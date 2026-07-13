@@ -1,0 +1,254 @@
+/* =========================
+   PRICING HERO
+========================= */
+
+/* .pricing-hero {
+  padding: 160px 8% 80px;
+  background: linear-gradient(135deg, #0b1f4d, #132f6f);
+  text-align: center;
+  color: white;
+} */
+
+.pricing-hero-content span {
+  color: #ff914d;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.pricing-hero-content h1 {
+  font-size: 60px;
+  margin: 20px 0;
+  font-weight: 700;
+}
+
+.pricing-hero-content p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 18px;
+  color: #dbe3f1;
+  line-height: 1.8;
+}
+
+/* =========================
+ PRICING TABS
+========================= */
+
+.pricing-tabs-section {
+  padding: 40px 8%;
+  background: #f8fafc;
+  position: sticky;
+  top: 80px;
+  z-index: 100;
+}
+
+.pricing-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.tab-btn {
+  border: none;
+  background: white;
+  color: #0b1f4d;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.tab-btn:hover {
+  transform: translateY(-4px);
+  color: #ff914d;
+}
+
+.tab-btn.active {
+  background: #ff914d;
+  color: white;
+}
+
+/* =========================
+ PRICING CONTENT
+========================= */
+
+.pricing-content-wrapper {
+  padding: 80px 8%;
+  background: #f8fafc;
+}
+
+.pricing-content {
+  display: none;
+}
+
+.pricing-content.active {
+  display: block;
+}
+
+.pricing-content h2 {
+  text-align: center;
+  color: #0b1f4d;
+  font-size: 42px;
+  margin-bottom: 60px;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* =========================
+ RESPONSIVE
+========================= */
+
+@media (max-width: 991px) {
+  .pricing-hero-content h1 {
+    font-size: 42px;
+  }
+
+  .pricing-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pricing-tabs-section {
+    top: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pricing-hero {
+    padding: 130px 5% 60px;
+  }
+
+  .pricing-hero-content h1 {
+    font-size: 34px;
+  }
+
+  .pricing-content h2 {
+    font-size: 30px;
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tab-btn {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+}
+
+/* =========================
+   PRICING CARD
+========================= */
+
+.pricing-card {
+  background: white;
+  border-radius: 30px;
+  padding: 40px 30px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  position: relative;
+  transition: 0.4s;
+  text-align: center;
+}
+
+.pricing-card:hover {
+  transform: translateY(-10px);
+}
+
+.popular {
+  border: 3px solid #ff914d;
+}
+
+.popular-badge {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ff914d;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.plan-name {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0b1f4d;
+  margin-bottom: 20px;
+}
+
+.price {
+  font-size: 42px;
+  font-weight: 700;
+  color: #ff914d;
+}
+
+.price span {
+  display: block;
+  font-size: 15px;
+  color: #64748b;
+  margin-top: 10px;
+}
+
+.plan-desc {
+  color: #64748b;
+  margin: 25px 0;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px;
+}
+
+.features li {
+  padding: 10px 0;
+  color: #334155;
+}
+
+.plan-btn {
+  display: inline-block;
+  padding: 14px 30px;
+  background: #0b1f4d;
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.plan-btn:hover {
+  background: #ff914d;
+}
+
+.pricing-bottom-btn {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.common-price-btn {
+  display: inline-block;
+  padding: 18px 45px;
+  background: #ff914d;
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 17px;
+  font-weight: 600;
+  transition: 0.3s;
+  box-shadow: 0 10px 30px rgba(255, 145, 77, 0.3);
+}
+
+.common-price-btn:hover {
+  background: #0b1f4d;
+  transform: translateY(-5px);
+  color: white;
+}

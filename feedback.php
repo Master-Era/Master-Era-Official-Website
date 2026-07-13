@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Master Era</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="feedback.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+
+        <div class="logo">
+            <a href="index.php">
+                <img src="images/main logo white.png" alt="Master Era Logo">
+            </a>
+        </div>
+
+        <ul class="menu">
+
+            <li><a href="index.php">Home</a></li>
+
+            <li><a href="services.php">Services</a></li>
+
+            <li><a href="portfolio.php">Portfolio</a></li>
+
+            <li><a href="about.php">About</a></li>
+
+            <li><a href="pricing.php">Pricing</a></li>
+
+            <li><a href="contact.php">Contact</a></li>
+
+            <li><a href="feedback.php">feedback</a></li>
+
+        </ul>
+
+
+    </nav>
+
+
+    <section class="feedback-section">
+
+        <div class="feedback-container">
+
+            <h1>Client Feedback</h1>
+
+            <p class="feedback-subtitle">
+                We value your feedback and suggestions.
+            </p>
+
+            <form class="feedback-form" action="feedback_submit.php" method="POST">
+
+                <input type="text" name="name" placeholder="Your Name" required>
+
+                <input type="text" name="company" placeholder="Company Name">
+
+                <select name="rating" required>
+                    <option value="">Select Rating</option>
+                    <option>⭐⭐⭐⭐⭐ Excellent</option>
+                    <option>⭐⭐⭐⭐ Very Good</option>
+                    <option>⭐⭐⭐ Good</option>
+                    <option>⭐⭐ Average</option>
+                    <option>⭐ Poor</option>
+                </select>
+
+                <textarea name="feedback" placeholder="Write your feedback..." rows="5" required></textarea>
+
+                <button type="submit">
+                    Submit Feedback
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-box">
+                <h3>MASTER ERA</h3>
+                <p>
+                    Empowering businesses with ERP, CRM, HRMS,
+                    Billing Systems and Digital Solutions.
+                </p>
+            </div>
+
+            <div class="footer-box">
+                <h3>Quick Links</h3>
+
+                <ul>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="services.php">Services</a></li>
+                    <li><a href="portfolio.php">Portfolio</a></li>
+                    <li><a href="about.php">About</a></li>
+                    <li><a href="pricing.php">Pricing</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-box">
+                <h3>Services</h3>
+
+                <ul>
+                    <li>HR & Payroll</li>
+                    <li>Sales CRM</li>
+                    <li>Invoice System</li>
+                    <li>Custom ERP</li>
+                    <li>Website Development</li>
+                </ul>
+            </div>
+
+            <div class="footer-box">
+                <h3>Contact Info</h3>
+
+                <p>📧 sachinparmar0706@gmail.com</p>
+                <p>📞 +91 7046674228</p>
+                <p>📍 Vadodara, Gujarat</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Master Era. All Rights Reserved.</p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
