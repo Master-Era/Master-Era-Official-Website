@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="about.css">
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
@@ -23,21 +24,20 @@
             </a>
         </div>
 
+        <div class="menu-toggle">
+    <i class="bi bi-list"></i>
+</div>
+
         <ul class="menu">
 
             <li><a href="index.php">Home</a></li>
 
             <li><a href="services.php">Services</a></li>
-
-            <li><a href="portfolio.php">Portfolio</a></li>
-
             <li><a href="about.php">About</a></li>
-
             <li><a href="pricing.php">Pricing</a></li>
-
+            <li><a href="portfolio.php">Portfolio</a></li>
+           <li><a href="feedback.php">feedback</a></li>
             <li><a href="contact.php">Contact</a></li>
-
-            <li><a href="feedback.php">feedback</a></li>
 
         </ul>
 
@@ -181,7 +181,7 @@
 
             <div class="tech-card">
                 <i class="fab fa-aws"></i>
-                <h4>AWS</h4>
+                <h4>VPS</h4>
             </div>
 
             <div class="tech-card">
@@ -294,6 +294,30 @@
         </div>
 
     </footer>
+   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+    <script>
+        const menuToggle = document.querySelector(".menu-toggle");
+        const menu = document.querySelector(".menu");
+
+        menuToggle.addEventListener("click", () => {
+            menu.classList.toggle("active");
+        });
+
+        const dropdown = document.querySelector(".dropdown");
+
+        dropdown.addEventListener("click", () => {
+            if (window.innerWidth <= 991) {
+                dropdown.classList.toggle("active");
+            }
+        });
+    </script>
 
 </body>
 

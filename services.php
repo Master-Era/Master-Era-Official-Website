@@ -7,7 +7,10 @@
     <title>Services | Master Era</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="style.css">
+
 
 </head>
 
@@ -17,44 +20,33 @@
 
     <nav class="navbar">
 
-        <div class="logo">
-            <a href="index.php">
-                <img src="images/main logo white.png" alt="Master Era Logo">
-            </a>
-        </div>
+<div class="logo">
+    <a href="index.php">
+        <img src="images/main logo white.png" alt="Master Era Logo">
+    </a>
+</div>
+<div class="menu-toggle">
+        <i class="bi bi-list"></i>
+    </div>
+<ul class="menu">
 
-        <ul class="menu">
-            <li><a href="index.php">Home</a></li>
+    <li><a href="index.php">Home</a></li>
 
-            <li class="dropdown" id="servicesDropdown">
-                <a href="services.php">
-                    Services <span class="arrow">&#9662;</span>
-                </a>
-
-                <ul class="service-dropdown">
-                    <li><a href="#hrms">👨‍💼 HR & Payroll</a></li>
-                    <li><a href="#crm">📈 Sales CRM</a></li>
-                    <li><a href="#invoice">🧾 Invoice System</a></li>
-                    <li><a href="#erp">⚙️ Custom ERP</a></li>
-                    <li><a href="#web">💻 Web Development</a></li>
-                    <li><a href="#cloud">☁️ Cloud Solutions</a></li>
-                    <li><a href="#dms">📁 Document Management</a></li>
-                </ul>
-            </li>
-
-            <li><a href="portfolio.php">Portfolio</a></li>
+    <li><a href="services.php">Services</a></li>
             <li><a href="about.php">About</a></li>
             <li><a href="pricing.php">Pricing</a></li>
+            <li><a href="portfolio.php">Portfolio</a></li>
+           <li><a href="feedback.php">feedback</a></li>
             <li><a href="contact.php">Contact</a></li>
-            <li><a href="feedback.php">feedback</a></li>
-        </ul>
+
+</ul>
 
 
-    </nav>
+</nav>
 
     <!-- ================= HERO ================= -->
 
-    <section class="services-hero">
+    <!-- <section class="services-hero">
 
         <div class="hero-content">
 
@@ -84,7 +76,7 @@
 
         </div>
 
-    </section>
+    </section> -->
 
     <!-- ================= QUICK NAVIGATION ================= -->
 
@@ -449,36 +441,32 @@
         </div>
 
     </footer>
+   
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
-    <script>
-        AOS.init({
-            duration: 1000,
-            once: true
-        });
-    </script>
-    <script>
-        const dropdown = document.getElementById("servicesDropdown");
-        const links = document.querySelectorAll(".service-dropdown a");
+<script>
+    AOS.init({
+        duration: 1000,
+        once: true
+    });
+</script>
+<script>
+    const menuToggle = document.querySelector(".menu-toggle");
+    const menu = document.querySelector(".menu");
 
-        links.forEach(link => {
-            link.addEventListener("click", function () {
+    menuToggle.addEventListener("click", () => {
+        menu.classList.toggle("active");
+    });
 
-                // dropdown તરત hide
-                const menu = document.querySelector(".service-dropdown");
+    const dropdown = document.querySelector(".dropdown");
 
-                menu.style.opacity = "0";
-                menu.style.visibility = "hidden";
-                menu.style.transform = "translateX(-50%) translateY(20px)";
+    dropdown.addEventListener("click", () => {
+        if (window.innerWidth <= 991) {
+            dropdown.classList.toggle("active");
+        }
+    });
+</script>
 
-                // થોડા સમય પછી style remove કરી દઈએ
-                // જેથી ફરી mouse hover કરશો તો dropdown open થાય
-                setTimeout(() => {
-                    menu.removeAttribute("style");
-                }, 300);
-            });
-        });
-    </script>
 
 
 </body>

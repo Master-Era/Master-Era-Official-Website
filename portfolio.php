@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="portfolio.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
@@ -21,22 +22,20 @@
         <img src="images/main logo white.png" alt="Master Era Logo">
     </a>
 </div>
+<div class="menu-toggle">
+            <i class="bi bi-list"></i>
+        </div>
 
 <ul class="menu">
 
     <li><a href="index.php">Home</a></li>
 
     <li><a href="services.php">Services</a></li>
-
-    <li><a href="portfolio.php">Portfolio</a></li>
-
-    <li><a href="about.php">About</a></li>
-
-    <li><a href="pricing.php">Pricing</a></li>
-
-    <li><a href="contact.php">Contact</a></li>
-
-    <li><a href="feedback.php">feedback</a></li>
+            <li><a href="about.php">About</a></li>
+            <li><a href="pricing.php">Pricing</a></li>
+            <li><a href="portfolio.php">Portfolio</a></li>
+           <li><a href="feedback.php">feedback</a></li>
+            <li><a href="contact.php">Contact</a></li>
 
 </ul>
 
@@ -46,7 +45,7 @@
     <!-- ==================================
          HERO SECTION
     =================================== -->
-    <section class="portfolio-hero">
+    <!-- <section class="portfolio-hero">
 
         <div class="hero-content">
             <div class="floating-shape shape1"></div>
@@ -69,13 +68,13 @@
 
         </div>
 
-    </section>
+    </section> -->
 
 
     <!-- ==================================
          STATS SECTION
     =================================== -->
-    <section class="portfolio-stats">
+    <!-- <section class="portfolio-stats">
 
         <div class="stats-grid">
 
@@ -102,12 +101,12 @@
         </div>
 
     </section>
-
+ -->
 
     <!-- ==================================
          FILTER SECTION
     =================================== -->
-    <section class="portfolio-filter">
+    <!-- <section class="portfolio-filter">
 
         <div class="filter-buttons">
 
@@ -119,7 +118,7 @@
 
         </div>
 
-    </section>
+    </section> -->
 
 
     <!-- ==================================
@@ -460,51 +459,30 @@
 
     </footer>
 
-    <div id="projectModal" class="modal">
-        <div class="modal-content">
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
-            <span class="close-btn" onclick="closeModal()">
-                &times;
-            </span>
+<script>
+    AOS.init({
+        duration: 1000,
+        once: true
+    });
+</script>
+<script>
+    const menuToggle = document.querySelector(".menu-toggle");
+    const menu = document.querySelector(".menu");
 
-            <h2 id="modalTitle"></h2>
+    menuToggle.addEventListener("click", () => {
+        menu.classList.toggle("active");
+    });
 
-            <p id="modalDescription"></p>
+    const dropdown = document.querySelector(".dropdown");
 
-        </div>
-    </div>
-
-    <script>
-        function openModal(title, description) {
-
-            document.getElementById("modalTitle").innerHTML = title;
-
-            document.getElementById("modalDescription").innerHTML = description;
-
-            document.getElementById("projectModal").style.display = "block";
+    dropdown.addEventListener("click", () => {
+        if (window.innerWidth <= 991) {
+            dropdown.classList.toggle("active");
         }
-
-        function closeModal() {
-            document.getElementById("projectModal").style.display = "none";
-        }
-
-        window.onclick = function (event) {
-            const modal = document.getElementById("projectModal");
-
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-    </script>
-    <script>
-        const menuToggle = document.querySelector(".menu-toggle");
-        const menu = document.querySelector(".menu");
-
-        menuToggle.addEventListener("click", () => {
-            menu.classList.toggle("active");
-        });
-    </script>
-
+    });
+</script>
 </body>
 
 </html>

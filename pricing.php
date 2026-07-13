@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="pricing.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
@@ -22,22 +23,19 @@
         <img src="images/main logo white.png" alt="Master Era Logo">
     </a>
 </div>
-
+<div class="menu-toggle">
+        <i class="bi bi-list"></i>
+    </div>
 <ul class="menu">
 
     <li><a href="index.php">Home</a></li>
 
     <li><a href="services.php">Services</a></li>
-
-    <li><a href="portfolio.php">Portfolio</a></li>
-
-    <li><a href="about.php">About</a></li>
-
-    <li><a href="pricing.php">Pricing</a></li>
-
-    <li><a href="contact.php">Contact</a></li>
-
-    <li><a href="feedback.php">feedback</a></li>
+            <li><a href="about.php">About</a></li>
+            <li><a href="pricing.php">Pricing</a></li>
+            <li><a href="portfolio.php">Portfolio</a></li>
+           <li><a href="feedback.php">feedback</a></li>
+            <li><a href="contact.php">Contact</a></li>
 
 </ul>
 
@@ -743,7 +741,30 @@ tabs.forEach(tab => {
 });
 
 </script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
+<script>
+    AOS.init({
+        duration: 1000,
+        once: true
+    });
+</script>
+<script>
+    const menuToggle = document.querySelector(".menu-toggle");
+    const menu = document.querySelector(".menu");
+
+    menuToggle.addEventListener("click", () => {
+        menu.classList.toggle("active");
+    });
+
+    const dropdown = document.querySelector(".dropdown");
+
+    dropdown.addEventListener("click", () => {
+        if (window.innerWidth <= 991) {
+            dropdown.classList.toggle("active");
+        }
+    });
+</script>
 
 </body>
 

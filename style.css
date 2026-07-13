@@ -10,10 +10,11 @@ body {
   animation: fadeIn 1s ease;
 }
 
-.logo {
-  font-size: 28px;
-  font-weight: bold;
-  color: #ff914d;
+.logo img {
+  height: 80px !important;
+  width: auto !important;
+  display: block;
+  object-fit: contain;
 }
 
 .menu {
