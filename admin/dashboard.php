@@ -15,6 +15,39 @@ $total_contacts = $contact_data['total'];
 $feedback_query = mysqli_query($conn, "SELECT COUNT(*) as total FROM feedback");
 $feedback_data = mysqli_fetch_assoc($feedback_query);
 $total_feedback = $feedback_data['total'];
+// Monthly Contact Data
+$monthly_query = mysqli_query($conn,"
+SELECT MONTH(created_at) as month,
+COUNT(*) as total
+FROM contact
+GROUP BY MONTH(created_at)
+ORDER BY MONTH(created_at)
+");
+
+$months = [];
+$totals = [];
+
+while($row = mysqli_fetch_assoc($monthly_query)){
+    $months[] = date("M", mktime(0,0,0,$row['month'],1));
+    $totals[] = $row['total'];
+}
+
+
+// Feedback Rating Data
+$rating_query = mysqli_query($conn,"
+SELECT rating,
+COUNT(*) as total
+FROM feedback
+GROUP BY rating
+");
+
+$ratings = [];
+$rating_totals = [];
+
+while($row = mysqli_fetch_assoc($rating_query)){
+    $ratings[] = $row['rating'].' Star';
+    $rating_totals[] = $row['total'];
+}
 ?>
 
 <!DOCTYPE html>
@@ -92,10 +125,10 @@ const inquiryChart = document.getElementById('inquiryChart');
 new Chart(inquiryChart, {
     type: 'line',
     data: {
-        labels: ['Jan','Feb','Mar','Apr','May','Jun'],
+        labels: <?php echo json_encode($months); ?>,
         datasets: [{
             label: 'Inquiries',
-            data: [5, 12, 18, 10, 25, 30],
+            data: <?php echo json_encode($totals); ?>,
             borderWidth: 3,
             tension: 0.4
         }]
@@ -110,9 +143,9 @@ const feedbackChart = document.getElementById('feedbackChart');
 new Chart(feedbackChart, {
     type: 'doughnut',
     data: {
-        labels: ['5 Star','4 Star','3 Star','2 Star','1 Star'],
+        labels: <?php echo json_encode($ratings); ?>,
         datasets: [{
-            data: [45,20,10,5,2]
+            data: <?php echo json_encode($rating_totals); ?>
         }]
     },
     options: {
