@@ -42,7 +42,8 @@
 
         <ul class="menu">
             <li><a href="index.php">Home</a></li>
-            <li><a href="services.php">Services</a></li>
+            
+            
 
             <!-- <li class="dropdown">
                 <a href="services.php">Services <i class="bi bi-chevron-down"></i></a>
@@ -57,7 +58,7 @@
                     <li><a href="services.php#dms">Document Management</a></li>
                 </ul>
             </li> -->
-
+            <li><a href="services.php">Services</a></li>
             <li><a href="about.php">About</a></li>
             <li><a href="pricing.php">Pricing</a></li>
             <li><a href="portfolio.php">Portfolio</a></li>

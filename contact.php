@@ -222,7 +222,7 @@
     </section>
 
     <!-- DEMO BOOKING -->
-    <section class="demo-section">
+    <!-- <section class="demo-section">
 
         <div class="section-title">
             <h2>Prefer a Live Demo? Book a 20-Minute Call</h2>
@@ -243,7 +243,29 @@
 
         </div>
 
-    </section>
+    </section> -->
+    <section class="map-section">
+
+    <div class="section-title">
+        <h2>Our Location</h2>
+        <p>Proudly Serving Businesses Across India from Tarsali, Vadodara, Gujarat</p>
+    </div>
+
+    <div class="map-container">
+
+        <iframe
+            src="https://maps.google.com/maps?q=Tarsali%20Vadodara%20Gujarat&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            width="100%"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
+    </div>
+
+</section>
 
     <!-- CTA -->
     <!-- <section class="cta-section">

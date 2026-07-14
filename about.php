@@ -114,7 +114,7 @@
 
         <div class="founder-image">
 
-            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600" alt="Founder">
+        <img src="images/founder image.png" alt="Founder">
 
         </div>
 
@@ -180,7 +180,7 @@
             </div>
 
             <div class="tech-card">
-                <i class="fab fa-aws"></i>
+            <i class="fa-solid fa-server"></i>
                 <h4>VPS</h4>
             </div>
 
