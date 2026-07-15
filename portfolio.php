@@ -148,10 +148,19 @@
                     <h3>Restaurant HR System</h3>
                     <p>Complete HR and payroll platform for restaurant staff management.</p>
                     <div class="tech-stack">React • Python • PostgreSQL</div>
-                    <a href="#" class="view-btn" onclick="openModal(
-'Restaurant HR System',
-'Complete HR and payroll platform for restaurant staff management. Features: Employee Management, Attendance, Leave and Payroll System.'
-)">View Details</a>
+                    <a href="#"
+class="view-btn"
+onclick="openGallery([
+'images/crm/dashboard.png',
+'images/crm/leads.png',
+'images/crm/customers.png',
+'images/crm/followups.png',
+'images/crm/reports.png'
+]); return false;">
+
+View Details
+
+</a>
                 </div>
 
             </div>
@@ -168,10 +177,19 @@
                     <h3>Invoice Generator App</h3>
                     <p>GST-compliant invoice generation software with PDF export.</p>
                     <div class="tech-stack">React • FastAPI</div>
-                    <a href="#" class="view-btn" onclick="openModal(
-'Invoice Generator App',
-'GST-compliant invoice generation software with PDF export. Features: GST Invoice Creation, Payment Tracking, Outstanding Reports, Client History and Automated Billing Management.'
-)">View Details</a>
+                    <a href="#"
+class="view-btn"
+onclick="openGallery([
+'images/crm/dashboard.png',
+'images/crm/leads.png',
+'images/crm/customers.png',
+'images/crm/followups.png',
+'images/crm/reports.png'
+]); return false;">
+
+View Details
+
+</a>
                 </div>
 
             </div>
@@ -188,10 +206,19 @@
                     <h3>Corporate Business Website</h3>
                     <p>Modern responsive business website with premium UI.</p>
                     <div class="tech-stack">React • Tailwind CSS</div>
-                    <a href="#" class="view-btn" onclick="openModal(
-'Corporate Business Website',
-'Modern responsive business website designed with premium UI and mobile-friendly design. Features: Responsive Layout, SEO Optimization, Contact Forms, Fast Loading Speed, Service Pages and Professional Branding.'
-)">View Details</a>
+                    <a href="#"
+class="view-btn"
+onclick="openGallery([
+'images/crm/dashboard.png',
+'images/crm/leads.png',
+'images/crm/customers.png',
+'images/crm/followups.png',
+'images/crm/reports.png'
+]); return false;">
+
+View Details
+
+</a>
                 </div>
 
             </div>
@@ -208,10 +235,19 @@
                     <h3>Sales CRM Dashboard</h3>
                     <p>Sales pipeline and lead management dashboard.</p>
                     <div class="tech-stack">React • Charts.js</div>
-                    <a href="#" class="view-btn" onclick="openModal(
-'Sales CRM Dashboard',
-'Smart CRM solution for managing leads, follow-ups and sales pipelines. Features: Lead Management, Follow-Up Reminders, Deal Pipeline Tracking, Customer Database, Sales Reports and Team Performance Analytics.'
-)">View Details</a>
+                    <a href="#"
+class="view-btn"
+onclick="openGallery([
+'images/crm/dashboard.png',
+'images/crm/leads.png',
+'images/crm/customers.png',
+'images/crm/followups.png',
+'images/crm/reports.png'
+]); return false;">
+
+View Details
+
+</a>
                 </div>
 
             </div>
@@ -220,18 +256,45 @@
             <div class="portfolio-card">
 
                 <div class="portfolio-image">
-                    <img src="images/school-management.jpg" alt="School ERP">
+                    <img src="images/sclhrm1.png" alt="School ERP">
                 </div>
 
                 <div class="portfolio-content">
                     <span class="project-tag">ERP</span>
                     <h3>School Management UI</h3>
-                    <p>ERP dashboard for school administration and operations.</p>
+                    <p>A complete cloud-based School Management System that simplifies admissions, student records, attendance, fees, examinations, communication, and administration through one secure platform for schools, colleges, and educational institutes.</p>
+                    <div class="project-details">
+
+    <div>
+        <h5>❌ Challenges</h5>
+        <p>
+            Paper records, manual attendance, Excel fee collection,
+            report generation and parent communication issues.
+        </p>
+    </div>
+
+    <div>
+        <h5>✅ Solution</h5>
+        <p>
+            Digital administration, online fees, smart attendance,
+            automated reports and parent portal.
+        </p>
+    </div>
+
+</div>
                     <div class="tech-stack">React</div>
-                    <a href="#" class="view-btn" onclick="openModal(
-'School Management UI',
-'Complete school management ERP solution for managing students, teachers and administration. Features: Student Management, Attendance Tracking, Fee Management, Exam & Result System, Staff Management and Parent Communication Portal.'
-)">View Details</a>
+                    <a href="#"
+class="view-btn"
+onclick="openGallery([
+'images/scl1.png',
+'images/scl2.png',
+'images/scl3.png',
+'images/scl4.png',
+]); return false;">
+
+View Details
+
+</a>
                 </div>
 
             </div>
@@ -248,10 +311,19 @@
                     <h3>Custom ERP Platform</h3>
                     <p>End-to-end ERP solution with HR, Sales and Inventory.</p>
                     <div class="tech-stack">React • Python</div>
-                    <a href="#" class="view-btn" onclick="openModal(
-                        'Custom ERP Platform',
-                        'End-to-end ERP solution designed to automate business operations and connect all departments in one system. Features: HR Management, Sales & Purchase, Inventory Management, Production Module, Multi-Branch Support, Role-Based Access and Custom Reports.'
-                        )">View Details</a>
+                    <a href="#"
+class="view-btn"
+onclick="openGallery([
+'images/crm/dashboard.png',
+'images/crm/leads.png',
+'images/crm/customers.png',
+'images/crm/followups.png',
+'images/crm/reports.png'
+]); return false;">
+
+View Details
+
+</a>
 
                 </div>
 
@@ -459,6 +531,37 @@
 
     </footer>
 
+    <!-- Screenshot Gallery Modal -->
+<div id="galleryModal" class="modal">
+
+<div class="modal-content">
+
+    <span class="close-btn" onclick="closeGallery()">&times;</span>
+
+    <img id="galleryImage" src="" style="
+        width:100%;
+        max-height:450px;
+        object-fit:contain;
+        border-radius:15px;
+        margin-bottom:20px;
+    ">
+
+    <div style="display:flex;justify-content:center;gap:15px;">
+
+        <button onclick="prevImage()" class="gallery-btn">
+            ⬅ Previous
+        </button>
+
+        <button onclick="nextImage()" class="gallery-btn">
+            Next ➡
+        </button>
+
+    </div>
+
+</div>
+
+</div>
+
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
 <script>
@@ -483,6 +586,55 @@
         }
     });
 </script>
+<script>
+
+let images = [];
+let currentIndex = 0;
+
+function openGallery(imageArray){
+
+    images = imageArray;
+    currentIndex = 0;
+
+    document.getElementById("galleryModal").style.display = "block";
+
+    document.getElementById("galleryImage").src = images[currentIndex];
+}
+
+function nextImage(){
+
+    currentIndex++;
+
+    if(currentIndex >= images.length){
+        currentIndex = 0;
+    }
+
+    document.getElementById("galleryImage").src = images[currentIndex];
+}
+
+function prevImage(){
+
+    currentIndex--;
+
+    if(currentIndex < 0){
+        currentIndex = images.length - 1;
+    }
+
+    document.getElementById("galleryImage").src = images[currentIndex];
+}
+
+function closeGallery(){
+    document.getElementById("galleryModal").style.display = "none";
+}
+
+window.onclick = function(event){
+    if(event.target == document.getElementById("galleryModal")){
+        closeGallery();
+    }
+}
+
+</script>
+
 </body>
 
 </html>
