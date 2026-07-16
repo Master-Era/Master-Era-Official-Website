@@ -700,6 +700,15 @@
                 <p>📞 +91 7046674228</p>
                 <p>📍 Vadodara, Gujarat</p>
             </div>
+            <div class="social-icons">
+                
+                <a href="https://www.instagram.com/masterera_managemantsoftware/" target="_blank">
+                 <i class="bi bi-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/master-era-511660369" target="_blank">
+                 <i class="bi bi-linkedin"></i></a>
+                 <a href="https://wa.me/917046674228" target="_blank">
+                <i class="bi bi-whatsapp"></i></a>
+            </div>
 
         </div>
 
