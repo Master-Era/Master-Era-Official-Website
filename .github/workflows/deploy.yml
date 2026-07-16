@@ -10,19 +10,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
 
-      - name: Deploy to cPanel
-        uses: easingthemes/ssh-deploy@v5.1.0
-        with:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          REMOTE_HOST: ${{ secrets.HOST }}
-          REMOTE_USER: ${{ secrets.USERNAME }}
-          REMOTE_PORT: ${{ secrets.PORT }}
-          SOURCE: "./"
-          TARGET: "/home2/mastec2a/public_html/"
-          EXCLUDE: |
-            .git/
-            .github/
-            README.md
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Deploy using SSH
+      uses: easingthemes/ssh-deploy@v5.1.0
+      with:
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        REMOTE_HOST: sh00018.bigrock.com
+        REMOTE_USER: mastec2a
+        REMOTE_PORT: 22
+        TARGET: /home2/your_user/public_html/
+        ARGS: "-rlgoDzvc --delete --exclude='.git' --exclude='.github' --exclude='README.md'"
+        SSH_OPTIONS: "-o StrictHostKeyChecking=no -o IdentitiesOnly=yes"
