@@ -10,17 +10,26 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
 
-    - name: Checkout
-      uses: actions/checkout@v4
+      - name: Deploy to BigRock
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          port: ${{ secrets.PORT }}
 
-    - name: Deploy using SSH
-      uses: easingthemes/ssh-deploy@v5.1.0
-      with:
-        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-        REMOTE_HOST: sh00018.bigrock.com
-        REMOTE_USER: mastec2a
-        REMOTE_PORT: 22
-        TARGET: /home2/your_user/public_html/
-        ARGS: "-rlgoDzvc --delete --exclude='.git' --exclude='.github' --exclude='README.md'"
-        SSH_OPTIONS: "-o StrictHostKeyChecking=no -o IdentitiesOnly=yes"
+          source: "."
+          target: "/home2/mastec2a/public_html"
+
+          strip_components: 0
+          overwrite: true
+
+          rm: false
+
+          exclude: |
+            .git
+            .github
+            README.md
