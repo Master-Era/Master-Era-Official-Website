@@ -176,7 +176,7 @@
     </div>
 
 </div>
-                    <div class="tech-stack">React • Python • PostgreSQL</div>
+                   
                     <a href="#"
 class="view-btn"
 onclick="openGallery([
@@ -202,7 +202,7 @@ View Details
             </div>
 
             <!-- Project 2 -->
-            <div class="portfolio-card">
+            <!-- <div class="portfolio-card">
 
                 <div class="portfolio-image">
                     <img src="images/invoice-app.jpg" alt="Invoice App">
@@ -228,28 +228,66 @@ View Details
 </a>
                 </div>
 
-            </div>
+            </div> -->
 
             <!-- Project 3 -->
             <div class="portfolio-card">
 
                 <div class="portfolio-image">
-                    <img src="images/website-app.jpg" alt="Corporate Website">
+                    <img src="images/web01.png" alt="Corporate Website">
                 </div>
 
                 <div class="portfolio-content">
                     <span class="project-tag">Website</span>
                     <h3>Corporate Business Website</h3>
-                    <p>Modern responsive business website with premium UI.</p>
-                    <div class="tech-stack">React • Tailwind CSS</div>
-                    <a href="#"
+                    <p>Modern, secure, and high-performance websites designed to help businesses grow online. Our websites are fast, responsive, SEO-friendly, and include a powerful admin panel for easy content management.</p>
+                    <div class="project-details">
+
+    <div class="detail-box">
+        <h5>❌ Manual Issues</h5>
+
+        <ul>
+            <li>Website updates require a developer</li>
+            <li>Customer data stored in multiple places</li>
+            <li>No secure login system</li>
+            <li>Slow website performance</li>
+            <li>Poor mobile experience</li>
+            <li>Difficult content management</li>
+            <li>Downtime affects business</li>
+            <li>Security vulnerabilities</li>
+        </ul>
+    </div>
+
+    <div class="detail-box">
+        <h5>✅ Master Era Solution</h5>
+
+        <ul>
+            <li>Easy-to-use Admin Panel</li>
+            <li>Secure JWT Authentication</li>
+            <li>Encrypted Data Protection</li>
+            <li>AI Integration Support</li>
+            <li>High-Speed Performance</li>
+            <li>99.9% Server Uptime</li>
+            <li>Mobile Responsive Design</li>
+            <li>SEO Optimized Structure</li>
+            <li>Real-Time Content Management</li>
+            <li>Automated Backup & Monitoring</li>
+        </ul>
+    </div>
+
+</div>
+                   
+  <a href="#"
 class="view-btn"
 onclick="openGallery([
-'images/crm/dashboard.png',
-'images/crm/leads.png',
-'images/crm/customers.png',
-'images/crm/followups.png',
-'images/crm/reports.png'
+'images/web1.png',
+'images/web2.png',
+'images/web3.png',
+'images/web4.png',
+'images/web5.png',
+'images/web6.png',
+'images/web7.png',
+'images/web8.png',
 ]); return false;">
 
 View Details
@@ -260,7 +298,7 @@ View Details
             </div>
 
             <!-- Project 4 -->
-            <div class="portfolio-card">
+            <!-- <div class="portfolio-card">
 
                 <div class="portfolio-image">
                     <img src="images/crm-dashboard.jpg" alt="CRM Dashboard">
@@ -286,7 +324,7 @@ View Details
 </a>
                 </div>
 
-            </div>
+            </div> -->
 
             <!-- Project 5 -->
             <div class="portfolio-card">
@@ -330,7 +368,7 @@ View Details
 </div>
 
 </div>
-                    <div class="tech-stack">React</div>
+                    
                     <a href="#"
 class="view-btn"
 onclick="openGallery([
@@ -349,7 +387,7 @@ View Details
             </div>
 
             <!-- Project 6 -->
-            <div class="portfolio-card">
+            <!-- <div class="portfolio-card">
 
                 <div class="portfolio-image">
                     <img src="images/school-management.jpg" alt="Custom ERP">
@@ -376,7 +414,7 @@ View Details
 
                 </div>
 
-            </div>
+            </div> -->
 
 
 
