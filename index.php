@@ -290,7 +290,7 @@
 
                 <h3>Contact Info</h3>
 
-                <p>📧 sachinparmar0706@gmail.com</p>
+                <p>📧 info@masterera.in</p>
                 <p>📞 +91 7046674228</p>
                 <p>📍 Akruti Heights, Near APS School,<br>
                 Tarsali Bypass, Tarsali,<br>
