@@ -53,9 +53,9 @@
 
 <div class="pricing-tabs">
 
-    <button class="tab-btn active" data-tab="hrms">
+    <!-- <button class="tab-btn active" data-tab="hrms">
         HRMS
-    </button>
+    </button> -->
 
     <button class="tab-btn" data-tab="school">
         School ERP
