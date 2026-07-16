@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Services | Master Era</title>
+    <link rel="icon" type="image/png" href="images/main logo white.png">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -430,7 +432,10 @@
 
                 <p>📧 sachinparmar0706@gmail.com</p>
                 <p>📞 +91 7046674228</p>
-                <p>📍 Vadodara, Gujarat</p>
+                <p>📍 Akruti Heights, Near APS School,<br>
+                Tarsali Bypass, Tarsali,<br>
+                Vadodara - 390009,<br>
+                Gujarat, India</p>
 
             </div>
             <div class="social-icons">

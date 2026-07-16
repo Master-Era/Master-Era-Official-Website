@@ -17,6 +17,7 @@
     <link rel="icon" href="images/favicon.png">
 
     <title>Master Era</title>
+    <link rel="icon" type="image/png" href="images/main logo white.png">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -291,7 +292,10 @@
 
                 <p>📧 sachinparmar0706@gmail.com</p>
                 <p>📞 +91 7046674228</p>
-                <p>📍 Vadodara, Gujarat</p>
+                <p>📍 Akruti Heights, Near APS School,<br>
+                Tarsali Bypass, Tarsali,<br>
+                Vadodara - 390009,<br>
+                Gujarat, India</p>
 
             </div>
             <div class="social-icons">

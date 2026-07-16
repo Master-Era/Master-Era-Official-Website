@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Pricing | Master Era</title>
-
+    <link rel="icon" type="image/png" href="images/main logo white.png">
     <!-- Main Theme CSS -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="pricing.css">
@@ -104,7 +105,7 @@
     </div>
 
     <p class="plan-desc">
-        Small businesses માટે perfect solution.
+    Perfect solution for small businesses.
     </p>
 
     <ul class="features">
@@ -132,7 +133,7 @@
     </div>
 
     <p class="plan-desc">
-        Growing companies માટે best choice.
+    Best choice for growing companies.
     </p>
 
     <ul class="features">
@@ -156,7 +157,7 @@
     </div>
 
     <p class="plan-desc">
-        Large organizations માટે custom pricing.
+    Custom pricing for large organizations.
     </p>
 
     <ul class="features">
@@ -296,7 +297,7 @@
 </div>
 
 <p class="plan-desc">
-    Small business અને startup માટે perfect.
+Perfect for small businesses and startups.
 </p>
 
 <ul class="features">
@@ -321,7 +322,7 @@
 </div>
 
 <p class="plan-desc">
-    Growing businesses માટે best option.
+Best option for growing businesses.
 </p>
 
 <ul class="features">
@@ -343,7 +344,7 @@
 </div>
 
 <p class="plan-desc">
-    Large scale projects માટે custom pricing.
+Custom pricing for large-scale projects.
 </p>
 
 <ul class="features">
@@ -383,7 +384,7 @@
     </div>
 
     <p class="plan-desc">
-        Small businesses માટે perfect CRM solution.
+    Perfect CRM solution for small businesses.
     </p>
 
     <ul class="features">
@@ -411,7 +412,7 @@
     </div>
 
     <p class="plan-desc">
-        Growing companies માટે best choice.
+    Best choice for growing companies.
     </p>
 
     <ul class="features">
@@ -436,7 +437,7 @@
     </div>
 
     <p class="plan-desc">
-        Large organizations માટે custom CRM solution.
+    Custom CRM solution for large organizations.
     </p>
 
     <ul class="features">
@@ -479,7 +480,7 @@
         </div>
 
         <p class="plan-desc">
-            Small businesses માટે simple billing solution.
+        Simple billing solution for small businesses.
         </p>
 
         <ul class="features">
@@ -507,7 +508,7 @@
         </div>
 
         <p class="plan-desc">
-            Growing businesses માટે advanced billing features.
+            Growing businesses for advanced billing features.
         </p>
 
         <ul class="features">
@@ -532,7 +533,7 @@
         </div>
 
         <p class="plan-desc">
-            Large organizations માટે customized billing solution.
+            Large organizations for customized billing solution.
         </p>
 
         <ul class="features">
@@ -575,7 +576,7 @@
     </div>
 
     <p class="plan-desc">
-        Small businesses માટે basic ERP package.
+        Small businesses for basic ERP package.
     </p>
 
     <ul class="features">
@@ -603,7 +604,7 @@
     </div>
 
     <p class="plan-desc">
-        Growing businesses માટે advanced ERP solution.
+        Growing businesses for advanced ERP solution.
     </p>
 
     <ul class="features">
@@ -628,7 +629,7 @@
     </div>
 
     <p class="plan-desc">
-        Large organizations માટે fully customized ERP.
+        Large organizations for fully customized ERP.
     </p>
 
     <ul class="features">
@@ -698,7 +699,10 @@
 
                 <p>📧 sachinparmar0706@gmail.com</p>
                 <p>📞 +91 7046674228</p>
-                <p>📍 Vadodara, Gujarat</p>
+                <p>📍 Akruti Heights, Near APS School,<br>
+                Tarsali Bypass, Tarsali,<br>
+                Vadodara - 390009,<br>
+                Gujarat, India</p>
             </div>
             <div class="social-icons">
                 

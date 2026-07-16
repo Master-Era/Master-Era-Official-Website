@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Contact Us | Master Era</title>
-
+    <link rel="icon" type="image/png" href="images/main logo white.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="contact.css">
 
@@ -175,11 +176,10 @@
                 <p>Within 4-8 Business Hours</p>
             </div>
 
-            <a href="#" class="whatsapp-btn">
-                <i class="fab fa-whatsapp"></i>
-                Chat On WhatsApp
-            </a>
-
+            <a href="https://wa.me/917046674228" class="whatsapp-btn" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+    Chat On WhatsApp
+</a>
         </div>
 
     </section>
@@ -248,13 +248,16 @@
 
     <div class="section-title">
         <h2>Our Location</h2>
-        <p>Proudly Serving Businesses Across India from Tarsali, Vadodara, Gujarat</p>
+        <p>
+            Proudly Serving Businesses Across India from
+            Akruti Heights, Tarsali, Vadodara, Gujarat
+        </p>
     </div>
 
     <div class="map-container">
 
         <iframe
-            src="https://maps.google.com/maps?q=Tarsali%20Vadodara%20Gujarat&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            src="https://maps.google.com/maps?q=Akruti%20Heights%20Near%20APS%20School%20Tarsali%20Bypass%20Vadodara%20Gujarat%20390009&t=&z=16&ie=UTF8&iwloc=&output=embed"
             width="100%"
             height="450"
             style="border:0;"
@@ -327,7 +330,10 @@
 
                 <p>📧 sachinparmar0706@gmail.com</p>
                 <p>📞 +91 7046674228</p>
-                <p>📍 Vadodara, Gujarat</p>
+                <p>📍 Akruti Heights, Near APS School,<br>
+                Tarsali Bypass, Tarsali,<br>
+                Vadodara - 390009,<br>
+                Gujarat, India</p>
             </div>
             <div class="social-icons">
                 
