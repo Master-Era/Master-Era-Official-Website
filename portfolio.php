@@ -140,22 +140,58 @@
             <div class="portfolio-card">
 
                 <div class="portfolio-image">
-                    <img src="images/main logo black.png" alt="HR System">
+                    <img src="images/hrm01.png" alt="HR System">
                 </div>
 
                 <div class="portfolio-content">
                     <span class="project-tag">HR Software</span>
                     <h3>Restaurant HR System</h3>
-                    <p>Complete HR and payroll platform for restaurant staff management.</p>
+                    <p>A complete HR Management System that simplifies employee management, attendance, leave tracking, payroll, documents, and reports in one secure cloud platform.</p>
+                    <div class="project-details">
+
+    <div class="detail-box">
+        <h5>❌ Manual Issues</h5>
+
+        <ul>
+            <li>Paper Attendance Records</li>
+            <li>Excel Payroll Calculations</li>
+            <li>Manual Leave Approvals</li>
+            <li>Scattered Employee Documents</li>
+            <li>Slow Report Generation</li>
+            <li>Human Errors</li>
+        </ul>
+    </div>
+
+    <div class="detail-box">
+        <h5>✅ Master Era Solution</h5>
+
+        <ul>
+            <li>Automated Attendance</li>
+            <li>One-Click Payroll</li>
+            <li>Online Leave Management</li>
+            <li>Centralized Employee Records</li>
+            <li>Instant Reports & Analytics</li>
+            <li>Paperless HR Operations</li>
+        </ul>
+    </div>
+
+</div>
                     <div class="tech-stack">React • Python • PostgreSQL</div>
                     <a href="#"
 class="view-btn"
 onclick="openGallery([
-'images/crm/dashboard.png',
-'images/crm/leads.png',
-'images/crm/customers.png',
-'images/crm/followups.png',
-'images/crm/reports.png'
+'images/hrm1.png',
+'images/hrm2.png',
+'images/hrm3.png',
+'images/hrm4.png',
+'images/hrm5.png',
+'images/hrm6.png',
+'images/hrm7.png',
+'images/hrm8.png',
+'images/hrm9.png',
+'images/hrm10.png',
+'images/hrm11.png',
+'images/hrm12.png',
 ]); return false;">
 
 View Details
@@ -265,21 +301,33 @@ View Details
                     <p>A complete cloud-based School Management System that simplifies admissions, student records, attendance, fees, examinations, communication, and administration through one secure platform for schools, colleges, and educational institutes.</p>
                     <div class="project-details">
 
-    <div>
-        <h5>❌ Challenges</h5>
-        <p>
-            Paper records, manual attendance, Excel fee collection,
-            report generation and parent communication issues.
-        </p>
-    </div>
+<div class="detail-box">
+    <h5>❌ Challenges</h5>
 
-    <div>
-        <h5>✅ Solution</h5>
-        <p>
-            Digital administration, online fees, smart attendance,
-            automated reports and parent portal.
-        </p>
-    </div>
+    <ul>
+        <li>Paper Records</li>
+        <li>Manual Attendance</li>
+        <li>Excel Fee Collection</li>
+        <li>Slow Reports</li>
+        <li>Parent Communication Issues</li>
+        <li>Duplicate Documents</li>
+        <li>No Real-time Data</li>
+    </ul>
+</div>
+
+<div class="detail-box">
+    <h5>✅ Solution</h5>
+
+    <ul>
+        <li>Digital Administration</li>
+        <li>Centralized Database</li>
+        <li>Smart Attendance</li>
+        <li>Online Fees</li>
+        <li>Auto Report Cards</li>
+        <li>Parent Portal</li>
+        <li>Real-time Dashboard</li>
+    </ul>
+</div>
 
 </div>
                     <div class="tech-stack">React</div>
@@ -290,6 +338,7 @@ onclick="openGallery([
 'images/scl2.png',
 'images/scl3.png',
 'images/scl4.png',
+'images/scl5.png',
 ]); return false;">
 
 View Details

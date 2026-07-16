@@ -677,3 +677,36 @@
     gap: 10px;
   }
 }
+.project-details {
+  display: flex;
+  gap: 15px;
+  margin: 15px 0;
+}
+
+.detail-box {
+  flex: 1;
+}
+
+.detail-box h5 {
+  font-size: 13px;
+  margin-bottom: 8px;
+  color: #0b1f4d;
+}
+
+.detail-box ul {
+  padding-left: 15px;
+  margin: 0;
+}
+
+.detail-box ul li {
+  font-size: 11px;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 4px;
+}
+
+@media (max-width: 768px) {
+  .project-details {
+    flex-direction: column;
+  }
+}
