@@ -414,17 +414,17 @@
 
             <div class="footer-box">
 
-                <h3>Services</h3>
+    <h3>Services</h3>
 
-                <ul>
-                    <li>HR & Payroll</li>
-                    <li>Sales CRM</li>
-                    <li>ERP Software</li>
-                    <li>Web Development</li>
-                    <li>Cloud Deployment</li>
-                </ul>
+    <ul>
+        <li><a href="services.php#hrms">HR & Payroll</a></li>
+        <li><a href="services.php#crm">Sales CRM</a></li>
+        <li><a href="services.php#erp">ERP Software</a></li>
+        <li><a href="services.php#web">Web Development</a></li>
+        <li><a href="services.php#cloud">Cloud Deployment</a></li>
+    </ul>
 
-            </div>
+</div>
 
             <div class="footer-box">
 

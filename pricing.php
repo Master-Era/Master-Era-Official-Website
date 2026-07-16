@@ -683,16 +683,18 @@ Custom pricing for large-scale projects.
             </div>
 
             <div class="footer-box">
-                <h3>Services</h3>
 
-                <ul>
-                    <li>HR & Payroll</li>
-                    <li>Sales CRM</li>
-                    <li>Invoice System</li>
-                    <li>Custom ERP</li>
-                    <li>Website Development</li>
-                </ul>
-            </div>
+    <h3>Services</h3>
+
+    <ul>
+        <li><a href="services.php#hrms">HR & Payroll</a></li>
+        <li><a href="services.php#crm">Sales CRM</a></li>
+        <li><a href="services.php#erp">ERP Software</a></li>
+        <li><a href="services.php#web">Web Development</a></li>
+        <li><a href="services.php#cloud">Cloud Deployment</a></li>
+    </ul>
+
+</div>
 
             <div class="footer-box">
                 <h3>Contact Info</h3>

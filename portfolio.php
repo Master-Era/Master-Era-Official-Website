@@ -550,7 +550,7 @@ View Details
         </div>
 
     </section> -->
-    <section class="clients">
+    <!-- <section class="clients">
         <h2>Trusted By Businesses</h2>
 
         <div class="client-grid">
@@ -559,7 +559,7 @@ View Details
             <img src="images/client3.png">
             <img src="images/client4.png">
         </div>
-    </section>
+    </section> -->
 
     <footer class="footer">
 
@@ -587,16 +587,18 @@ View Details
             </div>
 
             <div class="footer-box">
-                <h3>Services</h3>
 
-                <ul>
-                    <li>HR & Payroll</li>
-                    <li>Sales CRM</li>
-                    <li>Invoice System</li>
-                    <li>Custom ERP</li>
-                    <li>Website Development</li>
-                </ul>
-            </div>
+    <h3>Services</h3>
+
+    <ul>
+        <li><a href="services.php#hrms">HR & Payroll</a></li>
+        <li><a href="services.php#crm">Sales CRM</a></li>
+        <li><a href="services.php#erp">ERP Software</a></li>
+        <li><a href="services.php#web">Web Development</a></li>
+        <li><a href="services.php#cloud">Cloud Deployment</a></li>
+    </ul>
+
+</div>
 
             <div class="footer-box">
                 <h3>Contact Info</h3>

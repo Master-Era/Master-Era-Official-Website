@@ -146,21 +146,24 @@
             <div class="info-card">
                 <i class="fas fa-envelope"></i>
                 <h3>Email</h3>
-                <p>contact@masterera.in</p>
+                <p>info@masterera.in</p>
             </div>
 
             <div class="info-card">
                 <i class="fas fa-phone"></i>
                 <h3>Phone</h3>
-                <a href="tel:+911234567890">
-                    +91 123456789
+                <a href="tel:+91 7046674228">
+                +91 7046674228
                 </a>
             </div>
 
             <div class="info-card">
                 <i class="fas fa-location-dot"></i>
                 <h3>Location</h3>
-                <p>Vadodara, Gujarat, India</p>
+                <p>Akruti Heights, Near APS School,<br>
+                Tarsali Bypass, Tarsali,<br>
+                Vadodara - 390009,<br>
+                Gujarat, India</p>
             </div>
 
             <div class="info-card">
@@ -314,16 +317,18 @@
             </div>
 
             <div class="footer-box">
-                <h3>Services</h3>
 
-                <ul>
-                    <li>HR & Payroll</li>
-                    <li>Sales CRM</li>
-                    <li>Invoice System</li>
-                    <li>Custom ERP</li>
-                    <li>Website Development</li>
-                </ul>
-            </div>
+    <h3>Services</h3>
+
+    <ul>
+        <li><a href="services.php#hrms">HR & Payroll</a></li>
+        <li><a href="services.php#crm">Sales CRM</a></li>
+        <li><a href="services.php#erp">ERP Software</a></li>
+        <li><a href="services.php#web">Web Development</a></li>
+        <li><a href="services.php#cloud">Cloud Deployment</a></li>
+    </ul>
+
+</div>
 
             <div class="footer-box">
                 <h3>Contact Info</h3>
