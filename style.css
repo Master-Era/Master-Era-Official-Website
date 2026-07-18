@@ -1,20 +1,30 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* =========================================================
+   GLOBAL RESET
+========================================================= */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background: #fff8f0;
-  animation: fadeIn 1s ease;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
 }
 
 .logo img {
-  height: 80px !important;
-  width: auto !important;
-  display: block;
-  object-fit: contain;
+    height: 60px;
+    width: auto;
+    display: block;
+    object-fit: contain;
 }
 
 .menu {

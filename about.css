@@ -1,19 +1,52 @@
-/* about.css */
+/* =========================================================
+   MASTER ERA - ABOUT PAGE
+   Page-specific styles only
+========================================================= */
 
 :root {
     --about-navy: #0b1f4d;
     --about-orange: #ff914d;
-    --about-orange-soft: #fff3ea;
+    --about-orange-soft: #fff1e8;
     --about-light: #f8fafc;
     --about-text: #666;
-    --about-border: rgba(11, 31, 77, 0.09);
-    --about-shadow: 0 18px 45px rgba(11, 31, 77, 0.08);
+    --about-border: rgba(11, 31, 77, 0.10);
+    --about-shadow: 0 20px 50px rgba(11, 31, 77, 0.12);
     --about-transition: 0.35s ease;
 }
 
+/* Prevent About page horizontal overflow */
+.about-page,
+.about-page main {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Shared container */
 .about-section-container {
     width: min(1180px, 84%);
     margin: 0 auto;
+}
+
+/* Make About page independent from random global styles */
+.about-page h1,
+.about-page h2,
+.about-page h3,
+.about-page p,
+.about-page ul {
+    margin-top: 0;
+}
+
+/* Images never overflow */
+.about-page img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Better mobile tap targets */
+.about-page a,
+.about-page button {
+    -webkit-tap-highlight-color: transparent;
 }
 
 .section-light {

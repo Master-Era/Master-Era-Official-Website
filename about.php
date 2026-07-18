@@ -4,20 +4,46 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<?php
+// about.php
+?>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>About Us | Master Era</title>
-    <meta name="description" content="Learn about Master Era, our mission, vision, values, technology, and commitment to building practical digital solutions for ambitious businesses.">
-
+    <meta
+        name="description"
+        content="Learn about Master Era, our mission, vision, values, technology, and commitment to building practical digital solutions for ambitious businesses."
+    >
     <link rel="icon" type="image/png" href="images/main logo white.png">
-
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="about.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--
+        IMPORTANT:
+        filemtime() creates automatic cache-busting.
+        Whenever CSS changes, the version changes automatically.
+    -->
+    <?php
+        $style_css = __DIR__ . '/style.css';
+        $about_css = __DIR__ . '/about.css';
+    ?>
+    <link
+        rel="stylesheet"
+        href="style.css?v=<?php echo file_exists($style_css) ? filemtime($style_css) : time(); ?>"
+    >
+    <link
+        rel="stylesheet"
+        href="about.css?v=<?php echo file_exists($about_css) ? filemtime($about_css) : time(); ?>"
+    >
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    >
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
 </head>
 
 <body>
