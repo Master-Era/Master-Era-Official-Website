@@ -24,7 +24,7 @@
 
 <div class="logo">
     <a href="index.php">
-        <img src="images/main logo white.png" alt="Master Era Logo">
+        <img src="images/Design AI PNG.png" alt="Master Era Logo">
     </a>
 </div>
 <div class="menu-toggle">
