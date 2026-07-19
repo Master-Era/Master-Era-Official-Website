@@ -62,8 +62,8 @@
             <li><a href="services.php">Services</a></li>
             <li><a href="about.php">About</a></li>
             <li><a href="pricing.php">Pricing</a></li>
+            <li><a href="feedback.php">feedback</a></li>
             <li><a href="portfolio.php">Portfolio</a></li>
-           <li><a href="feedback.php">feedback</a></li>
             <li><a href="contact.php">Contact</a></li>
         </ul>
 
@@ -95,7 +95,7 @@
 
         <div class="hero-image" data-aos="fade-left">
 
-            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1000" alt="Business Team">
+            <img src="images/Hero Section iamge.png" alt="Business Team">
 
         </div>
 

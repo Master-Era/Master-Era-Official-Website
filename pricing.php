@@ -1,786 +1,963 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Pricing | Master Era</title>
-    <link rel="icon" type="image/png" href="images/main logo white.png">
-    <!-- Main Theme CSS -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="pricing.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pricing | Master Era</title>
+<link rel="icon" type="image/png" href="images/main logo white.png">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<?php
+$style_css = __DIR__ . '/style.css';
+$pricing_css = __DIR__ . '/pricing.css';
+?>
+
+<link rel="stylesheet" href="style.css?v=<?= file_exists($style_css) ? filemtime($style_css) : time() ?>">
+<link rel="stylesheet" href="pricing.css?v=<?= file_exists($pricing_css) ? filemtime($pricing_css) : time() ?>">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
 
 <nav class="navbar">
-
 <div class="logo">
-    <a href="index.php">
-        <img src="images/Design AI PNG.png" alt="Master Era Logo">
-    </a>
-</div>
-<div class="menu-toggle">
-        <i class="bi bi-list"></i>
-    </div>
-<ul class="menu">
-
-    <li><a href="index.php">Home</a></li>
-
-    <li><a href="services.php">Services</a></li>
-            <li><a href="about.php">About</a></li>
-            <li><a href="pricing.php">Pricing</a></li>
-            <li><a href="portfolio.php">Portfolio</a></li>
-           <li><a href="feedback.php">feedback</a></li>
-            <li><a href="contact.php">Contact</a></li>
-
-</ul>
-
-
-</nav>
-
-  <!-- ================= PRICING HERO ================= -->
-
-
-
-
-<!-- ================= PRICING TABS ================= -->
-
-<section class="pricing-tabs-section">
-
-<div class="pricing-tabs">
-
-    <button class="tab-btn active" data-tab="hrms">
-        HRMS
-    </button>
-
-    <button class="tab-btn" data-tab="school">
-        School ERP
-    </button>
-
-    <button class="tab-btn" data-tab="website">
-        Website
-    </button>
-
-    <button class="tab-btn" data-tab="crm">
-        CRM
-    </button>
-
-    <button class="tab-btn" data-tab="invoice">
-        Invoice
-    </button>
-
-    <button class="tab-btn" data-tab="erp">
-        Custom ERP
-    </button>
-
-</div>
-
-</section>
-
-<!-- ================= PRICING CONTENT ================= -->
-
-<section class="pricing-content-wrapper">
-
-<!-- HRMS -->
-<div class="pricing-content active" id="hrms">
-
-    <h2>HR & Payroll Management</h2>
-
-    <div class="pricing-grid">
-
-        <!-- cards ahiya aavse -->
-
-        <div class="pricing-card">
-
-    <div class="plan-name">Starter</div>
-
-    <div class="price">
-        ₹500
-        <span>/ Employee / Month</span>
-    </div>
-
-    <p class="plan-desc">
-    Perfect solution for small businesses.
-    </p>
-
-    <ul class="features">
-        <li>✓ Employee Management</li>
-        <li>✓ Attendance Tracking</li>
-        <li>✓ Leave Management</li>
-        <li>✓ Basic Reports</li>
-    </ul>
-
-    
-
-</div>
-
-<div class="pricing-card popular">
-
-    <div class="popular-badge">
-        Most Popular
-    </div>
-
-    <div class="plan-name">Business</div>
-
-    <div class="price">
-        ₹800
-        <span>/ Employee / Month</span>
-    </div>
-
-    <p class="plan-desc">
-    Best choice for growing companies.
-    </p>
-
-    <ul class="features">
-        <li>✓ Payroll Management</li>
-        <li>✓ PF / ESI Calculation</li>
-        <li>✓ Salary Slip PDF</li>
-        <li>✓ Employee Portal</li>
-        <li>✓ HR Reports</li>
-    </ul>
-
-   
-
-</div>
-
-<div class="pricing-card">
-
-    <div class="plan-name">Enterprise</div>
-
-    <div class="price">
-        Custom
-    </div>
-
-    <p class="plan-desc">
-    Custom pricing for large organizations.
-    </p>
-
-    <ul class="features">
-        <li>✓ Multi Branch Support</li>
-        <li>✓ Custom Modules</li>
-        <li>✓ Dedicated Support</li>
-        <li>✓ API Integration</li>
-        <li>✓ Advanced Analytics</li>
-    </ul>
-
-   
-
-</div>
-
-    </div>
-    <div class="pricing-bottom-btn">
-    <a href="contact.php" class="common-price-btn">
-        Learn More →
-    </a>
-</div>
-
-</div>
-
-<!-- School ERP -->
-<div class="pricing-content" id="school">
-
-    <h2>School Management SaaS</h2>
-
-    <div class="pricing-grid">
-
-    <div class="pricing-card">
-
-    <div class="plan-name">Starter</div>
-
-    <div class="price">
-        ₹240
-        <span>/ Month</span>
-    </div>
-
-    <div class="year-price">
-        ₹2799 / Year
-    </div>
-
-    <p class="plan-desc">
-        Suitable for schools with 1-100 students.
-    </p>
-
-    <ul class="features">
-        <li>✓ Student Dashboard</li>
-        <li>✓ Student Profile & Documents</li>
-        <li>✓ Attendance Tracking</li>
-        <li>✓ Homework PDF</li>
-        <li>✓ Result Viewing</li>
-    </ul>
-
-</div>
-
-<div class="pricing-card popular">
-
-    <div class="popular-badge">
-        Most Popular
-    </div>
-
-    <div class="plan-name">Growth</div>
-
-    <div class="price">
-        ₹180
-        <span>/ Month</span>
-    </div>
-
-    <div class="year-price">
-        ₹1999 / Year
-    </div>
-
-    <p class="plan-desc">
-        Best for schools with 100-300 students.
-    </p>
-
-    <ul class="features">
-        <li>✓ Everything in Starter</li>
-        <li>✓ Teacher Dashboard</li>
-        <li>✓ Teacher Attendance</li>
-        <li>✓ Lesson Upload</li>
-        <li>✓ Exam Result Upload</li>
-    </ul>
-
-</div>
-
-<div class="pricing-card">
-
-    <div class="plan-name">Enterprise</div>
-
-    <div class="price">
-        ₹90
-        <span>/ Month</span>
-    </div>
-
-    <div class="year-price">
-        ₹999 / Year
-    </div>
-
-    <p class="plan-desc">
-        Perfect for schools with 300-500 students.
-    </p>
-
-    <ul class="features">
-        <li>✓ Admission Management</li>
-        <li>✓ Document Verification</li>
-        <li>✓ Teacher Management</li>
-        <li>✓ Fee Tracking</li>
-        <li>✓ Accountant Dashboard</li>
-    </ul>
-
-</div>
-
-    </div>
-    <div class="pricing-bottom-btn">
-    <a href="contact.php" class="common-price-btn">
-        Learn More →
-    </a>
-</div>
-
-</div>
-
-<!-- Website -->
-<div class="pricing-content" id="website">
-
-    <h2>Website Development</h2>
-
-    <div class="pricing-grid">
-    <div class="pricing-card">
-
-<div class="plan-name">Basic Website</div>
-
-<div class="price">
-    ₹4,999
-</div>
-
-<p class="plan-desc">
-Perfect for small businesses and startups.
-</p>
-
-<ul class="features">
-    <li>✓ 5 Pages Website</li>
-    <li>✓ Mobile Responsive</li>
-    <li>✓ Contact Form</li>
-    <li>✓ Basic SEO</li>
-</ul>
-
-</div>
-
-<div class="pricing-card popular">
-
-<div class="popular-badge">
-    Most Popular
-</div>
-
-<div class="plan-name">Professional Website</div>
-
-<div class="price">
-    ₹9,999
-</div>
-
-<p class="plan-desc">
-Best option for growing businesses.
-</p>
-
-<ul class="features">
-    <li>✓ 10+ Pages Website</li>
-    <li>✓ Admin Panel</li>
-    <li>✓ SEO Optimization</li>
-    <li>✓ Database Integration</li>
-    <li>✓ Premium Design</li>
-</ul>
-
-</div>
-
-<div class="pricing-card">
-
-<div class="plan-name">Enterprise Website</div>
-
-<div class="price">
-    Custom
-</div>
-
-<p class="plan-desc">
-Custom pricing for large-scale projects.
-</p>
-
-<ul class="features">
-    <li>✓ Unlimited Pages</li>
-    <li>✓ Custom Features</li>
-    <li>✓ API Integration</li>
-    <li>✓ Advanced Security</li>
-    <li>✓ Dedicated Support</li>
-</ul>
-
-</div>
-
-    </div>
-    <div class="pricing-bottom-btn">
-    <a href="contact.php" class="common-price-btn">
-        Learn More →
-    </a>
-</div>
-
-</div>
-
-<!-- CRM -->
-<div class="pricing-content" id="crm">
-
-    <h2>Sales CRM</h2>
-
-    <div class="pricing-grid">
-
-<!-- Starter -->
-<div class="pricing-card">
-
-    <div class="plan-name">Starter</div>
-
-    <div class="price">
-        ₹500
-        <span>/ User / Month</span>
-    </div>
-
-    <p class="plan-desc">
-    Perfect CRM solution for small businesses.
-    </p>
-
-    <ul class="features">
-        <li>✓ Lead Management</li>
-        <li>✓ Customer Database</li>
-        <li>✓ Follow-up Tracking</li>
-        <li>✓ Basic Reports</li>
-        <li>✓ Sales Dashboard</li>
-    </ul>
-
-</div>
-
-<!-- Business -->
-<div class="pricing-card popular">
-
-    <div class="popular-badge">
-        Most Popular
-    </div>
-
-    <div class="plan-name">Business</div>
-
-    <div class="price">
-        ₹800
-        <span>/ User / Month</span>
-    </div>
-
-    <p class="plan-desc">
-    Best choice for growing companies.
-    </p>
-
-    <ul class="features">
-        <li>✓ Deal Pipeline</li>
-        <li>✓ Quotation Management</li>
-        <li>✓ Task & Reminder System</li>
-        <li>✓ Team Performance Tracking</li>
-        <li>✓ Sales Reports</li>
-        <li>✓ Email Integration</li>
-        <li>✓ Customer Support Tracking</li>
-    </ul>
-
-</div>
-
-<!-- Enterprise -->
-<div class="pricing-card">
-
-    <div class="plan-name">Enterprise</div>
-
-    <div class="price">
-        Custom
-    </div>
-
-    <p class="plan-desc">
-    Custom CRM solution for large organizations.
-    </p>
-
-    <ul class="features">
-        <li>✓ Multi Branch Support</li>
-        <li>✓ API Integration</li>
-        <li>✓ Custom Modules</li>
-        <li>✓ Advanced Analytics</li>
-        <li>✓ Role Based Access</li>
-        <li>✓ Dedicated Support</li>
-        <li>✓ Business Automation</li>
-    </ul>
-
-</div>
-
-</div>
-
-<div class="pricing-bottom-btn">
-<a href="contact.php" class="common-price-btn">
-    Learn More →
+<a href="index.php">
+<img src="images/main logo white.png" alt="Master Era Logo">
 </a>
 </div>
 
+<div class="menu-toggle">
+<i class="bi bi-list"></i>
 </div>
 
-<!-- Invoice -->
+<ul class="menu">
+<li><a href="index.php">Home</a></li>
+<li><a href="services.php">Services</a></li>
+<li><a href="about.php">About</a></li>
+<li><a href="pricing.php">Pricing</a></li>
+<li><a href="feedback.php">Feedback</a></li>
+<li><a href="portfolio.php">Portfolio</a></li>
+<li><a href="contact.php">Contact</a></li>
+</ul>
+</nav>
+
+<main class="pricing-page">
+
+<section class="pricing-tabs-wrapper">
+<div class="pricing-tabs">
+
+<button class="tab-btn active" data-tab="hrms">
+<i class="bi bi-people"></i>
+<span>HRMS</span>
+</button>
+
+<button class="tab-btn" data-tab="school">
+<i class="bi bi-mortarboard"></i>
+<span>School ERP</span>
+</button>
+
+<button class="tab-btn" data-tab="crm">
+<i class="bi bi-bar-chart"></i>
+<span>CRM</span>
+</button>
+
+<button class="tab-btn" data-tab="invoice">
+<i class="bi bi-receipt"></i>
+<span>Invoice</span>
+</button>
+
+<button class="tab-btn" data-tab="erp">
+<i class="bi bi-diagram-3"></i>
+<span>Custom ERP</span>
+</button>
+
+<button class="tab-btn" data-tab="website">
+<i class="bi bi-window"></i>
+<span>Website</span>
+</button>
+
+</div>
+</section>
+
+<section class="pricing-content-wrapper">
+
+<div class="billing-switcher" id="billingSwitcher">
+
+<button class="billing-btn" data-billing="monthly">
+Monthly
+</button>
+
+<button class="billing-btn active" data-billing="yearly">
+Yearly
+<span>Save More</span>
+</button>
+
+</div>
+
+<div class="pricing-content active" id="hrms">
+
+<div class="section-heading">
+<span>HR & PAYROLL MANAGEMENT</span>
+<h2>HRMS Pricing For Every Team</h2>
+<p>
+Manage employees, attendance, leave, payroll, performance
+and HR operations from one connected platform.
+</p>
+</div>
+
+<div class="pricing-grid" data-category="hrms"></div>
+
+</div>
+
+<div class="pricing-content" id="school">
+
+<div class="section-heading">
+<span>SCHOOL MANAGEMENT SAAS</span>
+<h2>School Management That Scales With Students</h2>
+<p>
+Choose your plan according to the number of students
+managed by your institution.
+</p>
+</div>
+
+<div class="pricing-grid" data-category="school"></div>
+
+</div>
+
+<div class="pricing-content" id="crm">
+
+<div class="section-heading">
+<span>SALES & CUSTOMER MANAGEMENT</span>
+<h2>Turn Leads Into Better Business</h2>
+<p>
+Manage leads, customers, sales pipelines, follow-ups
+and business performance in one place.
+</p>
+</div>
+
+<div class="pricing-grid" data-category="crm"></div>
+
+</div>
+
 <div class="pricing-content" id="invoice">
 
-    <h2>Invoice System</h2>
+<div class="section-heading">
+<span>INVOICE & BILLING SYSTEM</span>
+<h2>Simple Billing For Growing Businesses</h2>
+<p>
+Create invoices, manage products, track payments
+and understand your business numbers.
+</p>
+</div>
 
-    <div class="pricing-grid">
-
-    <!-- Starter -->
-    <div class="pricing-card">
-
-        <div class="plan-name">Starter</div>
-
-        <div class="price">
-            ₹300
-            <span>/ User / Month</span>
-        </div>
-
-        <p class="plan-desc">
-        Simple billing solution for small businesses.
-        </p>
-
-        <ul class="features">
-            <li>✓ GST Invoice Creation</li>
-            <li>✓ Customer Management</li>
-            <li>✓ Product Management</li>
-            <li>✓ Basic Reports</li>
-            <li>✓ PDF Invoice Download</li>
-        </ul>
-
-    </div>
-
-    <!-- Business -->
-    <div class="pricing-card popular">
-
-        <div class="popular-badge">
-            Most Popular
-        </div>
-
-        <div class="plan-name">Business</div>
-
-        <div class="price">
-            ₹500
-            <span>/ User / Month</span>
-        </div>
-
-        <p class="plan-desc">
-            Growing businesses for advanced billing features.
-        </p>
-
-        <ul class="features">
-            <li>✓ GST Billing</li>
-            <li>✓ Payment Tracking</li>
-            <li>✓ Stock Management</li>
-            <li>✓ Expense Management</li>
-            <li>✓ Sales Reports</li>
-            <li>✓ Customer Statements</li>
-            <li>✓ Email Invoice Sending</li>
-        </ul>
-
-    </div>
-
-    <!-- Enterprise -->
-    <div class="pricing-card">
-
-        <div class="plan-name">Enterprise</div>
-
-        <div class="price">
-            Custom
-        </div>
-
-        <p class="plan-desc">
-            Large organizations for customized billing solution.
-        </p>
-
-        <ul class="features">
-            <li>✓ Multi Branch Support</li>
-            <li>✓ Role Based Access</li>
-            <li>✓ API Integration</li>
-            <li>✓ Custom Reports</li>
-            <li>✓ Advanced Analytics</li>
-            <li>✓ Dedicated Support</li>
-            <li>✓ ERP Integration</li>
-        </ul>
-
-    </div>
+<div class="pricing-grid" data-category="invoice"></div>
 
 </div>
 
-<div class="pricing-bottom-btn">
-    <a href="contact.php" class="common-price-btn">
-        Learn More →
-    </a>
-</div>
-
-</div>
-
-<!-- ERP -->
 <div class="pricing-content" id="erp">
 
-    <h2>Custom ERP Software</h2>
+<div class="section-heading">
+<span>CUSTOM ERP SOLUTIONS</span>
+<h2>One System. Your Business Way.</h2>
+<p>
+Custom ERP solutions designed around your actual workflow,
+departments, modules and business growth.
+</p>
+</div>
 
-    <div class="pricing-grid">
-
-<!-- Basic ERP -->
-<div class="pricing-card">
-
-    <div class="plan-name">Starter ERP</div>
-
-    <div class="price">
-        ₹15,000
-        <span>/ One Time</span>
-    </div>
-
-    <p class="plan-desc">
-        Small businesses for basic ERP package.
-    </p>
-
-    <ul class="features">
-        <li>✓ Employee Management</li>
-        <li>✓ Sales Management</li>
-        <li>✓ Purchase Management</li>
-        <li>✓ Basic Reports</li>
-        <li>✓ Dashboard</li>
-    </ul>
+<div class="pricing-grid" data-category="erp"></div>
 
 </div>
 
-<!-- Business ERP -->
-<div class="pricing-card popular">
+<div class="pricing-content" id="website">
 
-    <div class="popular-badge">
-        Most Popular
-    </div>
+<div class="section-heading">
+<span>WEBSITE DESIGN & DEVELOPMENT</span>
+<h2>Professional Websites That Build Trust</h2>
+<p>
+From a focused business website to a fully custom digital platform,
+choose the package that matches your goals.
+</p>
+</div>
 
-    <div class="plan-name">Business ERP</div>
-
-    <div class="price">
-        ₹35,000
-        <span>/ One Time</span>
-    </div>
-
-    <p class="plan-desc">
-        Growing businesses for advanced ERP solution.
-    </p>
-
-    <ul class="features">
-        <li>✓ HR + Payroll</li>
-        <li>✓ CRM Integration</li>
-        <li>✓ Inventory Management</li>
-        <li>✓ Purchase & Sales</li>
-        <li>✓ Accounting Reports</li>
-        <li>✓ Role Based Access</li>
-        <li>✓ Analytics Dashboard</li>
-    </ul>
+<div class="pricing-grid" data-category="website"></div>
 
 </div>
 
-<!-- Enterprise ERP -->
-<div class="pricing-card">
+<section class="value-advantage">
 
-    <div class="plan-name">Enterprise ERP</div>
-
-    <div class="price">
-        Custom Quote
-    </div>
-
-    <p class="plan-desc">
-        Large organizations for fully customized ERP.
-    </p>
-
-    <ul class="features">
-        <li>✓ Multi Branch Support</li>
-        <li>✓ Custom Modules</li>
-        <li>✓ API Integration</li>
-        <li>✓ Mobile App Support</li>
-        <li>✓ Advanced Reports</li>
-        <li>✓ Dedicated Support</li>
-        <li>✓ Cloud Deployment</li>
-        <li>✓ Business Automation</li>
-    </ul>
-
+<div class="value-icon">
+<i class="bi bi-gem"></i>
 </div>
 
+<div class="value-content">
+<span>SMARTER VALUE. BETTER TECHNOLOGY.</span>
+
+<h3>
+Premium Software Without The Premium Price.
+</h3>
+
+<p>
+Master Era focuses on practical features, transparent pricing
+and business-friendly technology. You get the tools your business
+actually needs without paying for unnecessary complexity.
+</p>
 </div>
 
-<div class="pricing-bottom-btn">
-    <a href="contact.php" class="common-price-btn">
-        Learn More →
-    </a>
+<div class="value-points">
+
+<div>
+<i class="bi bi-check-circle-fill"></i>
+<span>Transparent Pricing</span>
+</div>
+
+<div>
+<i class="bi bi-check-circle-fill"></i>
+<span>Business-Focused Features</span>
+</div>
+
+<div>
+<i class="bi bi-check-circle-fill"></i>
+<span>Scalable Technology</span>
 </div>
 
 </div>
 
 </section>
 
+<div class="pricing-bottom-btn">
+<a href="contact.php" class="common-price-btn">
+Discuss Your Requirements
+<i class="bi bi-arrow-right"></i>
+</a>
+</div>
+
+</section>
+
+</main>
+
 <footer class="footer">
 
-        <div class="footer-container">
+<div class="footer-container">
 
-            <div class="footer-box">
-                <h3>MASTER ERA</h3>
-                <p>
-                    Empowering businesses with ERP, CRM, HRMS,
-                    Billing Systems and Digital Solutions.
-                </p>
-            </div>
+<div class="footer-box">
+<h3>MASTER ERA</h3>
+<p>
+Empowering businesses with ERP, CRM, HRMS,
+Billing Systems and Digital Solutions.
+</p>
+</div>
 
-            <div class="footer-box">
-                <h3>Quick Links</h3>
+<div class="footer-box">
+<h3>Quick Links</h3>
+<ul>
+<li><a href="index.php">Home</a></li>
+<li><a href="services.php">Services</a></li>
+<li><a href="portfolio.php">Portfolio</a></li>
+<li><a href="about.php">About</a></li>
+<li><a href="pricing.php">Pricing</a></li>
+<li><a href="contact.php">Contact</a></li>
+</ul>
+</div>
 
-                <ul>
-                    <li><a href="index.php">Home</a></li>
-                    <li><a href="services.php">Services</a></li>
-                    <li><a href="portfolio.php">Portfolio</a></li>
-                    <li><a href="about.php">About</a></li>
-                    <li><a href="pricing.php">Pricing</a></li>
-                    <li><a href="contact.php">Contact</a></li>
-                </ul>
-            </div>
+<div class="footer-box">
+<h3>Services</h3>
+<ul>
+<li><a href="services.php#hrms">HR & Payroll</a></li>
+<li><a href="services.php#crm">Sales CRM</a></li>
+<li><a href="services.php#erp">ERP Software</a></li>
+<li><a href="services.php#web">Web Development</a></li>
+<li><a href="services.php#cloud">Cloud Deployment</a></li>
+</ul>
+</div>
 
-            <div class="footer-box">
+<div class="footer-box">
+<h3>Contact Info</h3>
+<p>📧 info@masterera.in</p>
+<p>📞 +91 7046674228</p>
+<p>
+📍 Akruti Heights, Near APS School,<br>
+Tarsali Bypass, Tarsali,<br>
+Vadodara - 390009,<br>
+Gujarat, India
+</p>
+</div>
 
-    <h3>Services</h3>
+<div class="social-icons">
 
-    <ul>
-        <li><a href="services.php#hrms">HR & Payroll</a></li>
-        <li><a href="services.php#crm">Sales CRM</a></li>
-        <li><a href="services.php#erp">ERP Software</a></li>
-        <li><a href="services.php#web">Web Development</a></li>
-        <li><a href="services.php#cloud">Cloud Deployment</a></li>
-    </ul>
+<a href="https://www.instagram.com/masterera_managemantsoftware/" target="_blank">
+<i class="bi bi-instagram"></i>
+</a>
+
+<a href="https://www.linkedin.com/in/master-era-511660369" target="_blank">
+<i class="bi bi-linkedin"></i>
+</a>
+
+<a href="https://wa.me/917046674228" target="_blank">
+<i class="bi bi-whatsapp"></i>
+</a>
 
 </div>
 
-            <div class="footer-box">
-                <h3>Contact Info</h3>
+</div>
 
-                <p>📧 info@masterera.in</p>
-                <p>📞 +91 7046674228</p>
-                <p>📍 Akruti Heights, Near APS School,<br>
-                Tarsali Bypass, Tarsali,<br>
-                Vadodara - 390009,<br>
-                Gujarat, India</p>
-            </div>
-            <div class="social-icons">
-                
-                <a href="https://www.instagram.com/masterera_managemantsoftware/" target="_blank">
-                 <i class="bi bi-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/master-era-511660369" target="_blank">
-                 <i class="bi bi-linkedin"></i></a>
-                 <a href="https://wa.me/917046674228" target="_blank">
-                <i class="bi bi-whatsapp"></i></a>
-            </div>
+<div class="footer-bottom">
+<p>© 2026 Master Era. All Rights Reserved.</p>
+</div>
 
-        </div>
+</footer>
 
-        <div class="footer-bottom">
-            <p>© 2026 Master Era. All Rights Reserved.</p>
-        </div>
+<script>
 
-    </footer>
+const pricingData = {
 
-    <script>
+hrms: [
+{
+name:"Starter",
+popular:false,
+monthly:49,
+monthlyDiscount:0,
+yearly:39,
+yearlyDiscount:0,
+desc:"Essential HR tools for small teams.",
+features:[
+"Employee Management",
+"Attendance Tracking",
+"Leave Management",
+"Document Management",
+"Basic HR Reports"
+]
+},
+{
+name:"Business",
+popular:true,
+monthly:99,
+monthlyDiscount:10,
+yearly:79,
+yearlyDiscount:0,
+desc:"Complete HR and payroll operations for growing businesses.",
+features:[
+"Everything in Starter",
+"Payroll Management",
+"PF / ESI / TDS Support",
+"Salary Slip Generation",
+"Employee Self-Service",
+"Performance Tracking",
+"Advanced Reports"
+]
+},
+{
+name:"Enterprise",
+popular:false,
+monthly:179,
+monthlyDiscount:0,
+yearly:149,
+yearlyDiscount:0,
+desc:"Advanced HR operations for larger organisations.",
+features:[
+"Everything in Business",
+"Multi-Branch Management",
+"Advanced Analytics",
+"Custom Workflows",
+"API Integration",
+"Priority Support"
+]
+},
+{
+name:"Custom",
+custom:true,
+desc:"Need a workflow built specifically for your business?",
+features:[
+"Custom HR Workflows",
+"Custom Reports",
+"Custom Integrations",
+"Dedicated Support"
+]
+}
+],
 
-const tabs = document.querySelectorAll(".tab-btn");
-const contents = document.querySelectorAll(".pricing-content");
+school:[
+{
+name:"Starter",
+popular:false,
+monthly:240,
+monthlyDiscount:0,
+yearly:2799,
+yearlyDiscount:0,
+range:"1–100 Students",
+desc:"For schools managing 1–100 students.",
+features:[
+"Student Profiles",
+"Student Documents",
+"Attendance Management",
+"Homework & PDFs",
+"Result Viewing",
+"Basic Dashboard"
+]
+},
+{
+name:"Growth",
+popular:true,
+monthly:180,
+monthlyDiscount:0,
+yearly:1999,
+yearlyDiscount:0,
+range:"100–300 Students",
+desc:"For schools managing 100–300 students.",
+features:[
+"Everything in Starter",
+"Teacher Dashboard",
+"Teacher Attendance",
+"Exam & Result Management",
+"Fees Management",
+"Parent Communication",
+"Reports & Analytics"
+]
+},
+{
+name:"Complete",
+popular:false,
+monthly:90,
+monthlyDiscount:0,
+yearly:999,
+yearlyDiscount:0,
+range:"300–500 Students",
+desc:"For schools managing 300–500 students.",
+features:[
+"Everything in Growth",
+"Admission Management",
+"Accountant Dashboard",
+"Advanced Reports",
+"Custom School Workflows",
+"Priority Support"
+]
+},
+{
+name:"Custom School",
+custom:true,
+desc:"For schools with more than 500 students or special requirements.",
+features:[
+"500+ Students",
+"Custom Modules",
+"Custom Workflows",
+"Custom Reports",
+"Dedicated Support"
+]
+}
+],
 
-tabs.forEach(tab => {
+crm:[
+{
+name:"Starter",
+popular:false,
+monthly:299,
+monthlyDiscount:0,
+yearly:2999,
+yearlyDiscount:0,
+desc:"Simple CRM for small sales teams.",
+features:[
+"Lead Management",
+"Customer Database",
+"Follow-up Tracking",
+"Sales Dashboard",
+"Basic Reports"
+]
+},
+{
+name:"Business",
+popular:true,
+monthly:599,
+monthlyDiscount:50,
+yearly:5999,
+yearlyDiscount:0,
+desc:"Powerful sales management for growing teams.",
+features:[
+"Everything in Starter",
+"Deal Pipeline",
+"Quotation Management",
+"Tasks & Reminders",
+"Team Performance",
+"Sales Reports",
+"Customer Support Tracking"
+]
+},
+{
+name:"Enterprise",
+popular:false,
+monthly:999,
+monthlyDiscount:0,
+yearly:9999,
+yearlyDiscount:0,
+desc:"Advanced CRM and automation for larger organisations.",
+features:[
+"Multi-Branch Support",
+"Role-Based Access",
+"API Integration",
+"Custom Modules",
+"Advanced Analytics",
+"Business Automation"
+]
+},
+{
+name:"Custom CRM",
+custom:true,
+desc:"Build your CRM around your exact sales process.",
+features:[
+"Custom CRM Modules",
+"Custom Automation",
+"API Integration",
+"Custom Reports"
+]
+}
+],
 
-    tab.addEventListener("click", () => {
+invoice:[
+{
+name:"Starter",
+popular:false,
+monthly:299,
+monthlyDiscount:0,
+yearly:2999,
+yearlyDiscount:0,
+desc:"Simple invoicing for small businesses.",
+features:[
+"GST Invoice Creation",
+"Customer Management",
+"Product Management",
+"PDF Invoice",
+"Basic Reports"
+]
+},
+{
+name:"Business",
+popular:true,
+monthly:599,
+monthlyDiscount:50,
+yearly:5999,
+yearlyDiscount:0,
+desc:"Complete billing and business tracking.",
+features:[
+"Everything in Starter",
+"Payment Tracking",
+"Stock Management",
+"Expense Management",
+"Sales Reports",
+"Customer Statements"
+]
+},
+{
+name:"Enterprise",
+popular:false,
+monthly:999,
+monthlyDiscount:0,
+yearly:9999,
+yearlyDiscount:0,
+desc:"Advanced billing for larger organisations.",
+features:[
+"Multi-Branch Support",
+"Role-Based Access",
+"API Integration",
+"Custom Reports",
+"Advanced Analytics"
+]
+},
+{
+name:"Custom Billing",
+custom:true,
+desc:"Custom billing software for your exact business process.",
+features:[
+"Custom Billing Workflow",
+"Custom Reports",
+"API Integration",
+"Business Automation"
+]
+}
+],
 
-        // active button remove
-        tabs.forEach(btn => {
-            btn.classList.remove("active");
-        });
+erp:[
+{
+name:"Starter ERP",
+popular:false,
+oneTime:true,
+price:149999,
+desc:"A practical ERP foundation for small businesses.",
+features:[
+"Employee Management",
+"Sales Management",
+"Purchase Management",
+"Inventory Basics",
+"Dashboard",
+"Basic Reports"
+]
+},
+{
+name:"Business ERP",
+popular:true,
+oneTime:true,
+price:349999,
+desc:"Integrated ERP for growing businesses and teams.",
+features:[
+"Everything in Starter",
+"HR + Payroll",
+"CRM Integration",
+"Inventory Management",
+"Purchase & Sales",
+"Accounting Reports",
+"Role-Based Access"
+]
+},
+{
+name:"Enterprise ERP",
+popular:false,
+oneTime:true,
+price:799999,
+desc:"Fully customised ERP for complex operations.",
+features:[
+"Multi-Branch Support",
+"Custom Modules",
+"API Integrations",
+"Mobile App Support",
+"Advanced Reports",
+"Cloud Deployment",
+"Business Automation"
+]
+},
+{
+name:"Custom ERP",
+custom:true,
+desc:"Your business. Your workflow. Your ERP.",
+features:[
+"Fully Custom Modules",
+"Custom Business Workflow",
+"API Integrations",
+"Advanced Automation",
+"Dedicated Support"
+]
+}
+],
 
-        // active content remove
-        contents.forEach(content => {
-            content.classList.remove("active");
-        });
+website:[
+{
+name:"Basic",
+popular:false,
+oneTime:true,
+price:14999,
+desc:"A professional online presence for small businesses.",
+features:[
+"Up to 5 Pages",
+"Mobile Responsive Design",
+"Contact / WhatsApp Integration",
+"Basic SEO Setup",
+"SSL Setup",
+"1 Year Domain & Hosting"
+]
+},
+{
+name:"Professional",
+popular:true,
+oneTime:true,
+price:34999,
+desc:"A stronger digital presence for growing businesses.",
+features:[
+"Up to 10 Pages",
+"Custom UI/UX Design",
+"CMS / Admin Panel",
+"Advanced SEO Setup",
+"Forms / Booking Integration",
+"Analytics Integration",
+"1 Year Domain & Hosting"
+]
+},
+{
+name:"Custom",
+popular:false,
+oneTime:true,
+price:74999,
+desc:"A powerful custom website built around your business.",
+features:[
+"Custom UI/UX",
+"Advanced Admin Panel",
+"Custom Modules",
+"API Integrations",
+"Advanced SEO",
+"Performance Optimisation",
+"Custom Automation"
+]
+},
+{
+name:"Custom Platform",
+custom:true,
+desc:"For advanced websites, portals and digital platforms.",
+features:[
+"Advanced Web Application",
+"Custom Dashboard",
+"Custom User Roles",
+"API Integrations",
+"Business Automation"
+]
+}
+]
 
-        // clicked button active
-        tab.classList.add("active");
+};
 
-        // selected section open
-        const target = tab.getAttribute("data-tab");
+let currentBilling = "yearly";
 
-        document.getElementById(target).classList.add("active");
+function formatPrice(price){
+return "₹"+Number(price).toLocaleString("en-IN");
+}
 
-    });
+function getPrice(plan){
+
+if(plan.oneTime){
+return{
+final:plan.price,
+original:null,
+discount:0
+};
+}
+
+const original=plan[currentBilling];
+const discount=plan[currentBilling+"Discount"]||0;
+
+return{
+final:Math.max(0,original-discount),
+original,
+discount
+};
+
+}
+
+function renderPricing(){
+
+document.querySelectorAll(".pricing-grid").forEach(grid=>{
+
+const category=grid.dataset.category;
+
+grid.innerHTML=pricingData[category].map(plan=>{
+
+if(plan.custom){
+
+return `
+<article class="pricing-card custom-card">
+
+<div class="custom-icon">
+<i class="bi bi-stars"></i>
+</div>
+
+<div class="plan-name">
+${plan.name}
+</div>
+
+<div class="custom-price">
+Let's Talk
+</div>
+
+<p class="plan-desc">
+${plan.desc}
+</p>
+
+<ul class="features">
+${plan.features.map(feature=>`
+<li>
+<i class="bi bi-check2"></i>
+${feature}
+</li>
+`).join("")}
+</ul>
+
+<a href="contact.php" class="plan-btn custom-btn">
+Contact Us
+<i class="bi bi-arrow-right"></i>
+</a>
+
+</article>
+`;
+
+}
+
+const price=getPrice(plan);
+
+return `
+<article class="pricing-card ${plan.popular?"popular":""}">
+
+${plan.popular?`
+<div class="popular-badge">
+MOST POPULAR
+</div>
+`:""}
+
+<div class="plan-name">
+${plan.name}
+</div>
+
+${plan.range?`
+<div class="student-range">
+<i class="bi bi-people"></i>
+${plan.range}
+</div>
+`:""}
+
+<div class="price">
+
+${price.discount>0?`
+<del>${formatPrice(price.original)}</del>
+`:""}
+
+${formatPrice(price.final)}
+
+<span>
+${
+category==="website"
+?"one-time project price"
+:
+category==="crm"||category==="invoice"
+?
+(currentBilling==="monthly"?"per month":"per year")
+:
+(currentBilling==="monthly"?"per month":"per year")
+}
+</span>
+
+</div>
+
+${price.discount>0?`
+<div class="discount-note">
+Save ${formatPrice(price.discount)}
+</div>
+`:""}
+
+<p class="plan-desc">
+${plan.desc}
+</p>
+
+<ul class="features">
+${plan.features.map(feature=>`
+<li>
+<i class="bi bi-check2"></i>
+${feature}
+</li>
+`).join("")}
+</ul>
+
+<a href="contact.php" class="plan-btn">
+Choose Plan
+<i class="bi bi-arrow-right"></i>
+</a>
+
+</article>
+`;
+
+}).join("");
+
+observeCards();
 
 });
 
-</script>
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+}
 
-<script>
-    AOS.init({
-        duration: 1000,
-        once: true
-    });
-</script>
-<script>
-    const menuToggle = document.querySelector(".menu-toggle");
-    const menu = document.querySelector(".menu");
+function updateBillingSwitcher(category){
 
-    menuToggle.addEventListener("click", () => {
-        menu.classList.toggle("active");
-    });
+const billingSwitcher=document.getElementById("billingSwitcher");
 
-    const dropdown = document.querySelector(".dropdown");
+if(category==="website"){
+billingSwitcher.style.display="none";
+}else{
+billingSwitcher.style.display="flex";
+}
 
-    dropdown.addEventListener("click", () => {
-        if (window.innerWidth <= 991) {
-            dropdown.classList.toggle("active");
-        }
-    });
+}
+
+document.querySelectorAll(".tab-btn").forEach(tab=>{
+
+tab.addEventListener("click",()=>{
+
+document.querySelectorAll(".tab-btn")
+.forEach(btn=>btn.classList.remove("active"));
+
+document.querySelectorAll(".pricing-content")
+.forEach(content=>content.classList.remove("active"));
+
+tab.classList.add("active");
+
+const selectedCategory=tab.dataset.tab;
+
+document.getElementById(selectedCategory).classList.add("active");
+
+updateBillingSwitcher(selectedCategory);
+
+window.scrollTo({
+top:document.querySelector(".pricing-content-wrapper").offsetTop-40,
+behavior:"smooth"
+});
+
+});
+
+});
+
+document.querySelectorAll(".billing-btn").forEach(btn=>{
+
+btn.addEventListener("click",()=>{
+
+document.querySelectorAll(".billing-btn")
+.forEach(button=>button.classList.remove("active"));
+
+btn.classList.add("active");
+
+currentBilling=btn.dataset.billing;
+
+renderPricing();
+
+});
+
+});
+
+const menuToggle=document.querySelector(".menu-toggle");
+const menu=document.querySelector(".menu");
+
+if(menuToggle&&menu){
+
+menuToggle.addEventListener("click",()=>{
+menu.classList.toggle("active");
+});
+
+}
+
+let cardObserver;
+
+function observeCards(){
+
+if(cardObserver){
+cardObserver.disconnect();
+}
+
+cardObserver=new IntersectionObserver(entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("show");
+
+cardObserver.unobserve(entry.target);
+
+}
+
+});
+
+},{
+threshold:0.12
+});
+
+document
+.querySelectorAll(".pricing-card")
+.forEach(card=>cardObserver.observe(card));
+
+}
+
+updateBillingSwitcher("hrms");
+renderPricing();
+
 </script>
 
 </body>
-
 </html>
