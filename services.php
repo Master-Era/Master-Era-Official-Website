@@ -1,137 +1,1011 @@
-<!DOCTYPE html>
-<html lang="en">
+    <?php
+    $services_css = __DIR__ . '/services.css';
+    $style_css = __DIR__ . '/style.css';
+    $services = [
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Services | Master Era</title>
-    <link rel="icon" type="image/png" href="images/main logo white.png">
+        [
+            'id' => 'custom-software',
+            'category' => 'Business Software',
+            'icon' => 'bi-code-slash',
+            'title' => 'Custom Software',
+            'description' => 'Software designed around your actual business workflow, departments, approvals and reports.',
+            'features' => [
+                'Custom modules',
+                'Custom workflows',
+                'User roles and permissions',
+                'Approval systems',
+                'Business reports',
+                'Department-based access'
+            ]
+        ],
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="services.css">
-    <link rel="stylesheet" href="style.css">
+        [
+            'id' => 'erp',
+            'category' => 'Business Software',
+            'icon' => 'bi-diagram-3-fill',
+            'title' => 'ERP Solutions',
+            'description' => 'Connect your business departments through one practical and integrated management system.',
+            'features' => [
+                'Admin management',
+                'HR management',
+                'Sales management',
+                'Purchase management',
+                'Inventory management',
+                'Production management',
+                'Finance and reports',
+                'Operations management'
+            ]
+        ],
 
+        [
+            'id' => 'crm',
+            'category' => 'Sales & CRM',
+            'icon' => 'bi-person-lines-fill',
+            'title' => 'CRM & Sales Management',
+            'description' => 'Manage leads, customers, sales pipelines, follow-ups, quotations and payment tracking.',
+            'features' => [
+                'Lead management',
+                'Customer management',
+                'Sales pipeline',
+                'Follow-up reminders',
+                'Communication history',
+                'Quotations and sales orders',
+                'Payment tracking',
+                'Sales reports'
+            ]
+        ],
 
-</head>
+        [
+            'id' => 'hrms',
+            'category' => 'HR & Payroll',
+            'icon' => 'bi-people-fill',
+            'title' => 'HR & Payroll Management',
+            'description' => 'Manage employees, attendance, leave, payroll, documents and HR operations in one system.',
+            'features' => [
+                'Employee profiles',
+                'Attendance management',
+                'Leave management',
+                'Payroll processing',
+                'Salary slips',
+                'Employee documents',
+                'Shift management',
+                'Late coming and early going',
+                'HR reports'
+            ]
+        ],
 
-<body>
+        [
+            'id' => 'operations',
+            'category' => 'Operations',
+            'icon' => 'bi-boxes',
+            'title' => 'Purchase, Inventory & Production',
+            'description' => 'Manage materials, vendors, warehouses, stock and production processes with better visibility.',
+            'features' => [
+                'Vendor management',
+                'Purchase requests',
+                'Purchase orders',
+                'Approval workflows',
+                'Item master',
+                'Stock in and stock out',
+                'Warehouse management',
+                'Minimum stock alerts',
+                'Production orders',
+                'Raw material usage',
+                'Finished goods tracking'
+            ]
+        ],
 
-    <!-- ================= NAVBAR ================= -->
+        [
+            'id' => 'billing',
+            'category' => 'Billing & Service',
+            'icon' => 'bi-receipt-cutoff',
+            'title' => 'Invoice, Billing & Service Management',
+            'description' => 'Manage billing, invoices, payments, customer service tickets and complaints.',
+            'features' => [
+                'Quotations',
+                'Proforma invoices',
+                'Tax invoices',
+                'GST-related fields',
+                'PDF invoice generation',
+                'Payment tracking',
+                'Due reminders',
+                'Service tickets',
+                'Complaint management',
+                'Technician assignment',
+                'AMC and service history'
+            ]
+        ],
 
-    <nav class="navbar">
+        [
+            'id' => 'digital',
+            'category' => 'Digital Solutions',
+            'icon' => 'bi-window-stack',
+            'title' => 'Web, Mobile & Business Automation',
+            'description' => 'Build professional digital solutions and automate repetitive business processes.',
+            'features' => [
+                'Corporate websites',
+                'Service websites',
+                'Portfolio websites',
+                'Landing pages',
+                'Admin panels',
+                'Mobile business applications',
+                'Approval automation',
+                'Automatic notifications',
+                'Report generation',
+                'Task assignment',
+                'Reminders'
+            ]
+        ],
 
-<div class="logo">
-    <a href="index.php">
-        <img src="images/Design AI PNG.png" alt="Master Era Logo">
-    </a>
-</div>
-<div class="menu-toggle">
-        <i class="bi bi-list"></i>
-    </div>
-<ul class="menu">
+        [
+            'id' => 'integration',
+            'category' => 'Integration & Support',
+            'icon' => 'bi-plug-fill',
+            'title' => 'Integration, Cloud & Technical Support',
+            'description' => 'Connect systems, deploy software and provide ongoing technical support for long-term use.',
+            'features' => [
+                'Attendance machine integration',
+                'Payment gateway integration',
+                'Website-to-CRM integration',
+                'ERP-to-mobile integration',
+                'Email and SMS integration',
+                'Supported WhatsApp integrations',
+                'Cloud hosting',
+                'On-premise deployment',
+                'Database configuration',
+                'SSL setup',
+                'Backup planning',
+                'Server monitoring',
+                'Bug fixes and updates',
+                'Performance optimization'
+            ]
+        ]
 
-    <li><a href="index.php">Home</a></li>
+    ];
 
-    <li><a href="services.php">Services</a></li>
-            <li><a href="about.php">About</a></li>
-            <li><a href="pricing.php">Pricing</a></li>
-            <li><a href="portfolio.php">Portfolio</a></li>
-           <li><a href="feedback.php">feedback</a></li>
-            <li><a href="contact.php">Contact</a></li>
+    $ecosystem_modules = [
+        'Admin',
+        'HR',
+        'Employees',
+        'Attendance',
+        'Leave',
+        'Payroll',
+        'CRM',
+        'Sales',
+        'Customers',
+        'Quotations',
+        'Invoices',
+        'Purchase',
+        'Inventory',
+        'Production',
+        'Service',
+        'Payments',
+        'Reports',
+        'Roles & Permissions'
+    ];
+    ?>
 
-</ul>
+    <!DOCTYPE html>
+    <html lang="en">
 
+    <head>
 
-</nav>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- ================= HERO ================= -->
+        <title>Services | Master Era</title>
 
-    <!-- <section class="services-hero">
+        <link rel="icon" type="image/png" href="images/main logo white.png">
 
-        <div class="hero-content">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        >
 
-            <span class="hero-badge">
-                Smart Business Solutions
-            </span>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+        >
 
-            <h1>
-                Powerful Software Solutions For Growing Businesses
-            </h1>
+        <link
+            rel="stylesheet"
+            href="style.css?v=<?php echo file_exists($style_css) ? filemtime($style_css) : time(); ?>"
+        >
 
-            <p>
-                From HRMS and CRM to ERP and Cloud Infrastructure,
-                Master Era helps businesses automate operations,
-                increase productivity and accelerate growth.
-            </p>
+        <link
+            rel="stylesheet"
+            href="services.css?v=<?php echo file_exists($services_css) ? filemtime($services_css) : time(); ?>"
+        >
 
-            <div class="hero-buttons">
-                <a href="#services" class="btn-primary-custom">
-                    Explore Services
+    </head>
+
+    <body>
+
+        <!-- ================= NAVBAR ================= -->
+
+        <nav class="navbar">
+
+            <div class="logo">
+
+                <a href="index.php">
+
+                    <img
+                        src="images/main logo white.png"
+                        alt="Master Era Logo"
+                    >
+
                 </a>
 
-                <a href="#" class="btn-secondary-custom">
-                    Free Consultation
-                </a>
             </div>
 
-        </div>
+            <div class="menu-toggle">
 
-    </section> -->
+                <i class="bi bi-list"></i>
 
-    <!-- ================= QUICK NAVIGATION ================= -->
-
-    <!-- <section class="service-navigation">
-
-        <div class="nav-container">
-
-            <a href="#hrms">HR & Payroll</a>
-            <a href="#crm">Sales CRM</a>
-            <a href="#invoice">Invoice System</a>
-            <a href="#erp">Custom ERP</a>
-            <a href="#web">Web Development</a>
-            <a href="#cloud">Cloud Solutions</a>
-
-        </div>
-
-    </section> -->
-
-    <!-- ================= SERVICES ================= -->
-
-    <section id="services" class="services-wrapper">
-
-        <!-- HRMS -->
-
-        <div class="service-section" id="hrms">
-
-            <div class="service-image">
-                <div class="service-icon">👨‍💼</div>
             </div>
 
-            <div class="service-content">
+            <ul class="menu">
 
-                <span>HR MANAGEMENT</span>
+                <li>
+                    <a href="index.php">
+                        Home
+                    </a>
+                </li>
 
-                <h2>HR & Payroll Management</h2>
+                <li>
+                    <a href="services.php" class="active">
+                        Services
+                    </a>
+                </li>
 
-                <p>
-                    Manage your employees, attendance, leaves and payroll
-                    from one centralized platform. Auto-calculate salaries
-                    with PF, ESI and TDS deductions while staying fully
-                    compliant with Indian regulations.
-                </p>
+                <li>
+                    <a href="about.php">
+                        About
+                    </a>
+                </li>
 
-                <div class="feature-grid">
+                <li>
+                    <a href="pricing.php">
+                        Pricing
+                    </a>
+                </li>
 
-                    <div class="feature-item">✓ Employee Profiles & Documents</div>
-                    <div class="feature-item">✓ Leave Apply & Approval</div>
-                    <div class="feature-item">✓ Auto Payroll Processing</div>
-                    <div class="feature-item">✓ PF / ESI / HR Payroll/ PT/ TDS Calculation</div>
-                    <div class="feature-item">✓ Payslip PDF Generation</div>
-                    <div class="feature-item">✓ Attendance Tracking</div>
-                    <div class="feature-item">✓ HR Reports</div>
-                    <div class="feature-item">✓ Business Analytics</div>
+                <li>
+                    <a href="portfolio.php">
+                        Portfolio
+                    </a>
+                </li>
+
+                <li>
+                    <a href="feedback.php">
+                        Feedback
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.php">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+
+
+        <main class="services-page">
+
+            <section class="service-filter-section">
+
+                <div class="service-filter">
+
+                    <button
+                        class="filter-btn active"
+                        data-filter="all"
+                    >
+                        All Services
+                    </button>
+
+                    <button
+                        class="filter-btn"
+                        data-filter="Business Software"
+                    >
+                        Business Software
+                    </button>
+
+                    <button
+                        class="filter-btn"
+                        data-filter="Sales & CRM"
+                    >
+                        Sales & CRM
+                    </button>
+
+                    <button
+                        class="filter-btn"
+                        data-filter="HR & Payroll"
+                    >
+                        HR & Payroll
+                    </button>
+
+                    <button
+                        class="filter-btn"
+                        data-filter="Operations"
+                    >
+                        Operations
+                    </button>
+
+                    <button
+                        class="filter-btn"
+                        data-filter="Digital Solutions"
+                    >
+                        Digital
+                    </button>
+
+                    <button
+                        class="filter-btn"
+                        data-filter="Integration & Support"
+                    >
+                        Cloud & Support
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= SERVICE CARDS ================= -->
+
+            <section
+                class="services-section"
+                id="services"
+            >
+
+                <div class="section-heading">
+
+                    <span class="section-kicker">
+                        WHAT WE CAN BUILD
+                    </span>
+
+                    <h2>
+                        One Technology Partner for Your Business Needs
+                    </h2>
+
+                    <p>
+                        Explore the areas where Master Era can help your business
+                        organize operations, improve visibility and move manual
+                        processes into practical digital systems.
+                    </p>
+
+                </div>
+
+
+                <div class="services-grid">
+
+                    <?php foreach ($services as $index => $service): ?>
+
+                        <article
+                            class="service-card"
+                            data-category="<?php echo htmlspecialchars($service['category']); ?>"
+                            data-aos="fade-up"
+                        >
+
+                            <div class="service-card-glow"></div>
+
+                            <div class="service-card-header">
+
+                                <span class="service-category">
+
+                                    <?php echo htmlspecialchars($service['category']); ?>
+
+                                </span>
+
+                                <div class="service-icon">
+
+                                    <i
+                                        class="bi <?php echo htmlspecialchars($service['icon']); ?>"
+                                    ></i>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="service-card-content">
+
+                                <span class="service-number">
+
+                                </span>
+
+                                <h3>
+
+                                    <?php echo htmlspecialchars($service['title']); ?>
+
+                                </h3>
+
+                                <p>
+
+                                    <?php echo htmlspecialchars($service['description']); ?>
+
+                                </p>
+
+                            </div>
+
+
+                            <button
+                                type="button"
+                                class="service-view-btn"
+                                data-bs-toggle="modal"
+                                data-bs-target="#serviceDetailsModal"
+                                data-service-id="<?php echo htmlspecialchars($service['id']); ?>"
+                            >
+
+                                View Details
+
+                                <i class="bi bi-arrow-up-right"></i>
+
+                            </button>
+
+                        </article>
+
+                    <?php endforeach; ?>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= BUSINESS ECOSYSTEM ================= -->
+
+            <section class="ecosystem-section">
+
+                <div class="section-heading light-heading">
+
+                    <span class="section-kicker">
+                        CONNECTED BUSINESS SYSTEM
+                    </span>
+
+                    <h2>
+                        One Platform for Complete Business Operations
+                    </h2>
+
+                    <p>
+                        Different departments can work together through a
+                        connected business management structure.
+                    </p>
+
+                </div>
+
+
+                <div class="ecosystem-box">
+
+                    <div class="ecosystem-center">
+
+                        <i class="bi bi-grid-1x2-fill"></i>
+
+                        <strong>
+                            Business
+                            <br>
+                            Platform
+                        </strong>
+
+                    </div>
+
+
+                    <div class="ecosystem-modules">
+
+                        <?php foreach ($ecosystem_modules as $module): ?>
+
+                            <span class="ecosystem-module">
+
+                                <i class="bi bi-check2-circle"></i>
+
+                                <?php echo htmlspecialchars($module); ?>
+
+                            </span>
+
+                        <?php endforeach; ?>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= SECURITY ================= -->
+
+            <section class="security-section">
+
+                <div class="section-heading">
+
+                    <span class="section-kicker">
+                        SECURITY STRUCTURE
+                    </span>
+
+                    <h2>
+                        Security Considered at Every Important Layer
+                    </h2>
+
+                    <p>
+                        We plan access, data handling and deployment according
+                        to the requirements of each business system.
+                    </p>
+
+                </div>
+
+
+                <div class="security-grid">
+
+                    <div
+                        class="security-card"
+                        data-aos="fade-up"
+                    >
+
+                        <div class="security-icon">
+
+                            <i class="bi bi-shield-lock-fill"></i>
+
+                        </div>
+
+                        <h3>
+                            Role-Based Access
+                        </h3>
+
+                        <p>
+                            Users can receive access according to their
+                            responsibilities and department requirements.
+                        </p>
+
+                    </div>
+
+
+                    <div
+                        class="security-card"
+                        data-aos="fade-up"
+                        data-aos-delay="100"
+                    >
+
+                        <div class="security-icon">
+
+                            <i class="bi bi-database-lock"></i>
+
+                        </div>
+
+                        <h3>
+                            Data & Backup Planning
+                        </h3>
+
+                        <p>
+                            Backup planning and data management can be designed
+                            according to the selected deployment environment.
+                        </p>
+
+                    </div>
+
+
+                    <div
+                        class="security-card"
+                        data-aos="fade-up"
+                        data-aos-delay="200"
+                    >
+
+                        <div class="security-icon">
+
+                            <i class="bi bi-server"></i>
+
+                        </div>
+
+                        <h3>
+                            Infrastructure Support
+                        </h3>
+
+                        <p>
+                            Cloud and server configurations can be planned with
+                            monitoring, SSL and operational support requirements.
+                        </p>
+
+                    </div>
+
+
+                    <div
+                        class="security-card"
+                        data-aos="fade-up"
+                        data-aos-delay="300"
+                    >
+
+                        <div class="security-icon">
+
+                            <i class="bi bi-person-check-fill"></i>
+
+                        </div>
+
+                        <h3>
+                            Controlled User Access
+                        </h3>
+
+                        <p>
+                            Business systems can be structured to reduce
+                            unnecessary access to sensitive functions and data.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= DEPLOYMENT ================= -->
+
+            <section class="deployment-section">
+
+                <div class="section-heading">
+
+                    <span class="section-kicker">
+                        DEPLOYMENT OPTIONS
+                    </span>
+
+                    <h2>
+                        Choose the Setup That Fits Your Business
+                    </h2>
+
+                    <p>
+                        Software can be deployed according to your infrastructure,
+                        access requirements and operational environment.
+                    </p>
+
+                </div>
+
+
+                <div class="deployment-grid">
+
+                    <div
+                        class="deployment-card"
+                        data-aos="fade-right"
+                    >
+
+                        <div class="deployment-icon">
+
+                            <i class="bi bi-cloud-check-fill"></i>
+
+                        </div>
+
+                        <h3>
+                            Cloud Deployment
+                        </h3>
+
+                        <p>
+                            Suitable for businesses that need remote access
+                            and centralized system availability.
+                        </p>
+
+                        <ul>
+
+                            <li>
+                                <i class="bi bi-check2"></i>
+                                Remote access
+                            </li>
+
+                            <li>
+                                <i class="bi bi-check2"></i>
+                                Multi-location access
+                            </li>
+
+                            <li>
+                                <i class="bi bi-check2"></i>
+                                Central database
+                            </li>
+
+                            <li>
+                                <i class="bi bi-check2"></i>
+                                Scalable setup
+                            </li>
+
+                            <li>
+                                <i class="bi bi-check2"></i>
+                                Backup planning
+                            </li>
+
+                            <li>
+                                <i class="bi bi-check2"></i>
+                                Remote support
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <div
+                        class="deployment-card"
+                        data-aos="fade-left"
+                    >
+
+                        <div class="deployment-icon">
+
+                            <i class="bi bi-hdd-rack-fill"></i>
+
+                        </div>
+
+                        <h3>
+                            On-Premise Deployment
+                        </h3>
+
+                        <p>
+                            Suitable for businesses that prefer software
+                            within their own infrastructure or local network.
+                        </p>
+
+                        <ul>
+
+                            <li>
+                                <i class="bi bi-check2"></i>
+                                Client server installation
+                            </li>
+
+                            <li>
+                                <i class="bi bi-check2"></i>
+                                Local network access
+                            </li>
+
+                            <li>
+                                <i class="bi bi-check2"></i>
+                                Internal infrastructure control
+                            </li>
+
+                            <li>
+                                <i class="bi bi-check2"></i>
+                                Limited-internet environments
+                            </li>
+
+                            <li>
+                                <i class="bi bi-check2"></i>
+                                Client-specific deployment
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= WHY MASTER ERA ================= -->
+
+            <section class="why-section">
+
+                <div class="section-heading">
+
+                    <span class="section-kicker">
+                        WHY MASTER ERA
+                    </span>
+
+                    <h2>
+                        Technology Designed for Practical Business Use
+                    </h2>
+
+                </div>
+
+
+                <div class="why-grid">
+
+                    <div class="why-card">
+
+                        <i class="bi bi-sliders"></i>
+
+                        <h3>
+                            Custom-Built Solutions
+                        </h3>
+
+                        <p>
+                            Designed around your actual workflow.
+                        </p>
+
+                    </div>
+
+
+                    <div class="why-card">
+
+                        <i class="bi bi-briefcase"></i>
+
+                        <h3>
+                            Business-Focused Development
+                        </h3>
+
+                        <p>
+                            Focused on practical business requirements.
+                        </p>
+
+                    </div>
+
+
+                    <div class="why-card">
+
+                        <i class="bi bi-layers"></i>
+
+                        <h3>
+                            Scalable Architecture
+                        </h3>
+
+                        <p>
+                            Systems can evolve as your business grows.
+                        </p>
+
+                    </div>
+
+
+                    <div class="why-card">
+
+                        <i class="bi bi-cloud-arrow-up"></i>
+
+                        <h3>
+                            Flexible Deployment
+                        </h3>
+
+                        <p>
+                            Cloud or on-premise deployment options.
+                        </p>
+
+                    </div>
+
+
+                    <div class="why-card">
+
+                        <i class="bi bi-headset"></i>
+
+                        <h3>
+                            Long-Term Support
+                        </h3>
+
+                        <p>
+                            Technical assistance after delivery.
+                        </p>
+
+                    </div>
+
+
+                    <div class="why-card">
+
+                        <i class="bi bi-chat-dots"></i>
+
+                        <h3>
+                            Clear Communication
+                        </h3>
+
+                        <p>
+                            Simple and transparent project communication.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= CTA ================= -->
+
+            <section class="services-cta">
+
+                <div class="cta-content">
+
+                    <span class="section-kicker">
+                        LET'S DISCUSS YOUR BUSINESS
+                    </span>
+
+                    <h2>
+                        Have a Business Process You Want to Automate?
+                    </h2>
+
+                    <p>
+                        Tell us how your business currently works.
+                        We can help you plan a practical software solution
+                        based on your actual requirements.
+                    </p>
+
+                    <div class="cta-buttons">
+
+                        <a
+                            href="contact.php"
+                            class="cta-primary"
+                        >
+
+                            Discuss Your Requirement
+
+                            <i class="bi bi-arrow-up-right"></i>
+
+                        </a>
+
+                        <a
+                            href="contact.php"
+                            class="cta-secondary"
+                        >
+
+                            Contact Master Era
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+        <!-- ================= SERVICE MODAL ================= -->
+
+        <div
+            class="modal fade"
+            id="serviceDetailsModal"
+            tabindex="-1"
+            aria-labelledby="serviceDetailsModalLabel"
+            aria-hidden="true"
+        >
+
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+
+                <div class="modal-content service-modal-content">
+
+                    <div class="modal-header">
+
+                        <div>
+
+                            <span class="modal-kicker">
+                                SERVICE DETAILS
+                            </span>
+
+                            <h2
+                                class="modal-title"
+                                id="serviceDetailsModalLabel"
+                            >
+                                Service Details
+                            </h2>
+
+                        </div>
+
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+
+                    </div>
+
+
+                    <div class="modal-body">
+
+                        <div class="modal-service-intro">
+
+                            <div class="modal-service-icon">
+
+                                <i class="bi bi-grid"></i>
+
+                            </div>
+
+                            <p
+                                id="serviceModalDescription"
+                            ></p>
+
+                        </div>
+
+
+                        <h3>
+                            What can be included
+                        </h3>
+
+
+                        <div
+                            class="modal-feature-grid"
+                            id="serviceModalFeatures"
+                        ></div>
+
+                    </div>
 
                 </div>
 
@@ -139,350 +1013,434 @@
 
         </div>
 
-        <!-- CRM -->
 
-        <div class="service-section reverse" id="crm">
+        <!-- ================= FOOTER ================= -->
 
-            <div class="service-image">
-                <div class="service-icon">📈</div>
-            </div>
+        <footer class="footer">
 
-            <div class="service-content">
+            <div class="footer-container">
 
-                <span>SALES AUTOMATION</span>
+                <div class="footer-box">
 
-                <h2>Sales CRM</h2>
+                    <h3>
+                        MASTER ERA
+                    </h3>
 
-                <p>
-                    Track every lead, follow-up and deal from first contact
-                    to final payment. Never miss a sales opportunity again.
-                </p>
+                    <p>
+                        Empowering businesses with ERP, CRM, HRMS,
+                        Billing Systems and Digital Solutions.
+                    </p>
 
-                <div class="feature-grid">
+                </div>
 
-                    <div class="feature-item">✓ Lead Capture System</div>
-                    <div class="feature-item">✓ Lead Management</div>
-                    <div class="feature-item">✓ Deal Pipeline View</div>
-                    <div class="feature-item">✓ Follow-Up Reminders</div>
-                    <div class="feature-item">✓ Sales Team Performance</div>
-                    <div class="feature-item">✓ Quotation Builder</div>
-                    <div class="feature-item">✓ Revenue Reports</div>
-                    <div class="feature-item">✓ Customer Tracking</div>
+
+                <div class="footer-box">
+
+                    <h3>
+                        Quick Links
+                    </h3>
+
+                    <ul>
+
+                        <li>
+                            <a href="index.php">
+                                Home
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="services.php">
+                                Services
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="portfolio.php">
+                                Portfolio
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="about.php">
+                                About
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="pricing.php">
+                                Pricing
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="contact.php">
+                                Contact
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="footer-box">
+
+                    <h3>
+                        Services
+                    </h3>
+
+                    <ul>
+
+                        <li>
+                            <a href="services.php#services">
+                                Business Software
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="services.php#services">
+                                CRM & Sales
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="services.php#services">
+                                HR & Payroll
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="services.php#services">
+                                Web Solutions
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="services.php#services">
+                                Cloud & Support
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="footer-box">
+
+                    <h3>
+                        Contact Info
+                    </h3>
+
+                    <p>
+                        📧 info@masterera.in
+                    </p>
+
+                    <p>
+                        📞 +91 7046674228
+                    </p>
+
+                    <p>
+                        📍 Akruti Heights, Near APS School,
+                        <br>
+                        Tarsali Bypass, Tarsali,
+                        <br>
+                        Vadodara - 390009,
+                        <br>
+                        Gujarat, India
+                    </p>
+
+                </div>
+
+
+                <div class="social-icons">
+
+                    <a
+                        href="https://www.instagram.com/masterera_managemantsoftware/"
+                        target="_blank"
+                        rel="noopener"
+                    >
+
+                        <i class="bi bi-instagram"></i>
+
+                    </a>
+
+                    <a
+                        href="https://www.linkedin.com/in/master-era-511660369"
+                        target="_blank"
+                        rel="noopener"
+                    >
+
+                        <i class="bi bi-linkedin"></i>
+
+                    </a>
+
+                    <a
+                        href="https://wa.me/917046674228"
+                        target="_blank"
+                        rel="noopener"
+                    >
+
+                        <i class="bi bi-whatsapp"></i>
+
+                    </a>
 
                 </div>
 
             </div>
 
-        </div>
 
-        <!-- INVOICE -->
-
-        <div class="service-section" id="invoice">
-
-            <div class="service-image">
-                <div class="service-icon">🧾</div>
-            </div>
-
-            <div class="service-content">
-
-                <span>BILLING SYSTEM</span>
-
-                <h2>Invoice & Billing System</h2>
+            <div class="footer-bottom">
 
                 <p>
-                    Create professional GST-compliant invoices in seconds.
-                    Track payments, send reminders and manage outstanding balances.
-                </p>
-
-                <div class="feature-grid">
-
-                    <div class="feature-item">✓ GST Invoice Generation</div>
-                    <div class="feature-item">✓ PDF Download</div>
-                    <div class="feature-item">✓ Email Invoices</div>
-                    <div class="feature-item">✓ Payment Tracking</div>
-                    <div class="feature-item">✓ Outstanding Reports</div>
-                    <div class="feature-item">✓ Proforma Invoice</div>
-                    <div class="feature-item">✓ Client History</div>
-                    <div class="feature-item">✓ Smart Billing Dashboard</div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- ERP -->
-
-        <div class="service-section reverse" id="erp">
-
-            <div class="service-image">
-                <div class="service-icon">⚙️</div>
-            </div>
-
-            <div class="service-content">
-
-                <span>ERP SOLUTION</span>
-
-                <h2>Custom ERP Software</h2>
-
-                <p>
-                    We build complete ERP systems customized according to
-                    your workflow with all departments connected together.
-                </p>
-
-                <div class="feature-grid">
-
-                    <div class="feature-item">✓ HR + Sales + Purchase</div>
-                    <div class="feature-item">✓ Production Module</div>
-                    <div class="feature-item">✓ Inventory Management</div>
-                    <div class="feature-item">✓ Admin Dashboard</div>
-                    <div class="feature-item">✓ Multi-Branch Support</div>
-                    <div class="feature-item">✓ Role Based Access</div>
-                    <div class="feature-item">✓ Custom Reports</div>
-                    <div class="feature-item">✓ Business Automation</div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- WEB -->
-
-        <div class="service-section" id="web">
-
-            <div class="service-image">
-                <div class="service-icon">💻</div>
-            </div>
-
-            <div class="service-content">
-
-                <span>WEB SOLUTIONS</span>
-
-                <h2>Web Design & Development</h2>
-
-                <p>
-                    Professional, fast and mobile-friendly websites
-                    that represent your brand and convert visitors into customers.
-                </p>
-
-                <div class="feature-grid">
-
-                    <div class="feature-item">✓ Business Websites</div>
-                    <div class="feature-item">✓ Company Websites</div>
-                    <div class="feature-item">✓ E-Commerce Stores</div>
-                    <div class="feature-item">✓ Landing Pages</div>
-                    <div class="feature-item">✓ Portfolio Websites</div>
-                    <div class="feature-item">✓ SEO Optimization</div>
-                    <div class="feature-item">✓ Mobile Responsive</div>
-                    <div class="feature-item">✓ Fast Loading Speed</div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-
-
-        <!-- CLOUD -->
-
-        <div class="service-section reverse" id="cloud">
-
-            <div class="service-image">
-                <div class="service-icon">☁️</div>
-            </div>
-
-            <div class="service-content">
-
-                <span>CLOUD INFRASTRUCTURE</span>
-
-                <h2>Cloud & Server Deployment</h2>
-
-                <p>
-                    Host your software on secure cloud servers or deploy
-                    it directly on your company infrastructure.
-                </p>
-
-                <div class="feature-grid">
-
-                    <div class="feature-item">✓ AWS Hosting</div>
-                    <div class="feature-item">✓ Google Cloud Setup</div>
-                    <div class="feature-item">✓ On-Premise Servers</div>
-                    <div class="feature-item">✓ SSL Security</div>
-                    <div class="feature-item">✓ Daily Backup</div>
-                    <div class="feature-item">✓ 99% Uptime</div>
-                    <div class="feature-item">✓ Technical Support</div>
-                    <div class="feature-item">✓ Server Monitoring</div>
-
-                </div>
-
-            </div>
-
-        </div>
-        <!-- DOCUMENT MANAGEMENT -->
-
-        <div class="service-section" id="dms">
-
-            <div class="service-image">
-                <div class="service-icon">📁</div>
-            </div>
-
-            <div class="service-content">
-
-                <span>DOCUMENT MANAGEMENT</span>
-
-                <h2>Document Management System</h2>
-
-                <p>
-                    Store, organize and manage all your business documents in one secure place.
-                    Access files anytime, improve collaboration and keep your important data safe.
-                </p>
-
-                <div class="feature-grid">
-
-                    <div class="feature-item">✓ Secure Document Storage</div>
-                    <div class="feature-item">✓ Upload & Organize Files</div>
-                    <div class="feature-item">✓ Document Search & Filter</div>
-                    <div class="feature-item">✓ User Access Permissions</div>
-                    <div class="feature-item">✓ Version Control & History</div>
-                    <div class="feature-item">✓ Document Sharing</div>
-                    <div class="feature-item">✓ Cloud Backup & Security</div>
-                    <div class="feature-item">✓ Download & Print Management</div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- ================= CTA ================= -->
-
-    <!-- <section class="cta-section">
-
-        <div class="cta-box">
-
-            <h2>
-                Ready To Transform Your Business?
-            </h2>
-
-            <p>
-                Get a free consultation and discover the right solution for your business.
-            </p>
-
-            <a href="contact.html" class="cta-btn">
-                Get Free Quote →
-            </a>
-
-        </div>
-
-    </section> -->
-
-    <!-- ================= FOOTER ================= -->
-
-    <footer class="footer">
-
-        <div class="footer-container">
-
-            <div class="footer-box">
-
-                <h3>MASTER ERA</h3>
-
-                <p>
-                    Empowering businesses with ERP, CRM, HRMS, Billing Systems and Digital Solutions.
+                    © 2026 Master Era. All Rights Reserved.
                 </p>
 
             </div>
 
-            <div class="footer-box">
-
-                <h3>Quick Links</h3>
-
-                <ul>
-                    <li><a href="index.php">Home</a></li>
-                    <li><a href="services.php">Services</a></li>
-                    <li><a href="portfolio.php">Portfolio</a></li>
-                    <li><a href="about.php">About</a></li>
-                    <li><a href="pricing.php">Pricing</a></li>
-                    <li><a href="contact.php">Contact</a></li>
-                </ul>
-
-            </div>
-
-            <div class="footer-box">
-
-    <h3>Services</h3>
-
-    <ul>
-        <li><a href="services.php#hrms">HR & Payroll</a></li>
-        <li><a href="services.php#crm">Sales CRM</a></li>
-        <li><a href="services.php#erp">ERP Software</a></li>
-        <li><a href="services.php#web">Web Development</a></li>
-        <li><a href="services.php#cloud">Cloud Deployment</a></li>
-    </ul>
-
-</div>
-
-            <div class="footer-box">
-
-                <h3>Contact Info</h3>
-
-                <p>📧 info@masterera.in<p>
-                <p>📞 +91 7046674228</p>
-                <p>📍 Akruti Heights, Near APS School,<br>
-                Tarsali Bypass, Tarsali,<br>
-                Vadodara - 390009,<br>
-                Gujarat, India</p>
-
-            </div>
-            <div class="social-icons">
-                
-                <a href="https://www.instagram.com/masterera_managemantsoftware/" target="_blank">
-                 <i class="bi bi-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/master-era-511660369" target="_blank">
-                 <i class="bi bi-linkedin"></i></a>
-                 <a href="https://wa.me/917046674228" target="_blank">
-                <i class="bi bi-whatsapp"></i></a>
-            </div>
-
-        </div>
-
-        <div class="footer-bottom">
-            <p>© 2026 Master Era. All Rights Reserved.</p>
-        </div>
-
-    </footer>
-   
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-
-<script>
-    AOS.init({
-        duration: 1000,
-        once: true
-    });
-</script>
-<script>
-    const menuToggle = document.querySelector(".menu-toggle");
-    const menu = document.querySelector(".menu");
-
-    menuToggle.addEventListener("click", () => {
-        menu.classList.toggle("active");
-    });
-
-    const dropdown = document.querySelector(".dropdown");
-
-    dropdown.addEventListener("click", () => {
-        if (window.innerWidth <= 991) {
-            dropdown.classList.toggle("active");
-        }
-    });
-</script>
+        </footer>
 
 
+        <!-- ================= SCRIPTS ================= -->
 
-</body>
+        <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
-</html>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        ></script>
+
+
+        <script>
+
+            AOS.init({
+                duration: 750,
+                once: true,
+                offset: 80
+            });
+
+
+            const serviceData = <?php echo json_encode(
+                $services,
+                JSON_UNESCAPED_UNICODE |
+                JSON_UNESCAPED_SLASHES
+            ); ?>;
+
+
+            /* ================= MODAL ================= */
+
+            const modalTitle =
+                document.getElementById("serviceDetailsModalLabel");
+
+            const modalDescription =
+                document.getElementById("serviceModalDescription");
+
+            const modalFeatures =
+                document.getElementById("serviceModalFeatures");
+
+            const modalIcon =
+                document.querySelector(".modal-service-icon i");
+
+
+            document
+                .querySelectorAll(".service-view-btn")
+                .forEach(button => {
+
+                    button.addEventListener("click", function () {
+
+                        const service =
+                            serviceData.find(
+                                item =>
+                                    item.id ===
+                                    this.dataset.serviceId
+                            );
+
+
+                        if (!service) return;
+
+
+                        modalTitle.textContent =
+                            service.title;
+
+
+                        modalDescription.textContent =
+                            service.description;
+
+
+                        modalIcon.className =
+                            "bi " + service.icon;
+
+
+                        modalFeatures.innerHTML =
+                            service.features
+                                .map(feature => `
+
+                                    <div class="modal-feature-item">
+
+                                        <i class="bi bi-check2-circle"></i>
+
+                                        <span>
+                                            ${feature}
+                                        </span>
+
+                                    </div>
+
+                                `)
+                                .join("");
+
+                    });
+
+                });
+
+
+            /* ================= FILTER ================= */
+
+            const filterButtons =
+                document.querySelectorAll(".filter-btn");
+
+            const serviceCards =
+                document.querySelectorAll(".service-card");
+
+
+            filterButtons.forEach(button => {
+
+                button.addEventListener("click", function () {
+
+                    const filter =
+                        this.dataset.filter;
+
+
+                    filterButtons.forEach(btn => {
+
+                        btn.classList.remove("active");
+
+                    });
+
+
+                    this.classList.add("active");
+
+
+                    serviceCards.forEach(card => {
+
+                        const category =
+                            card.dataset.category;
+
+
+                        if (
+                            filter === "all" ||
+                            category === filter
+                        ) {
+
+                            card.classList.remove("is-hidden");
+
+                        } else {
+
+                            card.classList.add("is-hidden");
+
+                        }
+
+                    });
+
+                });
+
+            });
+
+
+            /* ================= 3D CARD TILT ================= */
+
+            if (window.matchMedia("(min-width: 992px)").matches) {
+
+                document
+                    .querySelectorAll(".service-card")
+                    .forEach(card => {
+
+                        card.addEventListener(
+                            "pointermove",
+                            event => {
+
+                                const rect =
+                                    card.getBoundingClientRect();
+
+
+                                const x =
+                                    event.clientX -
+                                    rect.left;
+
+
+                                const y =
+                                    event.clientY -
+                                    rect.top;
+
+
+                                const rotateY =
+                                    ((x / rect.width) - 0.5) * 7;
+
+
+                                const rotateX =
+                                    ((y / rect.height) - 0.5) * -7;
+
+
+                                card.style.setProperty(
+                                    "--rotateX",
+                                    `${rotateX}deg`
+                                );
+
+
+                                card.style.setProperty(
+                                    "--rotateY",
+                                    `${rotateY}deg`
+                                );
+
+                            }
+                        );
+
+
+                        card.addEventListener(
+                            "pointerleave",
+                            () => {
+
+                                card.style.setProperty(
+                                    "--rotateX",
+                                    "0deg"
+                                );
+
+
+                                card.style.setProperty(
+                                    "--rotateY",
+                                    "0deg"
+                                );
+
+                            }
+                        );
+
+                    });
+
+            }
+
+
+            /* ================= MOBILE MENU ================= */
+
+            const menuToggle =
+                document.querySelector(".menu-toggle");
+
+            const menu =
+                document.querySelector(".menu");
+
+
+            if (menuToggle && menu) {
+
+                menuToggle.addEventListener(
+                    "click",
+                    () => {
+
+                        menu.classList.toggle("active");
+
+                    }
+                );
+
+            }
+
+        </script>
+
+    </body>
+
+    </html>
