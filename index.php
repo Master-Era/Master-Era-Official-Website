@@ -42,29 +42,14 @@
         </div>
 
         <ul class="menu">
-            <li><a href="index.php">Home</a></li>
-            
-            
+    <li><a href="index.php">Home</a></li>
 
-            <!-- <li class="dropdown">
-                <a href="services.php">Services <i class="bi bi-chevron-down"></i></a>
-
-                <ul class="dropdown-menu">
-                    <li><a href="services.php#hrms">HR & Payroll</a></li>
-                    <li><a href="services.php#crm">Sales CRM</a></li>
-                    <li><a href="services.php#invoice">Invoice System</a></li>
-                    <li><a href="services.php#erp">Custom ERP</a></li>
-                    <li><a href="services.php#web">Web Development</a></li>
-                    <li><a href="services.php#cloud">Cloud Solutions</a></li>
-                    <li><a href="services.php#dms">Document Management</a></li>
-                </ul>
-            </li> -->
-            <li><a href="services.php">Services</a></li>
-            <li><a href="about.php">About</a></li>
-            <li><a href="pricing.php">Pricing</a></li>
-            <li><a href="feedback.php">feedback</a></li>
-            <li><a href="portfolio.php">Portfolio</a></li>
-            <li><a href="contact.php">Contact</a></li>
+    <li><a href="services.php">Services</a></li>
+    <li><a href="pricing.php">Pricing</a></li>
+    <li><a href="about.php">About</a></li>       
+    <li><a href="portfolio.php">Portfolio</a></li>
+    <li><a href="contact.php">Contact</a></li>
+    <li><a href="feedback.php">feedback</a></li>
         </ul>
 
         <a href="contact.php" class="quote-btn">Get Quote</a>
