@@ -5,14 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pricing | Master Era</title>
 <link rel="icon" type="image/png" href="images/main logo white.png">
-
-<?php
-$style_css = __DIR__ . '/style.css';
-$pricing_css = __DIR__ . '/pricing.css';
-?>
-
-<link rel="stylesheet" href="style.css?v=<?= file_exists($style_css) ? filemtime($style_css) : time() ?>">
-<link rel="stylesheet" href="pricing.css?v=<?= file_exists($pricing_css) ? filemtime($pricing_css) : time() ?>">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="pricing.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
@@ -35,8 +29,8 @@ $pricing_css = __DIR__ . '/pricing.css';
 <li><a href="services.php">Services</a></li>
 <li><a href="about.php">About</a></li>
 <li><a href="pricing.php">Pricing</a></li>
-<li><a href="feedback.php">Feedback</a></li>
 <li><a href="portfolio.php">Portfolio</a></li>
+<li><a href="feedback.php">Feedback</a></li>
 <li><a href="contact.php">Contact</a></li>
 </ul>
 </nav>
@@ -95,7 +89,6 @@ Yearly
 </div>
 
 <div class="pricing-content active" id="hrms">
-
 <div class="section-heading">
 <span>HR & PAYROLL MANAGEMENT</span>
 <h2>HRMS Pricing For Every Team</h2>
@@ -104,13 +97,10 @@ Manage employees, attendance, leave, payroll, performance
 and HR operations from one connected platform.
 </p>
 </div>
-
 <div class="pricing-grid" data-category="hrms"></div>
-
 </div>
 
 <div class="pricing-content" id="school">
-
 <div class="section-heading">
 <span>SCHOOL MANAGEMENT SAAS</span>
 <h2>School Management That Scales With Students</h2>
@@ -119,13 +109,10 @@ Choose your plan according to the number of students
 managed by your institution.
 </p>
 </div>
-
 <div class="pricing-grid" data-category="school"></div>
-
 </div>
 
 <div class="pricing-content" id="crm">
-
 <div class="section-heading">
 <span>SALES & CUSTOMER MANAGEMENT</span>
 <h2>Turn Leads Into Better Business</h2>
@@ -134,13 +121,10 @@ Manage leads, customers, sales pipelines, follow-ups
 and business performance in one place.
 </p>
 </div>
-
 <div class="pricing-grid" data-category="crm"></div>
-
 </div>
 
 <div class="pricing-content" id="invoice">
-
 <div class="section-heading">
 <span>INVOICE & BILLING SYSTEM</span>
 <h2>Simple Billing For Growing Businesses</h2>
@@ -149,13 +133,10 @@ Create invoices, manage products, track payments
 and understand your business numbers.
 </p>
 </div>
-
 <div class="pricing-grid" data-category="invoice"></div>
-
 </div>
 
 <div class="pricing-content" id="erp">
-
 <div class="section-heading">
 <span>CUSTOM ERP SOLUTIONS</span>
 <h2>One System. Your Business Way.</h2>
@@ -164,13 +145,10 @@ Custom ERP solutions designed around your actual workflow,
 departments, modules and business growth.
 </p>
 </div>
-
 <div class="pricing-grid" data-category="erp"></div>
-
 </div>
 
 <div class="pricing-content" id="website">
-
 <div class="section-heading">
 <span>WEBSITE DESIGN & DEVELOPMENT</span>
 <h2>Professional Websites That Build Trust</h2>
@@ -179,9 +157,7 @@ From a focused business website to a fully custom digital platform,
 choose the package that matches your goals.
 </p>
 </div>
-
 <div class="pricing-grid" data-category="website"></div>
-
 </div>
 
 <section class="value-advantage">
@@ -192,11 +168,7 @@ choose the package that matches your goals.
 
 <div class="value-content">
 <span>SMARTER VALUE. BETTER TECHNOLOGY.</span>
-
-<h3>
-Premium Software Without The Premium Price.
-</h3>
-
+<h3>Premium Software Without The Premium Price.</h3>
 <p>
 Master Era focuses on practical features, transparent pricing
 and business-friendly technology. You get the tools your business
@@ -238,92 +210,96 @@ Discuss Your Requirements
 
 <footer class="footer">
 
-<div class="footer-container">
+    <div class="footer-container">
 
-<div class="footer-box">
-<h3>MASTER ERA</h3>
-<p>
-Empowering businesses with ERP, CRM, HRMS,
-Billing Systems and Digital Solutions.
-</p>
-</div>
+        <div class="footer-box">
+            <h3>MASTER ERA</h3>
 
-<div class="footer-box">
-<h3>Quick Links</h3>
-<ul>
-<li><a href="index.php">Home</a></li>
-<li><a href="services.php">Services</a></li>
-<li><a href="portfolio.php">Portfolio</a></li>
-<li><a href="about.php">About</a></li>
-<li><a href="pricing.php">Pricing</a></li>
-<li><a href="contact.php">Contact</a></li>
-</ul>
-</div>
+            <p>
+                Empowering businesses with ERP, CRM, HRMS,
+                Billing Systems and Digital Solutions.
+            </p>
+        </div>
 
-<div class="footer-box">
-<h3>Services</h3>
-<ul>
-<li><a href="services.php#hrms">HR & Payroll</a></li>
-<li><a href="services.php#crm">Sales CRM</a></li>
-<li><a href="services.php#erp">ERP Software</a></li>
-<li><a href="services.php#web">Web Development</a></li>
-<li><a href="services.php#cloud">Cloud Deployment</a></li>
-</ul>
-</div>
+        <div class="footer-box">
+            <h3>Quick Links</h3>
 
-<div class="footer-box">
-<h3>Contact Info</h3>
-<p>📧 info@masterera.in</p>
-<p>📞 +91 7046674228</p>
-<p>
-📍 Akruti Heights, Near APS School,<br>
-Tarsali Bypass, Tarsali,<br>
-Vadodara - 390009,<br>
-Gujarat, India
-</p>
-</div>
+            <ul>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="services.php">Services</a></li>
+                <li><a href="portfolio.php">Portfolio</a></li>
+                <li><a href="about.php">About</a></li>
+                <li><a href="pricing.php">Pricing</a></li>
+                <li><a href="contact.php">Contact</a></li>
+            </ul>
+        </div>
 
-<div class="social-icons">
+        <div class="footer-box">
+            <h3>Services</h3>
 
-<a href="https://www.instagram.com/masterera_managemantsoftware/" target="_blank">
-<i class="bi bi-instagram"></i>
-</a>
+            <ul>
+                <li><a href="services.php#hrms">HR & Payroll</a></li>
+                <li><a href="services.php#crm">Sales CRM</a></li>
+                <li><a href="services.php#erp">ERP Software</a></li>
+                <li><a href="services.php#web">Web Development</a></li>
+                <li><a href="services.php#cloud">Cloud Deployment</a></li>
+            </ul>
+        </div>
 
-<a href="https://www.linkedin.com/in/master-era-511660369" target="_blank">
-<i class="bi bi-linkedin"></i>
-</a>
+        <div class="footer-box">
+            <h3>Contact Info</h3>
 
-<a href="https://wa.me/917046674228" target="_blank">
-<i class="bi bi-whatsapp"></i>
-</a>
+            <p>📧 info@masterera.in</p>
+            <p>📞 +91 7046674228</p>
 
-</div>
+            <p>
+                📍 Akruti Heights, Near APS School,<br>
+                Tarsali Bypass, Tarsali,<br>
+                Vadodara - 390009,<br>
+                Gujarat, India
+            </p>
+        </div>
 
-</div>
+        <div class="social-icons">
 
-<div class="footer-bottom">
-<p>© 2026 Master Era. All Rights Reserved.</p>
-</div>
+            <a href="https://www.instagram.com/masterera_managemantsoftware/" target="_blank" rel="noopener">
+                <i class="bi bi-instagram"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/master-era-511660369" target="_blank" rel="noopener">
+                <i class="bi bi-linkedin"></i>
+            </a>
+
+            <a href="https://wa.me/917046674228" target="_blank" rel="noopener">
+                <i class="bi bi-whatsapp"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Master Era. All Rights Reserved.</p>
+    </div>
 
 </footer>
 
 <script>
 
-const pricingData = {
+const pricingData={
 
-hrms: [
+hrms:[
 {
 name:"Starter",
-popular:false,
-monthly:49,
-monthlyDiscount:0,
-yearly:39,
-yearlyDiscount:0,
+range:"1–100 Employees",
+monthly:2499,
+yearlyDiscount:20,
 desc:"Essential HR tools for small teams.",
 features:[
 "Employee Management",
 "Attendance Tracking",
 "Leave Management",
+"Payroll Management",
 "Document Management",
 "Basic HR Reports"
 ]
@@ -331,14 +307,12 @@ features:[
 {
 name:"Business",
 popular:true,
-monthly:99,
-monthlyDiscount:10,
-yearly:79,
-yearlyDiscount:0,
+range:"101–300 Employees",
+monthly:4999,
+yearlyDiscount:20,
 desc:"Complete HR and payroll operations for growing businesses.",
 features:[
 "Everything in Starter",
-"Payroll Management",
 "PF / ESI / TDS Support",
 "Salary Slip Generation",
 "Employee Self-Service",
@@ -348,11 +322,9 @@ features:[
 },
 {
 name:"Enterprise",
-popular:false,
-monthly:179,
-monthlyDiscount:0,
-yearly:149,
-yearlyDiscount:0,
+range:"301+ Employees",
+monthly:9999,
+yearlyDiscount:20,
 desc:"Advanced HR operations for larger organisations.",
 features:[
 "Everything in Business",
@@ -364,7 +336,7 @@ features:[
 ]
 },
 {
-name:"Custom",
+name:"Custom HRMS",
 custom:true,
 desc:"Need a workflow built specifically for your business?",
 features:[
@@ -379,13 +351,10 @@ features:[
 school:[
 {
 name:"Starter",
-popular:false,
-monthly:240,
-monthlyDiscount:0,
-yearly:2799,
-yearlyDiscount:0,
 range:"1–100 Students",
-desc:"For schools managing 1–100 students.",
+monthly:2499,
+yearlyDiscount:20,
+desc:"For schools managing up to 100 students.",
 features:[
 "Student Profiles",
 "Student Documents",
@@ -398,12 +367,10 @@ features:[
 {
 name:"Growth",
 popular:true,
-monthly:180,
-monthlyDiscount:0,
-yearly:1999,
-yearlyDiscount:0,
-range:"100–300 Students",
-desc:"For schools managing 100–300 students.",
+range:"101–300 Students",
+monthly:3999,
+yearlyDiscount:20,
+desc:"Complete school management for growing institutions.",
 features:[
 "Everything in Starter",
 "Teacher Dashboard",
@@ -416,13 +383,10 @@ features:[
 },
 {
 name:"Complete",
-popular:false,
-monthly:90,
-monthlyDiscount:0,
-yearly:999,
-yearlyDiscount:0,
-range:"300–500 Students",
-desc:"For schools managing 300–500 students.",
+range:"301–500 Students",
+monthly:5999,
+yearlyDiscount:20,
+desc:"Complete digital management for established schools.",
 features:[
 "Everything in Growth",
 "Admission Management",
@@ -435,7 +399,7 @@ features:[
 {
 name:"Custom School",
 custom:true,
-desc:"For schools with more than 500 students or special requirements.",
+desc:"For schools with 500+ students or special requirements.",
 features:[
 "500+ Students",
 "Custom Modules",
@@ -449,11 +413,8 @@ features:[
 crm:[
 {
 name:"Starter",
-popular:false,
 monthly:299,
-monthlyDiscount:0,
-yearly:2999,
-yearlyDiscount:0,
+yearlyDiscount:20,
 desc:"Simple CRM for small sales teams.",
 features:[
 "Lead Management",
@@ -467,9 +428,7 @@ features:[
 name:"Business",
 popular:true,
 monthly:599,
-monthlyDiscount:50,
-yearly:5999,
-yearlyDiscount:0,
+yearlyDiscount:20,
 desc:"Powerful sales management for growing teams.",
 features:[
 "Everything in Starter",
@@ -483,11 +442,8 @@ features:[
 },
 {
 name:"Enterprise",
-popular:false,
 monthly:999,
-monthlyDiscount:0,
-yearly:9999,
-yearlyDiscount:0,
+yearlyDiscount:20,
 desc:"Advanced CRM and automation for larger organisations.",
 features:[
 "Multi-Branch Support",
@@ -514,11 +470,8 @@ features:[
 invoice:[
 {
 name:"Starter",
-popular:false,
 monthly:299,
-monthlyDiscount:0,
-yearly:2999,
-yearlyDiscount:0,
+yearlyDiscount:20,
 desc:"Simple invoicing for small businesses.",
 features:[
 "GST Invoice Creation",
@@ -532,9 +485,7 @@ features:[
 name:"Business",
 popular:true,
 monthly:599,
-monthlyDiscount:50,
-yearly:5999,
-yearlyDiscount:0,
+yearlyDiscount:20,
 desc:"Complete billing and business tracking.",
 features:[
 "Everything in Starter",
@@ -547,11 +498,8 @@ features:[
 },
 {
 name:"Enterprise",
-popular:false,
 monthly:999,
-monthlyDiscount:0,
-yearly:9999,
-yearlyDiscount:0,
+yearlyDiscount:20,
 desc:"Advanced billing for larger organisations.",
 features:[
 "Multi-Branch Support",
@@ -577,7 +525,6 @@ features:[
 erp:[
 {
 name:"Starter ERP",
-popular:false,
 oneTime:true,
 price:149999,
 desc:"A practical ERP foundation for small businesses.",
@@ -608,7 +555,6 @@ features:[
 },
 {
 name:"Enterprise ERP",
-popular:false,
 oneTime:true,
 price:799999,
 desc:"Fully customised ERP for complex operations.",
@@ -639,7 +585,6 @@ features:[
 website:[
 {
 name:"Basic",
-popular:false,
 oneTime:true,
 price:14999,
 desc:"A professional online presence for small businesses.",
@@ -670,7 +615,6 @@ features:[
 },
 {
 name:"Custom",
-popular:false,
 oneTime:true,
 price:74999,
 desc:"A powerful custom website built around your business.",
@@ -700,7 +644,7 @@ features:[
 
 };
 
-let currentBilling = "yearly";
+let currentBilling="yearly";
 
 function formatPrice(price){
 return "₹"+Number(price).toLocaleString("en-IN");
@@ -716,13 +660,28 @@ discount:0
 };
 }
 
-const original=plan[currentBilling];
-const discount=plan[currentBilling+"Discount"]||0;
+const monthly=Number(plan.monthly);
+const yearlyOriginal=monthly*12;
+const discountPercent=Number(plan.yearlyDiscount||0);
+
+if(currentBilling==="yearly"){
+
+const yearlyFinal=Math.round(
+yearlyOriginal-(yearlyOriginal*discountPercent/100)
+);
 
 return{
-final:Math.max(0,original-discount),
-original,
-discount
+final:yearlyFinal,
+original:yearlyOriginal,
+discount:discountPercent
+};
+
+}
+
+return{
+final:monthly,
+original:null,
+discount:0
 };
 
 }
@@ -737,7 +696,7 @@ grid.innerHTML=pricingData[category].map(plan=>{
 
 if(plan.custom){
 
-return `
+return`
 <article class="pricing-card custom-card">
 
 <div class="custom-icon">
@@ -757,12 +716,14 @@ ${plan.desc}
 </p>
 
 <ul class="features">
+
 ${plan.features.map(feature=>`
 <li>
 <i class="bi bi-check2"></i>
 ${feature}
 </li>
 `).join("")}
+
 </ul>
 
 <a href="contact.php" class="plan-btn custom-btn">
@@ -777,7 +738,45 @@ Contact Us
 
 const price=getPrice(plan);
 
-return `
+let priceHTML="";
+
+if(plan.oneTime){
+
+priceHTML=`
+<div class="price one-time-price">
+<strong>${formatPrice(price.final)}</strong>
+<span>One-Time Payment</span>
+</div>
+`;
+
+}else{
+
+priceHTML=`
+<div class="price">
+
+${price.original?`
+<del>${formatPrice(price.original)}</del>
+`:""}
+
+<strong>${formatPrice(price.final)}</strong>
+
+<span>
+${currentBilling==="monthly"?"per month":"per year"}
+</span>
+
+</div>
+
+${price.discount>0?`
+<div class="discount-note">
+Save ${price.discount}%
+</div>
+`:""}
+
+`;
+
+}
+
+return`
 <article class="pricing-card ${plan.popular?"popular":""}">
 
 ${plan.popular?`
@@ -791,52 +790,27 @@ ${plan.name}
 </div>
 
 ${plan.range?`
-<div class="student-range">
+<div class="plan-range">
 <i class="bi bi-people"></i>
 ${plan.range}
 </div>
 `:""}
 
-<div class="price">
-
-${price.discount>0?`
-<del>${formatPrice(price.original)}</del>
-`:""}
-
-${formatPrice(price.final)}
-
-<span>
-${
-category==="website"
-?"one-time project price"
-:
-category==="crm"||category==="invoice"
-?
-(currentBilling==="monthly"?"per month":"per year")
-:
-(currentBilling==="monthly"?"per month":"per year")
-}
-</span>
-
-</div>
-
-${price.discount>0?`
-<div class="discount-note">
-Save ${formatPrice(price.discount)}
-</div>
-`:""}
+${priceHTML}
 
 <p class="plan-desc">
 ${plan.desc}
 </p>
 
 <ul class="features">
+
 ${plan.features.map(feature=>`
 <li>
 <i class="bi bi-check2"></i>
 ${feature}
 </li>
 `).join("")}
+
 </ul>
 
 <a href="contact.php" class="plan-btn">
@@ -849,21 +823,7 @@ Choose Plan
 
 }).join("");
 
-observeCards();
-
 });
-
-}
-
-function updateBillingSwitcher(category){
-
-const billingSwitcher=document.getElementById("billingSwitcher");
-
-if(category==="website"){
-billingSwitcher.style.display="none";
-}else{
-billingSwitcher.style.display="flex";
-}
 
 }
 
@@ -879,16 +839,15 @@ document.querySelectorAll(".pricing-content")
 
 tab.classList.add("active");
 
-const selectedCategory=tab.dataset.tab;
+document.getElementById(tab.dataset.tab)
+.classList.add("active");
 
-document.getElementById(selectedCategory).classList.add("active");
+const billingSwitcher=document.getElementById("billingSwitcher");
 
-updateBillingSwitcher(selectedCategory);
-
-window.scrollTo({
-top:document.querySelector(".pricing-content-wrapper").offsetTop-40,
-behavior:"smooth"
-});
+billingSwitcher.style.display=
+tab.dataset.tab==="erp"||tab.dataset.tab==="website"
+?"none"
+:"flex";
 
 });
 
@@ -922,39 +881,6 @@ menu.classList.toggle("active");
 
 }
 
-let cardObserver;
-
-function observeCards(){
-
-if(cardObserver){
-cardObserver.disconnect();
-}
-
-cardObserver=new IntersectionObserver(entries=>{
-
-entries.forEach(entry=>{
-
-if(entry.isIntersecting){
-
-entry.target.classList.add("show");
-
-cardObserver.unobserve(entry.target);
-
-}
-
-});
-
-},{
-threshold:0.12
-});
-
-document
-.querySelectorAll(".pricing-card")
-.forEach(card=>cardObserver.observe(card));
-
-}
-
-updateBillingSwitcher("hrms");
 renderPricing();
 
 </script>
