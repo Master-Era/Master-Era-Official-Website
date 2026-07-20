@@ -347,16 +347,7 @@
     padding: 25px;
   }
 }
-.logo img {
-  height: 90px;
-  width: auto;
-  display: block;
-}
 
-.logo a {
-  display: flex;
-  align-items: center;
-}
 .contact-header-mini {
   background: #f8fafc;
   padding: 120px 8% 40px;
