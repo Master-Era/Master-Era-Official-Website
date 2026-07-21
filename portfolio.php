@@ -2,16 +2,74 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Portfolio | Master Era</title>
+
+    <!-- Primary SEO -->
+    <title>Portfolio | Our Projects & Software Solutions | Master Era</title>
+
+    <meta name="description"
+        content="Explore Master Era's portfolio featuring ERP Software, CRM Systems, HRMS Solutions, Website Development, Custom Software and Digital Business Projects delivered for clients.">
+
+    <meta name="keywords"
+        content="Master Era Portfolio, ERP Projects, CRM Projects, HRMS Projects, Website Development Portfolio, Software Company India">
+
+    <meta name="author" content="Master Era">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="theme-color" content="#0b1f4d">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://masterera.in/portfolio.php">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Master Era Portfolio">
+    <meta property="og:description"
+        content="Browse our ERP, CRM, HRMS, Website Development and Digital Solution projects.">
+    <meta property="og:url" content="https://masterera.in/portfolio.php">
+    <meta property="og:image" content="https://masterera.in/images/main%20logo%20white.png">
+    <meta property="og:site_name" content="Master Era">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Master Era Portfolio">
+    <meta name="twitter:description"
+        content="See our latest ERP, CRM, HRMS and Website Development projects.">
+    <meta name="twitter:image"
+        content="https://masterera.in/images/main%20logo%20white.png">
+
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/main logo white.png">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="portfolio.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- CreativeWork Schema -->
+    <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"CreativeWork",
+      "name":"Master Era Portfolio",
+      "creator":{
+        "@type":"Organization",
+        "name":"Master Era",
+        "url":"https://masterera.in"
+      },
+      "url":"https://masterera.in/portfolio.php",
+      "description":"Portfolio of ERP Software, CRM, HRMS and Website Development projects."
+    }
+    </script>
+
 </head>
 
 <body>
