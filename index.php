@@ -70,6 +70,39 @@
       "sameAs":[]
     }
     </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Master Era",
+  "url": "https://masterera.in",
+  "logo": "https://masterera.in/images/main%20logo%20white.png",
+  "description": "Master Era provides ERP Software, CRM, HRMS, Website Development and Digital Solutions.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Akruti Hights, Near APS School, Tarsali Bypass",
+    "addressLocality": "Vadodara",
+    "addressRegion": "Gujarat",
+    "postalCode": "390009",
+    "addressCountry": "IN"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+91-7046674228",
+    "contactType": "customer service",
+    "areaServed": "IN",
+    "availableLanguage": [
+      "English",
+      "Hindi",
+      "Gujarati"
+    ]
+  },
+  "sameAs": [
+    "https://www.instagram.com/masterera_managemantsoftware/",
+    "https://www.linkedin.com/in/master-era-511660369"
+  ]
+}
+</script>
 
 </head>
 
