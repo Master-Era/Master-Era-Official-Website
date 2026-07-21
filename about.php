@@ -9,45 +9,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>About Us | Master Era</title>
+    <!-- Primary SEO -->
+    <title>About Master Era | ERP, CRM, HRMS & Website Development Company</title>
 
-    <meta
-        name="description"
-        content="Learn about Master Era, our mission, vision, values, technology, and commitment to building practical digital solutions for ambitious businesses."
-    >
+    <meta name="description"
+        content="Learn about Master Era, a trusted ERP, CRM, HRMS and Website Development company. Discover our mission, vision, expertise, and commitment to helping businesses grow with innovative digital solutions.">
 
-    <link
-        rel="icon"
-        type="image/png"
-        href="images/main logo white.png"
-    >
+    <meta name="keywords"
+        content="About Master Era, ERP Company India, CRM Development, HRMS Software, Website Development Company, Business Software Solutions">
+
+    <meta name="author" content="Master Era">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="theme-color" content="#0b1f4d">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://masterera.in/about.php">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="About Master Era">
+    <meta property="og:description"
+        content="Meet the team behind Master Era and learn how we build ERP, CRM, HRMS and modern business software solutions.">
+    <meta property="og:url" content="https://masterera.in/about.php">
+    <meta property="og:image" content="https://masterera.in/images/main%20logo%20white.png">
+    <meta property="og:site_name" content="Master Era">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="About Master Era">
+    <meta name="twitter:description"
+        content="Learn about Master Era's mission, vision and software development expertise.">
+    <meta name="twitter:image"
+        content="https://masterera.in/images/main%20logo%20white.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/main logo white.png">
 
     <?php
-
         $style_css = __DIR__ . '/style.css';
         $about_css = __DIR__ . '/about.css';
-
     ?>
 
-    <link
-        rel="stylesheet"
-        href="style.css?v=<?php echo file_exists($style_css) ? filemtime($style_css) : time(); ?>"
-    >
+    <link rel="stylesheet"
+        href="style.css?v=<?php echo file_exists($style_css) ? filemtime($style_css) : time(); ?>">
 
-    <link
-        rel="stylesheet"
-        href="about.css?v=<?php echo file_exists($about_css) ? filemtime($about_css) : time(); ?>"
-    >
+    <link rel="stylesheet"
+        href="about.css?v=<?php echo file_exists($about_css) ? filemtime($about_css) : time(); ?>">
 
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    >
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    >
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"Organization",
+      "name":"Master Era",
+      "url":"https://masterera.in",
+      "logo":"https://masterera.in/images/main%20logo%20white.png",
+      "description":"Master Era provides ERP, CRM, HRMS, Website Development and Digital Solutions.",
+      "foundingLocation":"Vadodara, Gujarat, India"
+    }
+    </script>
 
 </head>
 
