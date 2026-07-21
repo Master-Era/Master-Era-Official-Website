@@ -6,7 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Primary SEO -->
-    <title>Master Era | ERP Software, CRM, HRMS & Website Development Company India</title>
+    <title>Master Era | ERP Software, CRM, HRMS & Website Development Company India
+
+    <!-- Open Graph SEO -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://masterera.in/">
+<meta property="og:title" content="Master Era | ERP, CRM, HRMS & Website Development">
+<meta property="og:description"
+content="Master Era provides ERP Software, CRM, HRMS, Website Development and Digital Solutions for businesses.">
+<meta property="og:image" content="https://masterera.in/images/og-banner.jpg">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Master Era | ERP, CRM, HRMS & Website Development">
+<meta name="twitter:description"
+content="ERP Software, CRM, HRMS & Website Development by Master Era.">
+<meta name="twitter:image"
+content="https://masterera.in/images/og-banner.jpg"> </title>
 
     <meta name="description"
         content="Master Era provides ERP Software, CRM, HRMS, Website Development, Digital Marketing and Custom Business Solutions for startups and enterprises across India.">
