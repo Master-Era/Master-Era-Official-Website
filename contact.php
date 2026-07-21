@@ -4,14 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Contact Us | Master Era</title>
+
+    <title>Contact Master Era | ERP, CRM & Website Development</title>
+
+    <meta name="description"
+        content="Contact Master Era for ERP Software, CRM, HRMS, Website Development and Digital Solutions. Get a free consultation today.">
+
+    <meta name="keywords"
+        content="Contact Master Era, ERP Company India, CRM Company, Website Development Vadodara, Software Company">
+
+    <meta name="author" content="Master Era">
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://masterera.in/contact.php">
+
     <link rel="icon" type="image/png" href="images/main logo white.png">
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="contact.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>

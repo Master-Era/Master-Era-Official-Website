@@ -2,17 +2,76 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Master Era provides ERP, CRM, HRMS, Website Development and Digital Solutions for modern businesses.">
-<meta name="keywords" content="ERP Software, CRM, HRMS, Website Development, Digital Solutions, Master Era">
-<meta name="author" content="Master Era">
-<link rel="icon" type="image/png" href="images/main logo white.png">
-<title>Master Era | Smart Digital Solutions For Modern Businesses</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary SEO -->
+    <title>Master Era | ERP Software, CRM, HRMS & Website Development Company India</title>
+
+    <meta name="description"
+        content="Master Era provides ERP Software, CRM, HRMS, Website Development, Digital Marketing and Custom Business Solutions for startups and enterprises across India.">
+
+    <meta name="keywords"
+        content="ERP Software India, CRM Software, HRMS Software, Website Development Company, Custom ERP, Business Software, Web Design, Master Era, Digital Solutions">
+
+    <meta name="author" content="Master Era">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    <meta name="theme-color" content="#0b1f4d">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://masterera.in/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title"
+        content="Master Era | ERP Software, CRM, HRMS & Website Development">
+    <meta property="og:description"
+        content="Grow your business with ERP, CRM, HRMS, Website Development and Digital Solutions by Master Era.">
+    <meta property="og:url" content="https://masterera.in/">
+    <meta property="og:image" content="https://masterera.in/images/main%20logo%20white.png">
+    <meta property="og:site_name" content="Master Era">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title"
+        content="Master Era | ERP Software & Website Development">
+    <meta name="twitter:description"
+        content="Professional ERP Software, CRM, HRMS and Website Development Company.">
+    <meta name="twitter:image"
+        content="https://masterera.in/images/main%20logo%20white.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/main logo white.png">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"Organization",
+      "name":"Master Era",
+      "url":"https://masterera.in",
+      "logo":"https://masterera.in/images/main%20logo%20white.png",
+      "description":"ERP Software, CRM, HRMS, Website Development and Digital Solutions.",
+      "sameAs":[]
+    }
+    </script>
+
+>>>>>>> 02af8014d71bd2dad4efc4a0f9784b34375e1d6e
 </head>
 <body>
 

@@ -190,34 +190,76 @@
 
     <head>
 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Services | Master Era</title>
+<!-- Primary SEO -->
+<title>Our Services | ERP, CRM, HRMS & Website Development | Master Era</title>
 
-        <link rel="icon" type="image/png" href="images/main logo white.png">
+<meta name="description"
+    content="Explore Master Era's professional services including ERP Software, CRM Development, HRMS Solutions, Website Development, Custom Software Development, Cloud Solutions and Digital Business Services.">
 
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-        >
+<meta name="keywords"
+    content="ERP Services, CRM Development, HRMS Software, Website Development, Custom Software Development, Business Automation, Cloud Solutions, Master Era Services">
 
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-        >
+<meta name="author" content="Master Era">
+<meta name="robots" content="index, follow">
+<meta name="language" content="English">
+<meta name="theme-color" content="#0b1f4d">
 
-        <link
-            rel="stylesheet"
-            href="style.css?v=<?php echo file_exists($style_css) ? filemtime($style_css) : time(); ?>"
-        >
+<!-- Canonical -->
+<link rel="canonical" href="https://masterera.in/services.php">
 
-        <link
-            rel="stylesheet"
-            href="services.css?v=<?php echo file_exists($services_css) ? filemtime($services_css) : time(); ?>"
-        >
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Master Era Services">
+<meta property="og:description"
+    content="Discover ERP, CRM, HRMS, Website Development and Custom Business Software Services offered by Master Era.">
+<meta property="og:url" content="https://masterera.in/services.php">
+<meta property="og:image" content="https://masterera.in/images/main%20logo%20white.png">
+<meta property="og:site_name" content="Master Era">
 
-    </head>
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Master Era Services">
+<meta name="twitter:description"
+    content="Professional ERP, CRM, HRMS and Website Development Services for modern businesses.">
+<meta name="twitter:image"
+    content="https://masterera.in/images/main%20logo%20white.png">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="images/main logo white.png">
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Icons -->
+<link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<!-- CSS -->
+<link rel="stylesheet"
+    href="style.css?v=<?php echo file_exists($style_css) ? filemtime($style_css) : time(); ?>">
+
+<link rel="stylesheet"
+    href="services.css?v=<?php echo file_exists($services_css) ? filemtime($services_css) : time(); ?>">
+
+<!-- Service Schema -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Service",
+  "provider":{
+    "@type":"Organization",
+    "name":"Master Era",
+    "url":"https://masterera.in"
+  },
+  "serviceType":"ERP Software, CRM, HRMS, Website Development, Custom Software Development",
+  "areaServed":"India"
+}
+</script>
+
+</head>
 
     <body>
 
