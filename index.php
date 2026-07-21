@@ -103,6 +103,20 @@
   ]
 }
 </script>
+<!-- Open Graph Meta Tags -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://masterera.in/">
+<meta property="og:title" content="Master Era | ERP, CRM, HRMS & Website Development">
+<meta property="og:description" content="Master Era provides ERP Software, CRM, HRMS, Website Development and Digital Solutions for businesses.">
+<meta property="og:image" content="https://masterera.in/images/main logo white.png">
+<meta property="og:site_name" content="Master Era">
+<meta property="og:locale" content="en_IN">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Master Era | ERP, CRM, HRMS & Website Development">
+<meta name="twitter:description" content="Master Era provides ERP Software, CRM, HRMS, Website Development and Digital Solutions.">
+<meta name="twitter:image" content="https://masterera.in/images/main logo white.png">
 
 </head>
 
