@@ -1,14 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pricing | Master Era</title>
-<link rel="icon" type="image/png" href="images/main logo white.png">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="pricing.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary SEO -->
+    <title>Pricing | Affordable ERP, CRM, HRMS & Website Development Plans | Master Era</title>
+
+    <meta name="description"
+        content="Explore Master Era's affordable pricing plans for ERP Software, CRM, HRMS, Website Development and Custom Business Solutions. Choose the perfect plan for your business.">
+
+    <meta name="keywords"
+        content="ERP Pricing India, CRM Pricing, HRMS Pricing, Website Development Cost, Software Development Pricing, Master Era Plans">
+
+    <meta name="author" content="Master Era">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="theme-color" content="#0b1f4d">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://masterera.in/pricing.php">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Master Era Pricing Plans">
+    <meta property="og:description"
+        content="Affordable ERP, CRM, HRMS and Website Development pricing plans for businesses of all sizes.">
+    <meta property="og:url" content="https://masterera.in/pricing.php">
+    <meta property="og:image" content="https://masterera.in/images/main%20logo%20white.png">
+    <meta property="og:site_name" content="Master Era">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Master Era Pricing">
+    <meta name="twitter:description"
+        content="View affordable pricing plans for ERP, CRM, HRMS and Website Development services.">
+    <meta name="twitter:image"
+        content="https://masterera.in/images/main%20logo%20white.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/main logo white.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pricing.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Service Schema -->
+    <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"Service",
+      "name":"Master Era Pricing Plans",
+      "provider":{
+        "@type":"Organization",
+        "name":"Master Era",
+        "url":"https://masterera.in"
+      },
+      "serviceType":"ERP Software, CRM, HRMS, Website Development",
+      "areaServed":"India"
+    }
+    </script>
+
 </head>
 
 <body>
