@@ -151,11 +151,7 @@
         <div class="hero-image" data-aos="fade-left">
 
         <img src="images/Hero Section iamge.png"
-     alt="Master Era ERP Software CRM HRMS Website Development"
-     loading="eager"
-     width="600"
-     height="600">
-
+     alt="Master Era ERP Software CRM HRMS Website Development">
         </div>
 
     </section>
