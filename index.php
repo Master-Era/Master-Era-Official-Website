@@ -6,23 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Primary SEO -->
-    <title>Master Era | ERP Software, CRM, HRMS & Website Development Company India
-
-    <!-- Open Graph SEO -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://masterera.in/">
-<meta property="og:title" content="Master Era | ERP, CRM, HRMS & Website Development">
-<meta property="og:description"
-content="Master Era provides ERP Software, CRM, HRMS, Website Development and Digital Solutions for businesses.">
-<meta property="og:image" content="https://masterera.in/images/og-banner.jpg">
-
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Master Era | ERP, CRM, HRMS & Website Development">
-<meta name="twitter:description"
-content="ERP Software, CRM, HRMS & Website Development by Master Era.">
-<meta name="twitter:image"
-content="https://masterera.in/images/og-banner.jpg"> </title>
+    <title>Master Era | ERP Software, CRM, HRMS & Website Development Company in India</title>
 
     <meta name="description"
         content="Master Era provides ERP Software, CRM, HRMS, Website Development, Digital Marketing and Custom Business Solutions for startups and enterprises across India.">
@@ -41,22 +25,20 @@ content="https://masterera.in/images/og-banner.jpg"> </title>
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:title"
-        content="Master Era | ERP Software, CRM, HRMS & Website Development">
-    <meta property="og:description"
-        content="Grow your business with ERP, CRM, HRMS, Website Development and Digital Solutions by Master Era.">
     <meta property="og:url" content="https://masterera.in/">
+    <meta property="og:title" content="Master Era | ERP Software, CRM, HRMS & Website Development Company">
+    <meta property="og:description"
+        content="Master Era provides ERP Software, CRM, HRMS, Website Development and Digital Solutions for businesses across India.">
     <meta property="og:image" content="https://masterera.in/images/main%20logo%20white.png">
     <meta property="og:site_name" content="Master Era">
+    <meta property="og:locale" content="en_IN">
 
-    <!-- Twitter -->
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title"
-        content="Master Era | ERP Software & Website Development">
+    <meta name="twitter:title" content="Master Era | ERP Software, CRM, HRMS & Website Development">
     <meta name="twitter:description"
-        content="Professional ERP Software, CRM, HRMS and Website Development Company.">
-    <meta name="twitter:image"
-        content="https://masterera.in/images/main%20logo%20white.png">
+        content="Master Era provides ERP Software, CRM, HRMS, Website Development and Digital Solutions.">
+    <meta name="twitter:image" content="https://masterera.in/images/main%20logo%20white.png">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/main logo white.png">
@@ -71,21 +53,10 @@ content="https://masterera.in/images/og-banner.jpg"> </title>
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <!-- CSS -->
+    <!-- Main CSS -->
     <link rel="stylesheet" href="style.css">
 
     <!-- Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context":"https://schema.org",
-      "@type":"Organization",
-      "name":"Master Era",
-      "url":"https://masterera.in",
-      "logo":"https://masterera.in/images/main%20logo%20white.png",
-      "description":"ERP Software, CRM, HRMS, Website Development and Digital Solutions.",
-      "sameAs":[]
-    }
-    </script>
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -96,7 +67,7 @@ content="https://masterera.in/images/og-banner.jpg"> </title>
   "description": "Master Era provides ERP Software, CRM, HRMS, Website Development and Digital Solutions.",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Akruti Hights, Near APS School, Tarsali Bypass",
+    "streetAddress": "Akruti Heights, Near APS School, Tarsali Bypass",
     "addressLocality": "Vadodara",
     "addressRegion": "Gujarat",
     "postalCode": "390009",
@@ -119,20 +90,6 @@ content="https://masterera.in/images/og-banner.jpg"> </title>
   ]
 }
 </script>
-<!-- Open Graph Meta Tags -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://masterera.in/">
-<meta property="og:title" content="Master Era | ERP, CRM, HRMS & Website Development">
-<meta property="og:description" content="Master Era provides ERP Software, CRM, HRMS, Website Development and Digital Solutions for businesses.">
-<meta property="og:image" content="https://masterera.in/images/main logo white.png">
-<meta property="og:site_name" content="Master Era">
-<meta property="og:locale" content="en_IN">
-
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Master Era | ERP, CRM, HRMS & Website Development">
-<meta name="twitter:description" content="Master Era provides ERP Software, CRM, HRMS, Website Development and Digital Solutions.">
-<meta name="twitter:image" content="https://masterera.in/images/main logo white.png">
 
 </head>
 
