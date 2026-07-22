@@ -29,7 +29,7 @@
     <meta property="og:title" content="Master Era | ERP Software, CRM, HRMS & Website Development Company">
     <meta property="og:description"
         content="Master Era provides ERP Software, CRM, HRMS, Website Development and Digital Solutions for businesses across India.">
-    <meta property="og:image" content="https://masterera.in/images/main%20logo%20white.png">
+    <meta property="og:image" content="https://masterera.in/images/og-banner.jpeg">
     <meta property="og:site_name" content="Master Era">
     <meta property="og:locale" content="en_IN">
 
@@ -38,7 +38,7 @@
     <meta name="twitter:title" content="Master Era | ERP Software, CRM, HRMS & Website Development">
     <meta name="twitter:description"
         content="Master Era provides ERP Software, CRM, HRMS, Website Development and Digital Solutions.">
-    <meta name="twitter:image" content="https://masterera.in/images/main%20logo%20white.png">
+    <meta name="twitter:image" content="https://masterera.in/images/og-banner.jpeg">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/main logo white.png">
