@@ -102,7 +102,8 @@
 
         <div class="logo">
             <a href="index.php">
-                <img src="images/Design AI PNG.png" alt="Master Era Logo">
+            <img src="images/Design AI PNG.png"
+     alt="Master Era ERP CRM HRMS Website Development Company Logo">
             </a>
         </div>
 
@@ -149,7 +150,11 @@
 
         <div class="hero-image" data-aos="fade-left">
 
-            <img src="images/Hero Section iamge.png" alt="Business Team">
+        <img src="images/Hero Section iamge.png"
+     alt="Master Era ERP Software CRM HRMS Website Development"
+     loading="eager"
+     width="600"
+     height="600">
 
         </div>
 
@@ -222,7 +227,7 @@
         </div>
 
     </section>
-    </section>
+    
     
     <section class="how-it-works">
 
@@ -387,11 +392,13 @@
 
         const dropdown = document.querySelector(".dropdown");
 
-        dropdown.addEventListener("click", () => {
-            if (window.innerWidth <= 991) {
-                dropdown.classList.toggle("active");
-            }
-        });
+if (dropdown) {
+    dropdown.addEventListener("click", () => {
+        if (window.innerWidth <= 991) {
+            dropdown.classList.toggle("active");
+        }
+    });
+}
     </script>
 </body>
 
