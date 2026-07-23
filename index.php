@@ -1,21 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description" content="Master Era helps businesses grow with smart ERP, CRM, HRMS, billing, web development, cloud and custom digital solutions.">
-    <meta name="keywords" content="ERP Software, CRM, HRMS, Website Development, Digital Solutions, Business Automation,Website Design, Application Creator,School Management ">
+    <meta name="keywords" content="ERP Software, CRM, HRMS, Website Development, Digital Solutions, Business Automation, Website Design, Application Creator, School Management">
     <meta name="author" content="Master Era">
 
     <link rel="icon" type="image/png" href="images/main logo white.png">
 
     <title>Master Era | Smart Digital Solutions For Growing Businesses</title>
 
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="style.css">
+
+    <!-- Main Website CSS -->
+    <link rel="stylesheet" href="./style.css?v=20260723">
+
 </head>
 
 <body>
