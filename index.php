@@ -22,54 +22,27 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+    <!-- Main Website CSS -->
+    <link rel="stylesheet" href="./style.css?v=20260723">
+
+    <link rel="stylesheet" href="includes/header-footer.css?v=20260723">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
-    <nav class="navbar">
 
-        <div class="logo">
-            <a href="index.php">
-                <img src="images/Design AI PNG.png" alt="Master Era Logo">
-            </a>
-        </div>
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+    <?php include __DIR__ . '/includes/header.php'; ?>
 
-        <div class="menu-toggle">
-            <i class="bi bi-list"></i>
-        </div>
+    <!-- =========================
+         PREMIUM HERO
+    ========================== -->
+    <main>
 
-        <ul class="menu">
-            <li><a href="index.php">Home</a></li>
-            
-            
-
-            <!-- <li class="dropdown">
-                <a href="services.php">Services <i class="bi bi-chevron-down"></i></a>
-
-                <ul class="dropdown-menu">
-                    <li><a href="services.php#hrms">HR & Payroll</a></li>
-                    <li><a href="services.php#crm">Sales CRM</a></li>
-                    <li><a href="services.php#invoice">Invoice System</a></li>
-                    <li><a href="services.php#erp">Custom ERP</a></li>
-                    <li><a href="services.php#web">Web Development</a></li>
-                    <li><a href="services.php#cloud">Cloud Solutions</a></li>
-                    <li><a href="services.php#dms">Document Management</a></li>
-                </ul>
-            </li> -->
-            <li><a href="services.php">Services</a></li>
-            <li><a href="about.php">About</a></li>
-            <li><a href="pricing.php">Pricing</a></li>
-            <li><a href="feedback.php">feedback</a></li>
-            <li><a href="portfolio.php">Portfolio</a></li>
-            <li><a href="contact.php">Contact</a></li>
-        </ul>
-
-        <a href="contact.php" class="quote-btn">Get Quote</a>
-        
-
-    </nav>
-    <section class="hero">
+        <section class="hero">
 
             <div class="hero-orb hero-orb-one"></div>
             <div class="hero-orb hero-orb-two"></div>
@@ -388,91 +361,68 @@
 
             </div>
 
-    </section>
-    
-    <!-- <section class="cta-section">
+        </section>
 
-        <div class="cta-box">
+        <!-- =========================
+             PROCESS
+        ========================== -->
+        <section class="how-it-works">
 
-            <h2>
-                Ready To Transform Your Business?
-            </h2>
+            <div class="section-heading">
+                <span class="section-kicker">OUR PROCESS</span>
+                <h2>From Idea To Impact.<br><span>Simple & Clear.</span></h2>
+                <p>Start your digital transformation journey with a clear, practical process.</p>
+            </div>
 
-            <p>
-                Get a free consultation and discover the right solution for your business.
-            </p>
+            <div class="steps-container">
 
-            <a href="contact.php" class="cta-btn">
-                Get Free Quote →
-            </a>
+                <div class="step-card">
+                    <div class="step-top">
+                        <span class="step-number">01</span>
+                        <i class="bi bi-chat-square-text"></i>
+                    </div>
+                    <h3>Understand</h3>
+                    <p>We listen to your challenges, goals and business requirements.</p>
+                </div>
 
-        </div>
+                <div class="step-card active-step">
+                    <div class="step-top">
+                        <span class="step-number">02</span>
+                        <i class="bi bi-bezier2"></i>
+                    </div>
+                    <h3>Build</h3>
+                    <p>We design and develop a practical solution around your workflow.</p>
+                </div>
 
-    </section> -->
-    <footer class="footer">
-
-        <div class="footer-container">
-
-            <div class="footer-box">
-
-                <h3>MASTER ERA</h3>
-
-                <p>
-                    Empowering businesses with ERP, CRM, HRMS, Billing Systems and Digital Solutions.
-                </p>
+                <div class="step-card">
+                    <div class="step-top">
+                        <span class="step-number">03</span>
+                        <i class="bi bi-rocket-takeoff"></i>
+                    </div>
+                    <h3>Grow</h3>
+                    <p>You launch, improve and scale with technology that grows with you.</p>
+                </div>
 
             </div>
 
-            <div class="footer-box">
+        </section>
 
-                <h3>Quick Links</h3>
+        <!-- =========================
+             CTA
+        ========================== -->
+        <section class="cta-section">
 
-                <ul>
-                    <li><a href="index.php">Home</a></li>
-                    <li><a href="services.php">Services</a></li>
-                    <li><a href="portfolio.php">Portfolio</a></li>
-                    <li><a href="about.php">About</a></li>
-                    <li><a href="pricing.php">Pricing</a></li>
-                    <li><a href="contact.php">Contact</a></li>
-                </ul>
+            <div class="cta-box">
 
-            </div>
+                <div class="cta-decoration cta-decoration-one"></div>
+                <div class="cta-decoration cta-decoration-two"></div>
 
-            <div class="footer-box">
-
-<h3>Services</h3>
-
-<ul>
-    <li><a href="services.php#hrms">HR & Payroll</a></li>
-    <li><a href="services.php#crm">Sales CRM</a></li>
-    <li><a href="services.php#erp">ERP Software</a></li>
-    <li><a href="services.php#web">Web Development</a></li>
-    <li><a href="services.php#cloud">Cloud Deployment</a></li>
-</ul>
-
-</div>
-
-            <div class="footer-box">
-
-                <h3>Contact Info</h3>
-
-                <p>📧 info@masterera.in</p>
-                <p>📞 +91 7046674228</p>
-                <p>📍 Akruti Heights, Near APS School,<br>
-                Tarsali Bypass, Tarsali,<br>
-                Vadodara - 390009,<br>
-                Gujarat, India</p>
-
-            </div>
-            <div class="social-icons">
-                
-                <a href="https://www.instagram.com/masterera_managemantsoftware/" target="_blank">
-                 <i class="bi bi-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/master-era-511660369" target="_blank">
-                 <i class="bi bi-linkedin"></i></a>
-                 <a href="https://wa.me/917046674228" target="_blank">
-                <i class="bi bi-whatsapp"></i></a>
-            </div>
+                <div class="cta-content">
+                    <span class="section-kicker light-kicker">READY TO MOVE FORWARD?</span>
+                    <h2>Let's Build Something<br><span>Better Together.</span></h2>
+                    <p>Tell us what you are building, and let's find the right digital solution for your next stage.</p>
+                    <a href="contact.php" class="cta-btn">Start a Conversation <i class="bi bi-arrow-up-right"></i></a>
+                </div>
 
             </div>
 
@@ -480,30 +430,11 @@
 
     </main>
 
-    </footer>
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <?php include __DIR__ . '/includes/footer.php'; ?>
 
-    <script>
-        AOS.init({
-            duration: 1000,
-            once: true
-        });
-    </script>
-    <script>
-        const menuToggle = document.querySelector(".menu-toggle");
-        const menu = document.querySelector(".menu");
 
-        menuToggle.addEventListener("click", () => {
-            menu.classList.toggle("active");
-        });
-
-        const dropdown = document.querySelector(".dropdown");
-
-        dropdown.addEventListener("click", () => {
-            if (window.innerWidth <= 991) {
-                dropdown.classList.toggle("active");
-            }
-        });
-    </script>
 </body>
 </html>
