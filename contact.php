@@ -4,62 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Contact Master Era | ERP, CRM & Website Development</title>
-
-    <meta name="description"
-        content="Contact Master Era for ERP Software, CRM, HRMS, Website Development and Digital Solutions. Get a free consultation today.">
-
-    <meta name="keywords"
-        content="Contact Master Era, ERP Company India, CRM Company, Website Development Vadodara, Software Company">
-
-    <meta name="author" content="Master Era">
-
-    <meta name="robots" content="index, follow">
-
-    <link rel="canonical" href="https://masterera.in/contact.php">
-
+    
+    <title>Contact Us | Master Era</title>
     <link rel="icon" type="image/png" href="images/main logo white.png">
-
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="contact.css">
 
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="includes/header-footer.css?v=20260723">
 </head>
 
 <body>
 
-<nav class="navbar">
-
-<div class="logo">
-    <a href="index.php">
-        <img src="images/Design AI PNG.png" alt="Master Era Logo">
-    </a>
-</div>
-<div class="menu-toggle">
-    <i class="bi bi-list"></i>
-</div>
-
-
-<ul class="menu">
-
-    <li><a href="index.php">Home</a></li>
-
-    <li><a href="services.php">Services</a></li>
-    <li><a href="pricing.php">Pricing</a></li>
-    <li><a href="about.php">About</a></li>       
-    <li><a href="portfolio.php">Portfolio</a></li>
-    <li><a href="contact.php">Contact</a></li>
-    <li><a href="feedback.php">feedback</a></li>
-
-</ul>
-
-
-</nav>
+<?php include __DIR__ . '/includes/header.php'; ?>
     <!-- CONTACT HERO -->
     <section class="contact-header">
     <span>CONTACT MASTER ERA</span>
@@ -290,90 +248,7 @@
 
 </section>
 
-    <!-- CTA -->
-    <!-- <section class="cta-section">
-
-        <div class="cta-box">
-            <h2>Ready To Transform Your Business?</h2>
-
-            <p>
-                Let's discuss your requirements and build
-                the right solution together.
-            </p>
-
-            <a href="#" class="cta-btn">
-                Schedule Free Consultation
-            </a>
-        </div>
-
-    </section> -->
-
-    <footer class="footer">
-
-        <div class="footer-container">
-
-            <div class="footer-box">
-                <h3>MASTER ERA</h3>
-                <p>
-                    Empowering businesses with ERP, CRM, HRMS,
-                    Billing Systems and Digital Solutions.
-                </p>
-            </div>
-
-            <div class="footer-box">
-                <h3>Quick Links</h3>
-
-                <ul>
-                    <li><a href="index.php">Home</a></li>
-                    <li><a href="services.php">Services</a></li>
-                    <li><a href="portfolio.php">Portfolio</a></li>
-                    <li><a href="about.php">About</a></li>
-                    <li><a href="pricing.php">Pricing</a></li>
-                    <li><a href="contact.php">Contact</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-box">
-
-    <h3>Services</h3>
-
-    <ul>
-        <li><a href="services.php#hrms">HR & Payroll</a></li>
-        <li><a href="services.php#crm">Sales CRM</a></li>
-        <li><a href="services.php#erp">ERP Software</a></li>
-        <li><a href="services.php#web">Web Development</a></li>
-        <li><a href="services.php#cloud">Cloud Deployment</a></li>
-    </ul>
-
-</div>
-
-            <div class="footer-box">
-                <h3>Contact Info</h3>
-
-                <p>📧 info@masterera.in</p>
-                <p>📞 +91 7046674228</p>
-                <p>📍 Akruti Heights, Near APS School,<br>
-                Tarsali Bypass, Tarsali,<br>
-                Vadodara - 390009,<br>
-                Gujarat, India</p>
-            </div>
-            <div class="social-icons">
-                
-                <a href="https://www.instagram.com/masterera_managemantsoftware/" target="_blank">
-                 <i class="bi bi-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/master-era-511660369" target="_blank">
-                 <i class="bi bi-linkedin"></i></a>
-                 <a href="https://wa.me/917046674228" target="_blank">
-                <i class="bi bi-whatsapp"></i></a>
-            </div>
-
-        </div>
-
-        <div class="footer-bottom">
-            <p>© 2026 Master Era. All Rights Reserved.</p>
-        </div>
-
-    </footer>
+    <?php include __DIR__ . '/includes/footer.php'; ?>
 
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
@@ -381,22 +256,6 @@
         AOS.init({
             duration: 1000,
             once: true
-        });
-    </script>
-    <script>
-        const menuToggle = document.querySelector(".menu-toggle");
-        const menu = document.querySelector(".menu");
-
-        menuToggle.addEventListener("click", () => {
-            menu.classList.toggle("active");
-        });
-
-        const dropdown = document.querySelector(".dropdown");
-
-        dropdown.addEventListener("click", () => {
-            if (window.innerWidth <= 991) {
-                dropdown.classList.toggle("active");
-            }
         });
     </script>
 

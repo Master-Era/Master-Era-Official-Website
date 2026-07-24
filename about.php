@@ -9,112 +9,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Primary SEO -->
-    <title>About Master Era | ERP, CRM, HRMS & Website Development Company</title>
+    <title>About Us | Master Era</title>
 
-    <meta name="description"
-        content="Learn about Master Era, a trusted ERP, CRM, HRMS and Website Development company. Discover our mission, vision, expertise, and commitment to helping businesses grow with innovative digital solutions.">
+    <meta
+        name="description"
+        content="Learn about Master Era, our mission, vision, values, technology, and commitment to building practical digital solutions for ambitious businesses."
+    >
 
-    <meta name="keywords"
-        content="About Master Era, ERP Company India, CRM Development, HRMS Software, Website Development Company, Business Software Solutions">
-
-    <meta name="author" content="Master Era">
-    <meta name="robots" content="index, follow">
-    <meta name="language" content="English">
-    <meta name="theme-color" content="#0b1f4d">
-
-    <!-- Canonical -->
-    <link rel="canonical" href="https://masterera.in/about.php">
-
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="About Master Era">
-    <meta property="og:description"
-        content="Meet the team behind Master Era and learn how we build ERP, CRM, HRMS and modern business software solutions.">
-    <meta property="og:url" content="https://masterera.in/about.php">
-    <meta property="og:image" content="https://masterera.in/images/main%20logo%20white.png">
-    <meta property="og:site_name" content="Master Era">
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="About Master Era">
-    <meta name="twitter:description"
-        content="Learn about Master Era's mission, vision and software development expertise.">
-    <meta name="twitter:image"
-        content="https://masterera.in/images/main%20logo%20white.png">
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="images/main logo white.png">
+    <link
+        rel="icon"
+        type="image/png"
+        href="images/main logo white.png"
+    >
 
     <?php
+
         $style_css = __DIR__ . '/style.css';
         $about_css = __DIR__ . '/about.css';
+
     ?>
 
-    <link rel="stylesheet"
-        href="style.css?v=<?php echo file_exists($style_css) ? filemtime($style_css) : time(); ?>">
+    <link
+        rel="stylesheet"
+        href="style.css?v=<?php echo file_exists($style_css) ? filemtime($style_css) : time(); ?>"
+    >
 
-    <link rel="stylesheet"
-        href="about.css?v=<?php echo file_exists($about_css) ? filemtime($about_css) : time(); ?>">
+    <link
+        rel="stylesheet"
+        href="about.css?v=<?php echo file_exists($about_css) ? filemtime($about_css) : time(); ?>"
+    >
 
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    >
 
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
 
-    <!-- Organization Schema -->
-    <script type="application/ld+json">
-    {
-      "@context":"https://schema.org",
-      "@type":"Organization",
-      "name":"Master Era",
-      "url":"https://masterera.in",
-      "logo":"https://masterera.in/images/main%20logo%20white.png",
-      "description":"Master Era provides ERP, CRM, HRMS, Website Development and Digital Solutions.",
-      "foundingLocation":"Vadodara, Gujarat, India"
-    }
-    </script>
-
+    <link rel="stylesheet" href="includes/header-footer.css?v=20260723">
 </head>
 
 <body class="about-page">
 
-<nav class="navbar">
-
-    <div class="logo">
-
-        <a href="index.php">
-
-            <img
-                src="images/Design AI PNG.png"
-                alt="Master Era Logo"
-            >
-
-        </a>
-
-    </div>
-
-    <div class="menu-toggle">
-
-        <i class="bi bi-list"></i>
-
-    </div>
-
-    <ul class="menu">
-
-       <li><a href="index.php">Home</a></li>
-
-    <li><a href="services.php">Services</a></li>
-    <li><a href="pricing.php">Pricing</a></li>
-    <li><a href="about.php">About</a></li>       
-    <li><a href="portfolio.php">Portfolio</a></li>
-    <li><a href="contact.php">Contact</a></li>
-    <li><a href="feedback.php">feedback</a></li>
-
-    </ul>
-
-</nav>
+<?php include __DIR__ . '/includes/header.php'; ?>
 
 <main>
 
@@ -911,183 +851,7 @@
 </main>
 
 
-<footer class="footer about-footer">
-
-    <div class="footer-container">
-
-        <div class="footer-box">
-
-            <h3>
-                MASTER ERA
-            </h3>
-
-            <p>
-                Empowering businesses with ERP, CRM, HRMS, Billing Systems and Digital Solutions.
-            </p>
-
-        </div>
-
-        <div class="footer-box">
-
-            <h3>
-                Quick Links
-            </h3>
-
-            <ul>
-
-                <li>
-                    <a href="index.php">
-                        Home
-                    </a>
-                </li>
-
-                <li>
-                    <a href="services.php">
-                        Services
-                    </a>
-                </li>
-
-                <li>
-                    <a href="portfolio.php">
-                        Portfolio
-                    </a>
-                </li>
-
-                <li>
-                    <a href="about.php">
-                        About
-                    </a>
-                </li>
-
-                <li>
-                    <a href="pricing.php">
-                        Pricing
-                    </a>
-                </li>
-
-                <li>
-                    <a href="contact.php">
-                        Contact
-                    </a>
-                </li>
-
-            </ul>
-
-        </div>
-
-        <div class="footer-box">
-
-            <h3>
-                Services
-            </h3>
-
-            <ul>
-
-                <li>
-                    <a href="services.php#hrms">
-                        HR & Payroll
-                    </a>
-                </li>
-
-                <li>
-                    <a href="services.php#crm">
-                        Sales CRM
-                    </a>
-                </li>
-
-                <li>
-                    <a href="services.php#erp">
-                        ERP Software
-                    </a>
-                </li>
-
-                <li>
-                    <a href="services.php#web">
-                        Web Development
-                    </a>
-                </li>
-
-                <li>
-                    <a href="services.php#cloud">
-                        Cloud Deployment
-                    </a>
-                </li>
-
-            </ul>
-
-        </div>
-
-        <div class="footer-box">
-
-            <h3>
-                Contact Info
-            </h3>
-
-            <p>
-                📧 info@masterera.in
-            </p>
-
-            <p>
-                📞 +91 7046674228
-            </p>
-
-            <p>
-                📍 Akruti Heights, Near APS School,
-                <br>
-                Tarsali Bypass, Tarsali,
-                <br>
-                Vadodara - 390009,
-                <br>
-                Gujarat, India
-            </p>
-
-        </div>
-
-        <div class="social-icons">
-
-            <a
-                href="https://www.instagram.com/masterera_managemantsoftware/"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-
-                <i class="bi bi-instagram"></i>
-
-            </a>
-
-            <a
-                href="https://www.linkedin.com/in/master-era-511660369"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-
-                <i class="bi bi-linkedin"></i>
-
-            </a>
-
-            <a
-                href="https://wa.me/917046674228"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-
-                <i class="bi bi-whatsapp"></i>
-
-            </a>
-
-        </div>
-
-    </div>
-
-    <div class="footer-bottom about-footer-bottom">
-
-        <p>
-            © 2026 Master Era. All Rights Reserved.
-        </p>
-
-    </div>
-
-</footer>
+<?php include __DIR__ . '/includes/footer.php'; ?>
 
 
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
@@ -1105,20 +869,7 @@
         easing: "ease-out-cubic"
 
     });
-
-    const menuToggle = document.querySelector(".menu-toggle");
-
-    const menu = document.querySelector(".menu");
-
-    if (menuToggle && menu) {
-
-        menuToggle.addEventListener("click", () => {
-
-            menu.classList.toggle("active");
-
-        });
-
-    }
+}
 
 </script>
 
