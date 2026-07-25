@@ -184,7 +184,7 @@
             </span>
 
             <div>
-                <strong>8+</strong>
+                <strong>11+</strong>
                 <span>Digital Solutions</span>
             </div>
             </div>
@@ -206,7 +206,7 @@
             </span>
 
             <div>
-                <strong>∞</strong>
+                <strong>100%</strong>
                 <span>Growth Possibilities</span>
             </div>
         </div>
