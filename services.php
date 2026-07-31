@@ -190,114 +190,44 @@
 
     <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Primary SEO -->
-<title>Our Services | ERP, CRM, HRMS & Website Development | Master Era</title>
+        <title>Services | Master Era</title>
 
-<meta name="description"
-    content="Explore Master Era's professional services including ERP Software, CRM Development, HRMS Solutions, Website Development, Custom Software Development, Cloud Solutions and Digital Business Services.">
+        <link rel="icon" type="image/png" href="images/main logo white.png">
 
-<meta name="keywords"
-    content="ERP Services, CRM Development, HRMS Software, Website Development, Custom Software Development, Business Automation, Cloud Solutions, Master Era Services">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        >
 
-<meta name="author" content="Master Era">
-<meta name="robots" content="index, follow">
-<meta name="language" content="English">
-<meta name="theme-color" content="#0b1f4d">
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+        >
 
-<!-- Canonical -->
-<link rel="canonical" href="https://masterera.in/services.php">
+        <link
+            rel="stylesheet"
+            href="style.css?v=<?php echo file_exists($style_css) ? filemtime($style_css) : time(); ?>"
+        >
 
-<!-- Open Graph -->
-<meta property="og:type" content="website">
-<meta property="og:title" content="Master Era Services">
-<meta property="og:description"
-    content="Discover ERP, CRM, HRMS, Website Development and Custom Business Software Services offered by Master Era.">
-<meta property="og:url" content="https://masterera.in/services.php">
-<meta property="og:image" content="https://masterera.in/images/main%20logo%20white.png">
-<meta property="og:site_name" content="Master Era">
+        <link
+            rel="stylesheet"
+            href="services.css?v=<?php echo file_exists($services_css) ? filemtime($services_css) : time(); ?>"
+        >
 
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Master Era Services">
-<meta name="twitter:description"
-    content="Professional ERP, CRM, HRMS and Website Development Services for modern businesses.">
-<meta name="twitter:image"
-    content="https://masterera.in/images/main%20logo%20white.png">
+        <link rel="stylesheet" href="includes/header-footer.css?v=20260723">
 
-<!-- Favicon -->
-<link rel="icon" type="image/png" href="images/main logo white.png">
-
-<!-- Bootstrap -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<!-- Bootstrap Icons -->
-<link rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-<!-- CSS -->
-<link rel="stylesheet"
-    href="style.css?v=<?php echo file_exists($style_css) ? filemtime($style_css) : time(); ?>">
-
-<link rel="stylesheet"
-    href="services.css?v=<?php echo file_exists($services_css) ? filemtime($services_css) : time(); ?>">
-
-<!-- Service Schema -->
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"Service",
-  "provider":{
-    "@type":"Organization",
-    "name":"Master Era",
-    "url":"https://masterera.in"
-  },
-  "serviceType":"ERP Software, CRM, HRMS, Website Development, Custom Software Development",
-  "areaServed":"India"
-}
-</script>
-
+        <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
     <body>
 
         <!-- ================= NAVBAR ================= -->
 
-        <nav class="navbar">
-
-            <div class="logo">
-
-                <a href="index.php">
-
-                    <img
-                        src="images/main logo white.png"
-                        alt="Master Era Logo"
-                    >
-
-                </a>
-
-            </div>
-
-            <div class="menu-toggle">
-
-                <i class="bi bi-list"></i>
-
-            </div>
-
-            <ul class="menu">
-    <li><a href="index.php">Home</a></li>
-    <li><a href="services.php">Services</a></li>
-    <li><a href="pricing.php">Pricing</a></li>
-    <li><a href="about.php">About</a></li>       
-    <li><a href="portfolio.php">Portfolio</a></li>
-    <li><a href="contact.php">Contact</a></li>
-    <li><a href="feedback.php">feedback</a></li>
-
-            </ul>
-
-        </nav>
+        <?php include __DIR__ . '/includes/header.php'; ?>
 
 
 
@@ -1023,189 +953,7 @@
 
         <!-- ================= FOOTER ================= -->
 
-        <footer class="footer">
-
-            <div class="footer-container">
-
-                <div class="footer-box">
-
-                    <h3>
-                        MASTER ERA
-                    </h3>
-
-                    <p>
-                        Empowering businesses with ERP, CRM, HRMS,
-                        Billing Systems and Digital Solutions.
-                    </p>
-
-                </div>
-
-
-                <div class="footer-box">
-
-                    <h3>
-                        Quick Links
-                    </h3>
-
-                    <ul>
-
-                        <li>
-                            <a href="index.php">
-                                Home
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="services.php">
-                                Services
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="portfolio.php">
-                                Portfolio
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="about.php">
-                                About
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="pricing.php">
-                                Pricing
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="contact.php">
-                                Contact
-                            </a>
-                        </li>
-
-                    </ul>
-
-                </div>
-
-
-                <div class="footer-box">
-
-                    <h3>
-                        Services
-                    </h3>
-
-                    <ul>
-
-                        <li>
-                            <a href="services.php#services">
-                                Business Software
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="services.php#services">
-                                CRM & Sales
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="services.php#services">
-                                HR & Payroll
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="services.php#services">
-                                Web Solutions
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="services.php#services">
-                                Cloud & Support
-                            </a>
-                        </li>
-
-                    </ul>
-
-                </div>
-
-
-                <div class="footer-box">
-
-                    <h3>
-                        Contact Info
-                    </h3>
-
-                    <p>
-                        📧 info@masterera.in
-                    </p>
-
-                    <p>
-                        📞 +91 7046674228
-                    </p>
-
-                    <p>
-                        📍 Akruti Heights, Near APS School,
-                        <br>
-                        Tarsali Bypass, Tarsali,
-                        <br>
-                        Vadodara - 390009,
-                        <br>
-                        Gujarat, India
-                    </p>
-
-                </div>
-
-
-                <div class="social-icons">
-
-                    <a
-                        href="https://www.instagram.com/masterera_managemantsoftware/"
-                        target="_blank"
-                        rel="noopener"
-                    >
-
-                        <i class="bi bi-instagram"></i>
-
-                    </a>
-
-                    <a
-                        href="https://www.linkedin.com/in/master-era-511660369"
-                        target="_blank"
-                        rel="noopener"
-                    >
-
-                        <i class="bi bi-linkedin"></i>
-
-                    </a>
-
-                    <a
-                        href="https://wa.me/917046674228"
-                        target="_blank"
-                        rel="noopener"
-                    >
-
-                        <i class="bi bi-whatsapp"></i>
-
-                    </a>
-
-                </div>
-
-            </div>
-
-
-            <div class="footer-bottom">
-
-                <p>
-                    © 2026 Master Era. All Rights Reserved.
-                </p>
-
-            </div>
-
-        </footer>
+        <?php include __DIR__ . '/includes/footer.php'; ?>
 
 
         <!-- ================= SCRIPTS ================= -->
@@ -1423,28 +1171,6 @@
 
             }
 
-
-            /* ================= MOBILE MENU ================= */
-
-            const menuToggle =
-                document.querySelector(".menu-toggle");
-
-            const menu =
-                document.querySelector(".menu");
-
-
-            if (menuToggle && menu) {
-
-                menuToggle.addEventListener(
-                    "click",
-                    () => {
-
-                        menu.classList.toggle("active");
-
-                    }
-                );
-
-            }
 
         </script>
 
