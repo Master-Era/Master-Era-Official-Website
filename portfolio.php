@@ -122,7 +122,7 @@
 
                 <div class="portfolio-content">
                     <span class="project-tag">HR Software</span>
-                    <h3>Restaurant HR System</h3>
+                    <h3>HR & Payroll System</h3>
                     <p>A complete HR Management System that simplifies employee management, attendance, leave tracking, payroll, documents, and reports in one secure cloud platform.</p>
                     <div class="project-details">
 
