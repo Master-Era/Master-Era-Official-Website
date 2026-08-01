@@ -32,14 +32,8 @@
 
 <body>
 
-    <!-- =========================
-         NAVBAR
-    ========================== -->
     <?php include __DIR__ . '/includes/header.php'; ?>
 
-    <!-- =========================
-         PREMIUM HERO
-    ========================== -->
     <main>
 
         <section class="hero">
@@ -215,9 +209,6 @@
 
     </section>
 
-        <!-- =========================
-             SERVICES
-        ========================== -->
         <section class="services">
 
             <div class="section-heading">
@@ -287,9 +278,6 @@
 
         </section>
 
-        <!-- =========================
-             WHY MASTER ERA
-        ========================== -->
         <section class="why-section">
 
             <div class="why-visual">
@@ -363,9 +351,6 @@
 
         </section>
 
-        <!-- =========================
-             PROCESS
-        ========================== -->
         <section class="how-it-works">
 
             <div class="section-heading">
@@ -407,9 +392,6 @@
 
         </section>
 
-        <!-- =========================
-             CTA
-        ========================== -->
         <section class="cta-section">
 
             <div class="cta-box">
@@ -429,10 +411,7 @@
         </section>
 
     </main>
-
-    <!-- =========================
-         FOOTER
-    ========================== -->
+    
     <?php include __DIR__ . '/includes/footer.php'; ?>
 
 

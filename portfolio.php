@@ -48,9 +48,7 @@
     </section> -->
 
 
-    <!-- ==================================
-         STATS SECTION
-    =================================== -->
+ 
     <!-- <section class="portfolio-stats">
 
         <div class="stats-grid">
@@ -398,9 +396,7 @@ View Details
     </section>
 
 
-    <!-- ==================================
-         CASE STUDIES
-    =================================== -->
+
     <section class="case-study-section">
 
         <div class="section-title">
@@ -480,9 +476,7 @@ View Details
     </section>
 
 
-    <!-- ==================================
-         TECHNOLOGY STACK
-    =================================== -->
+
     <section class="tech-section">
 
         <div class="section-title">
@@ -503,9 +497,7 @@ View Details
     </section>
 
 
-    <!-- ==================================
-         CTA SECTION
-    =================================== -->
+
     <!-- <section class="portfolio-cta">
 
         <div class="cta-box">

@@ -225,7 +225,7 @@
 
     <body>
 
-        <!-- ================= NAVBAR ================= -->
+      
 
         <?php include __DIR__ . '/includes/header.php'; ?>
 
@@ -291,7 +291,7 @@
             </section>
 
 
-            <!-- ================= SERVICE CARDS ================= -->
+        
 
             <section
                 class="services-section"
@@ -392,7 +392,6 @@
             </section>
 
 
-            <!-- ================= BUSINESS ECOSYSTEM ================= -->
 
             <section class="ecosystem-section">
 
@@ -450,7 +449,7 @@
             </section>
 
 
-            <!-- ================= SECURITY ================= -->
+    
 
             <section class="security-section">
 
@@ -571,9 +570,6 @@
                 </div>
 
             </section>
-
-
-            <!-- ================= DEPLOYMENT ================= -->
 
             <section class="deployment-section">
 
@@ -710,8 +706,7 @@
             </section>
 
 
-            <!-- ================= WHY MASTER ERA ================= -->
-
+    
             <section class="why-section">
 
                 <div class="section-heading">
@@ -823,7 +818,6 @@
             </section>
 
 
-            <!-- ================= CTA ================= -->
 
             <section class="services-cta">
 
@@ -874,7 +868,6 @@
         </main>
 
 
-        <!-- ================= SERVICE MODAL ================= -->
 
         <div
             class="modal fade"
@@ -951,12 +944,8 @@
         </div>
 
 
-        <!-- ================= FOOTER ================= -->
 
         <?php include __DIR__ . '/includes/footer.php'; ?>
-
-
-        <!-- ================= SCRIPTS ================= -->
 
         <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
@@ -981,7 +970,6 @@
             ); ?>;
 
 
-            /* ================= MODAL ================= */
 
             const modalTitle =
                 document.getElementById("serviceDetailsModalLabel");
@@ -1047,8 +1035,6 @@
                 });
 
 
-            /* ================= FILTER ================= */
-
             const filterButtons =
                 document.querySelectorAll(".filter-btn");
 
@@ -1099,8 +1085,6 @@
 
             });
 
-
-            /* ================= 3D CARD TILT ================= */
 
             if (window.matchMedia("(min-width: 992px)").matches) {
 
