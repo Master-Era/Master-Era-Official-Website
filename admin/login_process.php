@@ -1,4 +1,5 @@
 <?php
+die("THIS IS LOGIN_PROCESS.PHP");
 session_start();
 include("../db_connect.php");
 
