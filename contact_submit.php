@@ -159,8 +159,8 @@ if ($conn->query($sql)) {
 
     die("MySQL Error: " . $conn->error);
 }
-=======
-<?php
+
+
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     header('Location: contact.php');
     exit;
@@ -197,4 +197,4 @@ try {
     header('Location: contact.php?status=error');
     exit;
 }
->>>>>>> 551fa1472bb426dbf71c34e6c78d5b9817af748a
+?>
