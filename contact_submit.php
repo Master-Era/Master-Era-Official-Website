@@ -59,7 +59,7 @@ if ($conn->query($sql)) {
         $mail->isSMTP();
         $mail->Host       = 'mail.masterera.in';
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'sachinparmar0706@gmail.com';
+        $mail->Username   = 'info@masterera.in';
         $mail->Password   = '!nf0#@dmin0607';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
         $mail->Port       = 465;
@@ -70,7 +70,7 @@ if ($conn->query($sql)) {
         // =========================
 
         $mail->setFrom(
-            'sachinparmar0706@gmail.com',
+            'info@masterera.in',
             'Master Era Website'
         );
 
@@ -79,7 +79,7 @@ if ($conn->query($sql)) {
         // EMAIL RECEIVER
         // =========================
 
-        $mail->addAddress('sachinparmar0706@gmail.com');
+        $mail->addAddress('info@masterera.in');
 
 
         // Customer email
