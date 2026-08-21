@@ -1,13 +1,21 @@
 <?php
+
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-include 'db_connect.php';
+// Only allow POST request
+if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+    header('Location: contact.php');
+    exit;
+}
+
+// Database connection
+require __DIR__ . '/db_connect.php';
 
 // PHPMailer
-require 'PHPMailer/src/Exception.php';
-require 'PHPMailer/src/PHPMailer.php';
-require 'PHPMailer/src/SMTP.php';
+require __DIR__ . '/PHPMailer/src/Exception.php';
+require __DIR__ . '/PHPMailer/src/PHPMailer.php';
+require __DIR__ . '/PHPMailer/src/SMTP.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
@@ -17,38 +25,62 @@ use PHPMailer\PHPMailer\Exception;
 // GET FORM DATA
 // =========================
 
-$fullname  = $_POST['fullname'] ?? '';
-$company   = $_POST['company'] ?? '';
-$email     = $_POST['email'] ?? '';
-$phone     = $_POST['phone'] ?? '';
-$city      = $_POST['city'] ?? '';
-$service   = $_POST['service'] ?? '';
-$employees = $_POST['employees'] ?? '';
-$message   = $_POST['message'] ?? '';
+$fullname  = trim($_POST['fullname'] ?? '');
+$company   = trim($_POST['company'] ?? '');
+$email     = trim($_POST['email'] ?? '');
+$phone     = trim($_POST['phone'] ?? '');
+$city      = trim($_POST['city'] ?? '');
+$service   = trim($_POST['service'] ?? '');
+$employees = trim($_POST['employees'] ?? '');
+$message   = trim($_POST['message'] ?? '');
 
 
 // =========================
-// INSERT DATA INTO DATABASE
+// VALIDATION
 // =========================
 
-$sql = "INSERT INTO contact (
-fullname, company, email, phone, city, service, employees, message
-) VALUES (
-'$fullname',
-'$company',
-'$email',
-'$phone',
-'$city',
-'$service',
-'$employees',
-'$message'
-)";
+if (
+    $fullname === '' ||
+    $company === '' ||
+    !filter_var($email, FILTER_VALIDATE_EMAIL) ||
+    $phone === '' ||
+    $service === ''
+) {
+    header('Location: contact.php?status=invalid');
+    exit;
+}
 
 
-if ($conn->query($sql)) {
+// =========================
+// INSERT INTO DATABASE
+// =========================
+
+try {
+
+    $statement = $conn->prepare(
+        'INSERT INTO contact
+        (fullname, company, email, phone, city, service, employees, message)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?)'
+    );
+
+    $statement->bind_param(
+        'ssssssss',
+        $fullname,
+        $company,
+        $email,
+        $phone,
+        $city,
+        $service,
+        $employees,
+        $message
+    );
+
+    $statement->execute();
+    $statement->close();
+
 
     // =========================
-    // SEND EMAIL USING PHPMailer
+    // SEND EMAIL
     // =========================
 
     $mail = new PHPMailer(true);
@@ -65,31 +97,22 @@ if ($conn->query($sql)) {
         $mail->Port       = 465;
 
 
-        // =========================
-        // EMAIL SENDER
-        // =========================
-
+        // Sender
         $mail->setFrom(
             'info@masterera.in',
             'Master Era Website'
         );
 
 
-        // =========================
-        // EMAIL RECEIVER
-        // =========================
-
+        // Receiver
         $mail->addAddress('info@masterera.in');
 
 
-        // Customer email
+        // Reply to customer
         $mail->addReplyTo($email, $fullname);
 
 
-        // =========================
-        // EMAIL CONTENT
-        // =========================
-
+        // Email content
         $mail->isHTML(true);
 
         $mail->Subject = 'New Contact Form Submission - Master Era';
@@ -116,57 +139,32 @@ if ($conn->query($sql)) {
         ";
 
 
-        // Send email
+        // Send email ONCE
         $mail->send();
 
-        echo "Insert Success";
+
+        // Successful submission
+        header('Location: contact.php?status=success');
+        exit;
+
 
     } catch (Exception $e) {
 
-        echo "Database Insert Success, but Email Failed.<br>";
-        echo "Mailer Error: " . $mail->ErrorInfo;
+        error_log('PHPMailer Error: ' . $mail->ErrorInfo);
+
+        header('Location: contact.php?status=email_error');
+        exit;
     }
 
-} else {
 
-    die("MySQL Error: " . $conn->error);
-}
-
-
-if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    header('Location: contact.php');
-    exit;
-}
-
-require __DIR__ . '/db_connect.php';
-
-$fullname = trim($_POST['fullname'] ?? '');
-$company = trim($_POST['company'] ?? '');
-$email = trim($_POST['email'] ?? '');
-$phone = trim($_POST['phone'] ?? '');
-$city = trim($_POST['city'] ?? '');
-$service = trim($_POST['service'] ?? '');
-$employees = trim($_POST['employees'] ?? '');
-$message = trim($_POST['message'] ?? '');
-
-if ($fullname === '' || $company === '' || !filter_var($email, FILTER_VALIDATE_EMAIL) || $phone === '' || $service === '') {
-    header('Location: contact.php?status=invalid');
-    exit;
-}
-
-try {
-    $statement = $conn->prepare(
-        'INSERT INTO contact (fullname, company, email, phone, city, service, employees, message)
-         VALUES (?, ?, ?, ?, ?, ?, ?, ?)'
-    );
-    $statement->bind_param('ssssssss', $fullname, $company, $email, $phone, $city, $service, $employees, $message);
-    $statement->execute();
-    $statement->close();
-    header('Location: contact.php?status=success');
-    exit;
 } catch (mysqli_sql_exception $exception) {
-    error_log('Contact form insert failed: ' . $exception->getMessage());
+
+    error_log(
+        'Contact form insert failed: ' . $exception->getMessage()
+    );
+
     header('Location: contact.php?status=error');
     exit;
 }
+
 ?>
